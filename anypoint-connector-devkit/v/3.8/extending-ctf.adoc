@@ -83,4 +83,4 @@ debug logging to show more info.
 //TODO: Describe logs in Mule and how to access logs in CloudHub
 ////
 == See Also
-For more information on CloudHub application management, see link:/cloudhub/managing-applications-and-servers-in-the-cloud-and-on-premises[Managing Applications and Servers in the Cloud and On Premises]
+For more information on CloudHub application management, see link:/runtime-manager/managing-applications-and-servers-in-the-cloud-and-on-premises[Managing Applications and Servers in the Cloud and On Premises]

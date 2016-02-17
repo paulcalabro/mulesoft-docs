@@ -1,5 +1,5 @@
 = CloudHub and Anypoint Runtime Manager
-:keywords: cloudhub, cloud, api
+:keywords: cloudhub, cloud, api, runtime manager, arm
 
 
 ////

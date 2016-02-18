@@ -3,11 +3,11 @@
 
 CloudHub supports worker monitoring and automatic restarts for unresponsive applications. Monitoring allows you the option to receive notifications and diagnostic information if your application becomes unresponsive. Optionally, enable automatic restarts so that your application can recover automatically without your intervention. CloudHub gives you the flexibility to conduct monitoring with or without enabling automatic restarts. 
 
-Monitoring is enabled by default on all applications deployed to runtimes. (Applications already deployed before the monitoring feature was introduced need to be redeployed for monitoring to take effect.) You can activate the automatic restart feature on a per-application basis using the CloudHub console when you deploy a new application or redeploy an existing application.
+Monitoring is enabled by default on all applications deployed on CloudHub. (Applications already deployed before the monitoring feature was introduced need to be redeployed for monitoring to take effect.) You can activate the automatic restart feature on a per-application basis using the Runtime Manager console when you deploy a new application or redeploy an existing application.
 
 == Prerequisites
 
-This document assumes that you are familiar with link:/runtime-manager/deploying-a-cloudHub-application[deploying applications using the CloudHub console] and that you are deploying to runtime 3.4.n, 3.5.n, or newer. 
+This document assumes that you are familiar with link:/runtime-manager/deploying-a-cloudHub-application[deploying applications using the Runtime Manager console] and that you are deploying to runtime 3.4.n, 3.5.n, or newer. 
 
 == Enabling Automatic Restarts
 

@@ -21,7 +21,7 @@ Starting with the August 2015 (r44) release, CloudHub provides a new optional us
 
 To enable this feature:
 
-. Log into link:https://anypoint.mulesoft.com/#/signin[Anypoint Platform] and click *CloudHub*.
+. Log into link:https://anypoint.mulesoft.com/#/signin[Anypoint Platform] and click *Runtime Manager*.
 .Click an application to expand the details view:
 +
 image:CHApps.png[CHApps]

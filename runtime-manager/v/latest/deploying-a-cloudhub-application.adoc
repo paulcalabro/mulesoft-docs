@@ -4,7 +4,7 @@
 You can deploy a CloudHub application from:
 
 * *Anypoint Studio* - Right-click your project and click *Deploy to Anypoint Platform* -> *Cloud*. For an example of deploying to CloudHub directly from Anypoint Studio, see link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub].
-* *CloudHub* - From the Applications tab, click the *Deploy application* button. This page describes the options on the Deploy Application page.
+* *Runtime Manager* - From the Applications tab, click the *Deploy application* button. This page describes the options on the Deploy Application page.
 
 [NOTE]
 ====
@@ -13,12 +13,12 @@ In the cloud version of the link:anypoint.mulesoft.com[Anypoint Platform], your 
 The topics in this document deal with app deployments on both these scenarios. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for a better understanding of the differences between both.
 ====
 
-== Deploying an Application from CloudHub
+== Deploying an Application from the Runtime Manager
 
 To deploy an application:
 
 . Log into link:https://anypoint.mulesoft.com[Anypoint Platform] or click *Sign up* on the sign on page. 
-. Click *CloudHub*:
+. Click *Runtime Manager*:
 +
 image:APStartScreen.png[APStartScreen]
 +
@@ -37,7 +37,7 @@ image:DeployAppFirstScreen.png[DeployAppFirstScreen] 
 
 Every application requires a unique application domain name. The application domain identifies your application in CloudHub and also provides you with a public URL, `http://myapplicationdomain.cloudhub.io`, for accessing the application if it exposes any inbound endpoints.
 
-To deploy an application, click *Deploy application* on the CloudHub console. in the *Deploy Application* dialog, enter a unique application name. The Application Name also becomes the `cloudhub.io` domain name that you use to access your application; for example the Application Name, `abcde` is accessible at `http://abcde.cloudhub.io`. Valid names contain alphanumeric characters and dashes, and contain at most 40 characters. If the name is valid, CloudHub alerts you whether it is available or already reserved by another user.
+To deploy an application, click *Deploy application* on the Runtime Manager console. in the *Deploy Application* dialog, enter a unique application name. The Application Name also becomes the `cloudhub.io` domain name that you use to access your application; for example the Application Name, `abcde` is accessible at `http://abcde.cloudhub.io`. Valid names contain alphanumeric characters and dashes, and contain at most 40 characters. If the name is valid, CloudHub alerts you whether it is available or already reserved by another user.
 
 image:DeployAppName.png[DeployAppName]
 

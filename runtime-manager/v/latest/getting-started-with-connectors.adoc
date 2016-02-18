@@ -31,14 +31,14 @@ With Anypoint connectors, you can leverage many Software-as-a-Service (SaaS) pla
 |*Twitter Connector* |To demonstrate how connectors simplify API integration, this project builds on the Twitter connector to access a Twitter user stream and post status updates.
 |*HTTP Connector* |The HTTP connector (also discussed in the link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub]) provides a web page for sending Twitter status updates via the URL query string.
 |*Expression Transformer* |The Expression Transformer sends a response to the web page.
-|*Logger* |The Logger component updates the CloudHub console with payload data.
+|*Logger* |The Logger component updates the Runtime Manager console with payload data.
 |*Mule Expression Language* |Mule Expression Language is used in various components to process the payload.
-|*CloudHub* |An introduction to the CloudHub console is provided, including details on starting, stopping applications, and viewing system log messages.
+|*Runtime Manager* |An introduction to the Runtime Manager console is provided, including details on starting, stopping applications, and viewing system log messages.
 |===
 
 *Running the Project:*
 
-After you build and deploy this project to CloudHub, you can run the project by opening a web browser and pointing it to the website produced by the HTTP connector. Then add a query string to the website URL. This query string is captured as a message in the Mule flow, using Mule Expression Language (MEL), and sent to your Twitter user stream by the Twitter connector.
+After you build and deploy this project to Runtime Manager, you can run the project by opening a web browser and pointing it to the website produced by the HTTP connector. Then add a query string to the website URL. This query string is captured as a message in the Mule flow, using Mule Expression Language (MEL), and sent to your Twitter user stream by the Twitter connector.
 
 As an example, if you deploy this application to the domain *twittertutorial*, the following URL sends a Tweet, "I just built a CloudHub integration using an Anypoint Connector", to your Twitter user stream:
 
@@ -172,7 +172,7 @@ image:TwitterExpression.png[TwitterExpression]
 
 == Step 5: Add Logger Components
 
-The Logger component is commonly used in CloudHub applications, as it can provide a detailed view of the information contained in a message at any specific point (or multiple points) in the flow. The Logger component is configured with an expression, and as the application runs, the result of this expression is sent to the CloudHub console.
+The Logger component is commonly used in CloudHub applications, as it can provide a detailed view of the information contained in a message at any specific point (or multiple points) in the flow. The Logger component is configured with an expression, and as the application runs, the result of this expression is sent to the Runtime Manager console.
 
 In this project, we add two Logger components to the flow. In doing so, we can view the data going into the Twitter Connector, and the subsequent response payload produced by Twitter.
 
@@ -201,18 +201,18 @@ image:TwitterLogPayload.png[TwitterLogPayload]
 
 == Step 6: Deploy Your Application to CloudHub
 
-Before deploying your application, it's helpful to go to the CloudHub Console. The benefits of doing so include:
+Before deploying your application, it's helpful to go to the Runtime Manager Console. The benefits of doing so include:
 
 * You can watch your application deploy as events display in the console.
 * Since your application includes Logger components, the log console displays events as they are encountered in the flow.
-* Finally, if things don't go as expected, and you become inundated with posts to your Twitter user stream, as an example, you can quickly stop the application from the CloudHub Console.
+* Finally, if things don't go as expected, and you become inundated with posts to your Twitter user stream, as an example, you can quickly stop the application from the Runtime Manager Console.
 
 If you are using a free Anypoint Platform account, you need to stop any other application that might be running before deploying this new application (or upgrade to a paid plan so you can run multiple applications).
 
-=== Sign In and Go to the CloudHub Console
+=== Sign In and Go to the Runtime Manager Console
 
-. link:https://anypoint.mulesoft.com/#/signin[Sign in to the Anypoint Platform] and go to the CloudHub Console by clicking on *CloudHub* from the top menu.
-. After you sign in, click *CloudHub*:
+. link:https://anypoint.mulesoft.com/#/signin[Sign in to the Anypoint Platform] and go to the Runtime Manager Console by clicking on *Runtime Manager* from the top menu.
+. After you sign in, click *Runtime Manager*:
 +
 image:APStartScreen.png[APStartScreen]
 . You can then see your applications – Click an entry to view the additional detail menu on the right:
@@ -251,9 +251,9 @@ image:TwitterDeploySuccess.png[TwitterDeploySuccess]
 
 === Watch the CloudHub Logs
 
-It can take several minutes for your application to upload and deploy. This process can be monitored through the CloudHub dashboard. Since your application includes Logger components, the CloudHub console also shows you the log entries these components generate.
+It can take several minutes for your application to upload and deploy. This process can be monitored through the CloudHub dashboard. Since your application includes Logger components, the Runtime Manager console also shows you the log entries these components generate.
 
-. Go back to the CloudHub Console.
+. Go back to the Runtime Manager Console.
 . Choose the environment by clicking Production:
 +
 image:TwitterChooseEnvironment.png[TwitterChooseEnvironment]
@@ -296,11 +296,11 @@ This expression passes the value of a query parameter ("tweet") in the URL strin
 
 Now log into your Twitter account, you should see your new Tweet posted. If you try this again, be sure to change the Tweet contents, as Twitter bounces duplicate posts. The web page should also show a response: *Thanks for Tweeting!*
 
-The CloudHub console  also shows various results from the logger components. These are discussed in the next section.
+The Runtime Manager console  also shows various results from the logger components. These are discussed in the next section.
 
 == How the Project Works
 
-In this section, we take an inside look at messages within the flow, and see how expressions allow us to control which data is sent to Twitter. We also revisit with the Logger component and view the output they produce in the CloudHub console.
+In this section, we take an inside look at messages within the flow, and see how expressions allow us to control which data is sent to Twitter. We also revisit with the Logger component and view the output they produce in the Runtime Manager console.
 
 === About the Payload
 
@@ -332,19 +332,19 @@ Mule Expression Language provides a powerful and comprehensive set of features. 
 +
 `#[payload]`
 
-=== View Logs in the CloudHub console
+=== View Logs in the Runtime Manager console
 
 Now with an understanding of Mule messages and expressions, let's take a look at the log entries produced by the Logger components. First, produce a new Tweet by visiting a URL such as this (be sure to change "twittertutorial" to your unique sub-domain):
 
 http://twittertutorial.cloudhub.io/sendtweet?tweet=Sent from my CloudHub application
 
-Now log into the CloudHub console, select this application, and go to the "logs" tab (as detailed above). After you visited the URL above, you should see a new set of log entries.
+Now log into the Runtime Manager console, select this application, and go to the "logs" tab (as detailed above). After you visited the URL above, you should see a new set of log entries.
 
 The first log entry was produced by the expression we configured in the Logger component:
 
 `Tweet: #[message.inboundProperties.'http.query.params'.tweet]`
 
-It produced this result in the CloudHub console:
+It produced this result in the Runtime Manager console:
 
 [source,bash, linenums]
 ----
@@ -357,7 +357,7 @@ For the second Logger component, we used this expression:
 
 `#[payload]`
 
-This produced a much longer log result in the CloudHub console:
+This produced a much longer log result in the Runtime Manager console:
 
 [source,json, linenums]
 ----

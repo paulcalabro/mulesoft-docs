@@ -12,7 +12,7 @@ API Gateway 2.0 supports server auto configuration and a greatly simplified depl
 
 == Getting Started
 
-https://anypoint.mulesoft.com/#/signin[Log in to Anypoint Platform] and click *CloudHub*:
+https://anypoint.mulesoft.com/#/signin[Log in to Anypoint Platform] and click *Runtime Manager*:
 
 image:APStartScreen.png[APStartScreen]
 
@@ -139,7 +139,7 @@ Topics:
 
 To add a server:
 
-. Go to the *Servers* tab in CloudHub.
+. Go to the *Servers* tab in the Runtime Manager.
 . If the environment already contains servers, click *Add Server* to add an additional server.
 +
 The *Servers* screen displays a command that you must run from each server or API Gateway on premise instance so that you can manage the server or on-premise gateway from CloudHub. Each command contains information unique to your organization.

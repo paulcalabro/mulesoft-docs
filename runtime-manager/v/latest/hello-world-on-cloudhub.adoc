@@ -97,7 +97,7 @@ To deploy this application to CloudHub, you first need to create an organization
 . Go to link:http://anypoint.mulesoft.com[http://anypoint.mulesoft.com] to create an organization if you do not already have one. Otherwise, sign in using your credentials for your existing Anypoint Platform account.
 . Enter your information, choose a username and password, and click *Create account*. Your new organization is created along with a user account. The resulting user account automatically becomes the administrator for the organization.
 
-After you create your Anypoint Platform account, you are directed to the landing page that describes CloudHub and the Anypoint Platform for APIs. From the top menu, click the *CloudHub* link to go to the CloudHub dashboard.
+After you create your Anypoint Platform account, you are directed to the landing page that describes CloudHub and the Anypoint Platform for APIs. From the top menu, click the *Runtime Manager* link to go to the Runtime Manager dashboard.
 
 == Deploying and Running Your Project
 

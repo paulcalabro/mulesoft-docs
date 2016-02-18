@@ -25,11 +25,11 @@ http://0.0.0.0:${http.port}/service/path/two
 
 If you want to run a CloudHub application locally, create an link:/mule-user-guide/v/3.7/mule-application-deployment-descriptor[application properties] file named *mule-app.properties* in the `src/main/app` folder of your project. You need to do this whether you work in Anypoint Studio or another IDE. This allows you to define a local value for the variable `http.port` or `https.port`.
 
-If you have other runtime settings that you want to configure differently when running locally, you may also place them in the application properties file and refer to them using the syntax `${propertyname}` in your Mule application configuration. Each application can declare a set of environment variables when it is deploys to provide a different value when deploying on CloudHub. You can define these environment variables using the link:/runtime-manager/deploying-a-cloudhub-application[CloudHub Console] or the link:/runtime-manager/command-line-tools[Command Line Tools].
+If you have other runtime settings that you want to configure differently when running locally, you may also place them in the application properties file and refer to them using the syntax `${propertyname}` in your Mule application configuration. Each application can declare a set of environment variables when it is deploys to provide a different value when deploying on CloudHub. You can define these environment variables using the link:/runtime-manager/deploying-a-cloudhub-application[Runtime Manager Console] or the link:/runtime-manager/command-line-tools[Command Line Tools].
 
 == Logging
 
-All log messages from your application are captured by the CloudHub logging service and available through the log search tool in the CloudHub console. If you wish to expose additional information in your logs for diagnostic or audit purposes, Mule provides a link:/mule-user-guide/v/3.6/logger-component-reference[logger element] for fine grained logging of message content.
+All log messages from your application are captured by the CloudHub logging service and available through the log search tool in the Runtime Manager console. If you wish to expose additional information in your logs for diagnostic or audit purposes, Mule provides a link:/mule-user-guide/v/3.6/logger-component-reference[logger element] for fine grained logging of message content.
 
 == Packaging Third-Party Libraries
 

@@ -74,7 +74,7 @@ It's because you're trying to bind to a specific host instead of "0.0.0.0". Chan
 
 === How do I stop my application?
 
-In the CloudHub Console, select your application, and click *Deployment* in the left navigation bar. Click *Stop application*.
+In the Runtime Manager Console, select your application, and click *Deployment* in the left navigation bar. Click *Stop application*.
 
 === Why can't I deploy more than one application?
 

@@ -110,7 +110,7 @@ Within transactions, use the *Transaction Details* to further refine the types 
 
 image:CHTransactionDetails.png[CHTransactionDetails]
 
-The *default settings* of the events filter depend upon your CloudHub user role as follows:
+The *default settings* of the events filter depend upon your user role as follows:
 
 * If your user role is *Support*, the default events filter setting display only custom events.
 * If your user role is *Admin* or *Developer*, the default events filter setting displays custom events, endpoint events, and message processor events, but does not display flow events.

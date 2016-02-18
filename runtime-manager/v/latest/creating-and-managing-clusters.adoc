@@ -5,11 +5,11 @@
 Need more information on clusters? See 
 link:/mule-management-console/v/3.7/managing-mule-high-availability-ha-clusters[Managing Mule High Availability (HA) Clusters]
 
-This guide helps you manage on premises server clusters in CloudHub. An on-premises cluster enables up to 8 servers to participate in a high availability processing unit so that should one server fail, another server takes over processing applications. A cluster can run multiple applications. All servers in a cluster must run the same version of the Mule Runtime. A cluster can only be made up of servers that are not already in a server group or part of another cluster.
+This guide helps you manage on premises server clusters in Runtime Manager, both through the link:anypoint.mulesoft.com[online version] of the Anypoint Platform and the link:/anypoint-platform-on-premises[On Premise Edition]. An on-premise cluster enables up to 8 servers to participate in a high availability processing unit so that in case one server should fail, another server takes over processing applications. A cluster can run multiple applications. All servers in a cluster must run the same version of the Mule Runtime. A cluster can only be made up of servers that are not already in a server group or part of another cluster.
 
-The minimum Mule version that supports this feature is Mule version 3.7.0 and newer. The minimum CloudHub version is August 2015 (R44).
+The minimum Mule version that supports this feature is Mule version 3.7.0 and newer.
 
-CloudHub lets you create clusters, add servers to a cluster, and delete servers from a cluster.
+Runtime Manager lets you create clusters, add servers to a cluster, and delete servers from a cluster.
 
 A cluster differs from a server group in that a server group runs one application on many servers, whereas a cluster is a group of servers that run multiple applications as a unit distributed on multiple nodes, sharing its common information and synchronizing its status.
 
@@ -18,7 +18,7 @@ link:/runtime-manager/managing-applications-and-servers-in-the-cloud-and-on-prem
 
 == Multicast Versus Unicast
 
-A cluster can be created the Runtime Manager from servers that are already registered with the Anypoint Runtime Manager console. While configuring a cluster, you can specify either unicast or multicast options for identifying a node within the cluster:
+A cluster can be created in the Runtime Manager from servers that are already registered with the Runtime Manager console. While configuring a cluster, you can specify either unicast or multicast options for identifying a node within the cluster:
 
 * *Unicast*. A unicast cluster requires that you configure the IP addresses of which nodes to associate together. No special network configuration is necessary other than to indicate which are the server IP addresses that make up the cluster. Each server needs to be in Running status when it is added to a unicast cluster. If a server has multiple interfaces, use the internal IP, the one that allows a node to have a direct communication with other nodes. Clustering across different subnets is not supported.
 
@@ -101,20 +101,22 @@ To create a cluster at your site (on premises):
 . Download and install the same version of link:https://www.mulesoft.com/platform/mule[Mule Runtime] on all servers you want to participate in the cluster.
 . From each server in the cluster, run the link:/runtime-manager/managing-applications-and-servers-in-the-cloud-and-on-premises[amc_setup] script to register the server with the Runtime Manager.
 
-== Creating a Cluster in CloudHub
+== Creating a Cluster in Runtime Manager
 
-To create a cluster in CloudHub:
+To create a cluster in Runtime Manager:
 
 . Download and install link:https://www.mulesoft.com/platform/enterprise-integration[Mule Runtime] on two or more physical or virtual servers in your site.
-. Log into Anypoint Platform and click *CloudHub*:
+. Log into Anypoint Platform and click *Runtime Manager*:
 +
 image:CloudHubStartPage.png[CloudHubStartPage]
 +
+[NOTE]
+Or install link:anypoint-platform-on-premises[Anypoint Platform On premises] to handle everything in your local environment.
+
 . Click the *Servers* tab and register each server to the platform. For more information, see link:/runtime-manager/managing-applications-and-servers-in-the-cloud-and-on-premises[Managing Applications and Servers in the Cloud and On Premises]
 +
 image:ServerStatus_No_Cluster_AllOnline.png[all servers]
-. 
-After all servers are registered and visible in the Servers tab, click *Create Cluster*. Servers can be added to a cluster in any status.
+. After all servers are registered and visible in the Servers tab, click *Create Cluster*. Servers can be added to a cluster in any status.
 +
 image:create_cluster_button.png[CreateCluster]
 +
@@ -135,7 +137,7 @@ A server can only be removed from a cluster if its link:/runtime-manager/managi
 
 To delete a server from a cluster:
 
-. From the CloudHub *Servers* tab, click the name of a cluster.
+. From the Runtime Manager's *Servers* tab, click the name of a cluster.
 . Click the *X* to the right of the server's name:
 +
 image:DeleteServerX.png[DeleteServerX]
@@ -146,11 +148,11 @@ A prompt appears to be sure you really want to remove the server from the cluste
 +
 image:DeleteMessage.png[DeleteMessage]
 
-== Deleting a Cluster From CloudHub
+== Deleting a Cluster From Runtime Manager
 
-To delete a cluster from CloudHub:
+To delete a cluster from Runtime Manager:
 
-. From the CloudHub *Servers* tab, click the name of a cluster to show details.
+. From the Runtime Manager *Servers* tab, click the name of a cluster to show details.
 +
 image:server_details.png[server details]
 
@@ -167,7 +169,7 @@ image:DeleteACluster.png[DeleteACluster]
 
 To add an additional server to a cluster:
 
-. In the CloudHub Servers tab, click the name of a cluster to open the details view. 
+. In the Runtime Manager Servers tab, click the name of a cluster to open the details view. 
 +
 image:server_details.png[server details]
 . Click *Add Servers*.

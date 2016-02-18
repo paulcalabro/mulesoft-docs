@@ -159,7 +159,7 @@ For a list and description of the parameters employed, see <<CloudHub>>.
 
 === Selecting Your Business Group
 
-In CloudHub and Anypoint Runtime Manager deployments, you can select a Business Group other than your root organization. In the example below, the plugin is configured to deploy to the `devops` business group, which resides under the `engineering` business group.
+In Runtime Manager deployments, you can select a Business Group other than your root organization. In the example below, the plugin is configured to deploy to the `devops` business group, which resides under the `engineering` business group.
 
 Business group names within a hierarchy are separated by a backslash (\). If the name of your business group includes a backslash, escape it with preceding backslash. For example, to select `\group2` under `\group1`: `\group1\\group2`.
 
@@ -593,7 +593,7 @@ The following tables list all available parameters that you can use. Parameters 
 |`region`|Region where you want your worker(s) to be created.
 |`workers`|Number of workers to create.
 |`workerType`|Size of the worker(s) specified as one of: *Micro* (0.1 vCores), *Small* (0.2 vCores), *Medium* (1 vCores), *Large* (2 vCores), *xLarge* (4 vCores). Note that the value is case sensitive. Example: `<workerType>Small</workerType>`
-|`properties`|Cloudhub properties to configure. Each nested element inside `<properties>` will be considerated a property name and its value will be its text. Example: `<properties> <key1>value1</key1> <anotherKey>this is a value</anotherKey> </properties>` will create two properties in the CloudHub console: `key1=value` and `anotherKey=this is a value`. Note that properties specified here will override existing properties for this application in CloudHub.
+|`properties`|Cloudhub properties to configure. Each nested element inside `<properties>` will be considerated a property name and its value will be its text. Example: `<properties> <key1>value1</key1> <anotherKey>this is a value</anotherKey> </properties>` will create two properties in the Runtime Manager console: `key1=value` and `anotherKey=this is a value`. Note that properties specified here will override existing properties for this application in CloudHub.
 |===
 
 === Agent

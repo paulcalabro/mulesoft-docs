@@ -3,6 +3,9 @@
 
 CloudHub supports *secure application properties*, where the name of a property is visible in the console, but the value is not displayed or retrievable by a user. CloudHub resolves the property at runtime without exposing the sensitive information.
 
+[NOTE]
+Application properties are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager to external servers on premises or in the cloud. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
+
 == Use Case
 
 Application Properties are variables that act as placeholders in your Mule application, and which are set in your Mule server at runtime. The Mule server supplies the values for the variables using information you configure in the CloudHub console when you deploy an application or update an existing application in the Deployment tab.

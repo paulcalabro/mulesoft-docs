@@ -3,6 +3,9 @@
 
 CloudHub includes a *Queues* tab in the left navigation menu where you can view and control any Virtual Machine (VM) or Staged Event-Driven Architecture (http://en.wikipedia.org/wiki/Staged_event-driven_architecture[SEDA]) queues within the flows of your deployed applications:
 
+[NOTE]
+Queues are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager to external servers on premises or in the cloud. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
+
 image:QueuesTab.png[QueuesTab]
 
 CloudHub automatically detects the queues from within your flow and lists them on the Queues tab. You can see the number of queued and in-flight messages on each queue, view a snapshot of the queue throughput for the past 24 hours, or clear all pending messages on a queue – all during runtime, without making any changes in the underlying application. You can also enable data-at-rest encryption for your persistent queues, this ensures that any shared application data written out to a persistent queue is encrypted.

@@ -17,7 +17,7 @@ The Schedules tab is especially useful for the following use cases:
 
 == Viewing Application Schedules in the Console
 
-To use the scheduling feature in CloudHub, deploy an application that includes one or more polling elements. For example, the application illustrated below includes two simple flows, each with a polling scope.
+To use the scheduling feature in the Runtime Manager, deploy an application that includes one or more polling elements. For example, the application illustrated below includes two simple flows, each with a polling scope.
 
 [tabs]
 ------
@@ -52,7 +52,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 
 Because CloudHub synchronizes your schedules automatically, overriding any synchronize property set on the flows containing the polling scopes, there is no need to do any other special configuration. 
 
-Once it is deployed, select the application in your CloudHub console, and click *Schedules* in the left navigation menu. CloudHub lists the polling elements in your application in the order that they appear in your application: 
+Once it is deployed, select the application in your Runtime Manager console, and click *Schedules* in the left navigation menu. Runtime Manager lists the polling elements in your application in the order that they appear in your application: 
 
 image:SchedulesView.png[SchedulesView]
 

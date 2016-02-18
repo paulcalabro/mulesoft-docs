@@ -3,6 +3,9 @@
 
 The POST operation specified with the /api/notifications resource creates a new CloudHub notification.
 
+[NOTE]
+Alerts and Notifications are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager to external servers on premises or in the cloud. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
+
 *Example Request:*
 
 [source,json, linenums]

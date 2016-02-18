@@ -4,11 +4,11 @@
 
 CloudHub Fabric provides scalability, workload distribution, and added reliability to CloudHub applications. These capabilities are powered by CloudHub's scalable load-balancing service,  *<<Worker Scaleout>>*, and *<<Persistent Queues>>* features.
 
-You can <<Enabling CloudHub Fabric Features, Enable CloudHub Fabric Features>> on a per-application basis using the CloudHub console when you deploy a new application or redeploy an existing application.
+You can <<Enabling CloudHub Fabric Features, Enable CloudHub Fabric Features>> on a per-application basis using the Runtime Manager console when you deploy a new application or redeploy an existing application.
 
 == Prerequisites
 
-CloudHub Fabric requires a CloudHub Enterprise or Partner account type. This document assumes that you have an account type that allows you to use this feature, and that you are familiar with link:/runtime-manager/deploying-a-cloudhub-application[deploying applications using the CloudHub console]. 
+CloudHub Fabric requires a CloudHub Enterprise or Partner account type. This document assumes that you have an account type that allows you to use this feature, and that you are familiar with link:/runtime-manager/deploying-a-cloudhub-application[deploying applications using the Runtime Manager console]. 
 
 == Worker Scaleout
 
@@ -39,7 +39,7 @@ Persistent queues ensure zero message loss and let you distribute workloads acro
 
 * If your application is deployed to more than one worker, persistent queues allow communication between workers and workload distribution. For example, if a large file is placed in the queue, your workers can divide it up and process it in parallel. 
 * Persistent queues guarantees delivery of your messages, even if one or more workers or datacenters go down, providing additional message security for high-stakes processing. 
-* With persistent queues enabled on your application, you have runtime visibility into your queues on the link:/runtime-manager/managing-queues[Queues tab] in the CloudHub console.
+* With persistent queues enabled on your application, you have runtime visibility into your queues on the link:/runtime-manager/managing-queues[Queues tab] in the Runtime Manager console.
 * You can enable data-at-rest encryption for all your persistent queues. By enabling this feature, you ensure that any shared application data written out to a persistent queue is encrypted, allowing you to meet your security and compliance needs.
 * Retention time for messages in a persistent queue is up to 4 days. Messages can be up to 256 KB in length. There is no limit on the number of messages in a persistent queue.
 
@@ -52,8 +52,8 @@ To learn more about how to work with persistent queues in your application, see 
 
 You can enable and disable either or both features of CloudHub Fabric in one of two ways:
 
-* When deploying an application to CloudHub for the first time using the CloudHub console
-* By accessing the *Deployment* tab in the CloudHub console for a previously-deployed application
+* When deploying an application to CloudHub for the first time using the Runtime Manager console
+* By accessing the *Deployment* tab in the Runtime Manager console for a previously-deployed application
 
 Next to *Workers*, select options from the drop-down menus to define the number and type of workers assigned to your application. See link:/runtime-manager/deploying-a-cloudhub-application[Worker Sizing] for more information about deploying to multiple workers.
 

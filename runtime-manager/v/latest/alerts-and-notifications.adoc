@@ -6,7 +6,7 @@ Alerts and Notifications are a feature that is currently only available for appl
 
 == Overview
 
-*Notifications* are standard messages that appear in the CloudHub console to provide status information about your applications. 
+*Notifications* are standard messages that appear in the Runtime Manager console to provide status information about your applications. 
 
 *Alerts* give you the ability to trigger emails whenever certain events related to your application occur.
 
@@ -19,7 +19,7 @@ CloudHub includes several out of the box *standard alert* types:
 
 Creating a standard alert creates both a notification in the console and an alert action, such as email to a specific user.
 
-CloudHub also lets you create your own *custom alerts* for your application. Custom alerts are triggered by notifications that your application sends to the CloudHub console (using the link:http://mulesoft.github.io/cloudhub-connector[CloudHub Connector]). For example, you can send a custom alert when:
+CloudHub also lets you create your own *custom alerts* for your application. Custom alerts are triggered by notifications that your application sends to the Runtime Manager console (using the link:http://mulesoft.github.io/cloudhub-connector[CloudHub Connector]). For example, you can send a custom alert when:
 
 * Your application is unable to connect to a remote service.
 * An error occurs which requires human intervention, such as a problem with data mapping.
@@ -29,7 +29,7 @@ Custom alerts differ from standard alerts in that you  receive a notification fr
 
 == Managing Notifications
 
-Notifications appear by clicking the bell icon in the top-right of the CloudHub console. When you have new notifications, the bell turns red.
+Notifications appear by clicking the bell icon in the top-right of the Runtime Manager console. When you have new notifications, the bell turns red.
 
 image:image2014-10-24+17-41-16.png[image2014-10-24+17-41-16]
 

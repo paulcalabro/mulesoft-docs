@@ -31,7 +31,7 @@
 *** link:/runtime-manager/penetration-testing-policies[Penetration Testing Policies]
 *** link:/runtime-manager/secure-data-gateway[Secure Data Gateway]
 ** link:/runtime-manager/cloudhub-api[CloudHub API]
-*** link:/runtime-manager/applications[Applications]
+*** link:/runtime-manager/working-with-applications[Working wiht Applications]
 **** link:/runtime-manager/create-application[Create Application]
 **** link:/runtime-manager/delete-application[Delete an Application]
 **** link:/runtime-manager/deploy-application[Deploy Application]

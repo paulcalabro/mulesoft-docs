@@ -7,7 +7,7 @@ This page covers additional details relevant to deployment.
 
 == Specifying a Host
 
-Define the Host address in a CloudHub configuration as *0.0.0.0*. CloudHub routes requests from your application domain URL to the endpoint. If you deploy multiple link:/runtime-manager/faq[workers], CloudHub load-balances incoming traffic automatically across these workers for you. As your application scales, work loads automatically distribute between your workers.
+Define the Host address in a CloudHub configuration as *0.0.0.0*. CloudHub routes requests from your application domain URL to the endpoint. If you deploy multiple link:/runtime-manager/cloudhub-faq[workers], CloudHub load-balances incoming traffic automatically across these workers for you. As your application scales, work loads automatically distribute between your workers.
 
 == Providing an External HTTP or HTTPS Port
 

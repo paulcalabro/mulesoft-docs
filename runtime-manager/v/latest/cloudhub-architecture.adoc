@@ -140,7 +140,7 @@ For more information about MuleSoft’s approach to security, please see the lin
 
 * Read the link:/runtime-manager/cloudhub-networking-guide[CloudHub Networking Guide].
 * Read more about how to link:/anypoint-platform-administration[manage your AnyPoint Platfrom account].
-* Having a technical issue? Check out the link:/runtime-manager/faq[FAQ].
+* Having a technical issue? Check out the link:/runtime-manager/cloudhub-faq[CloudHub FAQ].
 * Find out how link:/runtime-manager/mule-esb-and-cloudhub[CloudHub differs from Mule ESB].
 * Refer to our link:/runtime-manager/maintenance-and-upgrade-policy[Maintenance and Upgrade Policy].
 * Learn how to access link:/runtime-manager/community-and-support[Community and Support] resources.

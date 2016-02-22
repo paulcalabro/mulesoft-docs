@@ -11,6 +11,19 @@ For more information, see link:http://blogs.mulesoft.org/introducing-integration
 
 CloudHub a cloud-based integration platform as a service (iPaaS) that enables developers to integrate and orchestrate applications and services while giving operations the control and visibility they require for mission-critical demands, all without the need to install or manage middleware or hardware infrastructure. You can deploy applications to CloudHub through the Runtime Manager, found on the link:anypoint.mulesoft.com[Anypoint Platform]. Read more about the CloudHub link:/runtime-manager/cloudhub-architecture[architecture].
 
+== How can I create a CloudHub account?
+
+[NOTE]
+As of November 2014, accounts in both the Anypoint Platform for APIs and CloudHub have been merged into a single platform.
+
+An link:https://anypoint.mulesoft.com/#/signup[Anypoint Platform account] gives you access to both the *Runtime Manager* – for deploying and managing applications both on *CloudHub* and on other servers –  and to the Anypoint Platform for APIs – for creating and managing APIs through their entire lifecycle.
+
+* link:/anypoint-platform-administration/creating-an-account[Creating an Account]
+* link:/anypoint-platform-administration/managing-accounts-roles-and-permissions[Managing Accounts Roles and Permissions]
+* link:/anypoint-platform-administration/manage-your-organization-and-business-groups[Manage your Organization and Business Groups]
+* link:/anypoint-platform-administration/managing-cloudhub-specific-settings[Managing CloudHub Specific Settings]
+** link:/anypoint-platform-administration/managing-cloudhub-environments[Managing CloudHub Environments]
+
 == Where can I get Anypoint Studio?
 
 Anypoint Studio can be link:https://www.mulesoft.com/lp/dl/studio[downloaded here]. From Studio, you have ability to deploy directly to CloudHub or run your applications locally on an embedded Mule runtime.

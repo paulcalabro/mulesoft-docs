@@ -1,7 +1,7 @@
 = Sending Data from Runtime Manager to External Monitoring Software
 keywords: analytics, monitoring, splunk, elk, elastisearch, logstash, kibana, logs, mule events, logging, apy analytics, metrics, traceability, arm, anypoint runtime manager
 
-By simply configuring a few settings on the Runtime Manager, the event notifications produced by your running Mule Applications can be easily sent out to your existing monitoring and analytics third party software.
+By simply configuring a few settings on the Runtime Manager (both on the cloud-based and on the on-premise edition), the event notifications produced by your running Mule Applications can be easily sent out to your existing monitoring and analytics third party software.
 
 You can currently send data out to any of the following:
 
@@ -15,7 +15,16 @@ The goal of this document to enable you to integrate Runtime Manager with a thir
 
 == Basic Architecture
 
-The Runtime Manager exists both as a component of the link:/mule-fundamentals/v/3.7/anypoint-platform-primer[Anypoint Platform] and as an link:/anypoint-platform-on-premises/v/1.0/installing-anypoint-runtime-manager-on-premises-edition[application that can be installed on premise]. Runtime Manager On-Premises Edition manages applications that are deployed on premise, the Cloud version of Runtime Manager allows you manage applications deployed to link:/runtime-manager/index[CloudHub] as well as applications that are deployed on premises. Users of Runtime Manager, using the Cloud and On-Prem editions, are able to monitor their applications. Applications deployed on Cloud can either use Insights (MuleSoft’s Analytics & Monitoring feature) or be integrated into third party monitoring applications for a unified view of monitoring and analytics. Apps deployed on on-prem must be integrated into third party monitoring applications.
+The Runtime Manager exists as:
+* a component of the link:/mule-fundamentals/v/3.7/anypoint-platform-primer[Anypoint Platform]
+* a component of the link:/anypoint-platform-on-premises/v/1.0/installing-anypoint-runtime-manager-on-premises-edition[Anypoint Platform on-premise Edition] that you can install on premises
+* a link:/anypoint-platform-on-premises/v/1.0/installing-anypoint-runtime-manager-on-premises-edition[standalone application] that can be installed on premises
+
+On-premise versions of the Runtime Manager handle only applications that are deployed on premise or on your own cloud servers, the cloud-based version of the Runtime Manager allows you manage applications deployed to link:/runtime-manager/index[CloudHub] as well as applications that are deployed on premises and to your own cloud servers. When using whichever version of the Runtime Manager, there's always a way to monitor your applications. Applications deployed to CloudHub can use link:/cloudhub/cloudhub-insight[CloudHub Insight]: MuleSoft’s Analytics & Monitoring feature. Applications that you deploy on premises or to your own cloud servers can be integrated into third party monitoring applications, which is what this document describes.
+
+////
+Applications deployed on Cloud can either use Insights (MuleSoft’s Analytics & Monitoring feature) or be integrated into third party monitoring applications for a unified view of monitoring and analytics. Apps deployed on on-prem must be integrated into third party monitoring applications.
+////
 
 You have the ability to leverage both options to monitor business events, custom business events, logs, and – in the case of apps deployed to an link:/anypoint-platform-for-apis/api-gateway-101[API Gateway] Runtime – API Analytics and governance.
 
@@ -69,7 +78,7 @@ To obtain this code, you must do the following:
 +
 [TIP]
 To open Runtime Manager On-Premise Edition, make sure you've already initiated Runtime Manager. If you haven't then you must boot it by running docker. Once initiated, you can access it by navigating to https://localhost in a browser.
-. Navigate to `CloudHub - > Servers`
+. Navigate to `Runtime Manager - > Servers`
 . Click `Add Server`. Without needing to actually add a new server, a sample command will be displayed in a popup window that includes the code for your particular organization. Copy this command, depending on where you wish to deploy, you may need to add extra arguments to it.
 
 +
@@ -81,7 +90,7 @@ image:org_code.png[image]
 [tab,title="Runtime Manager Cloud"]
 ....
 
-When using Runtime Manager as part of the Anypoint Platform, launch the agent with exactly the same command that you found on the Runtime Manager UI:
+When using Runtime Manager as part of the cloud-based Anypoint Platform, launch the agent with exactly the same command that you found on the Runtime Manager UI:
 
 [source, linenums]
 ----
@@ -95,7 +104,7 @@ or on Windows:
 amc_setup.bat -H 1c3eded9-7917-4a5e-bbe0-f73f9d4f33c1---2 myServer
 ----
 
-The argument `-H` is an id that references your organization in the Anypoint platform and Runtime Manager On-Premises Edition installation.
+The argument `-H` is an id that references your organization in the Anypoint platform On-Premises Edition and the Runtime Manager On-Premises Edition installations.
 
 The final argument of this command is the name that you assign for your Mule Agent instance, in the above example, `myServer`. This name will then be visible when interacting with the agent from your Runtime Manager console.
 
@@ -142,7 +151,7 @@ Creating multiple agents within a single server is not supported.
 After running the above command, open Runtime Manager to verify that the agent has been registered successfully:
 
 . Log in to Runtime Manager with your credentials
-. Go to `CloudHub - > Servers`. You should now see that one of those servers is your Agent instance, named with the name you provided when installing it:
+. Go to `Runtime Manager - > Servers`. You should now see that one of those servers is your Agent instance, named with the name you provided when installing it:
 
 image:verify_agent.jpg[image]
 

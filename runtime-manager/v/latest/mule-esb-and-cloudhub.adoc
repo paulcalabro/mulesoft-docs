@@ -7,8 +7,8 @@ CloudHub and Mule share a single runtime, ensuring that building applications fo
 ====
 *Notes*
 
-* CloudHub and Mule rely on the new Mule Agent. See link:http://mulesoft.github.io/mule-agent/[Mule Agent Documentation] for more information.
-* Mule Agent requires Anypoint API Gateway version 2.0, which is forth coming.
+* The communication between CloudHub and Mule relies on the new Mule Agent. See link:http://mulesoft.github.io/mule-agent/[Mule Agent Documentation] for more information.
+* Mule Agent requires Anypoint API Gateway version 2.0.
 ====
 
 == Ports and Hosts
@@ -32,7 +32,7 @@ CloudHub provides high availability through link:/runtime-manager/cloudhub-fabri
 
 == Logging
 
-While on-premise applications can use custom log4j properties files, CloudHub provides a logging service for allowing logs to be searched, downloaded, or log levels to be customized.
+While on-premise applications can use custom log4j properties files, CloudHub provides a link:/runtime-manager/logs[logging service] for allowing logs to be searched, downloaded, or log levels to be customized.
 
 == ObjectStore
 
@@ -40,7 +40,7 @@ CloudHub provides an implementation of the user object store. It places limits o
 
 == Domains and Shared Resources
 
-When deploying on premises, it's possible to create 'Domain' mule projects that don't hold any flows, but do hold a set of global configuration elements to share among other apps deployed to the same server. link:/mule-user-guide/v/3.7/shared-resources[Read more]. This is not currently supported for deploying through the Runtime Manager, both for deployments to CloudHub and for deployments to other servers in the cloud and on premises.
+When deploying on premises, it's possible to create 'Domain' mule projects that don't hold any flows, but do hold a set of global configuration elements to share among other apps deployed to the same server. link:/mule-user-guide/v/3.7/shared-resources[Read more]. This is not currently supported for deploying through the Runtime Manager, both for deployments to CloudHub and for deployments to other servers in the cloud and on premises. For deployments outside CloudHub, you can nevertheless manually deploy a domain via the command line and then reference it on the applications that you deploy via the Runtime Manager.
 
 == JDK Versions
 

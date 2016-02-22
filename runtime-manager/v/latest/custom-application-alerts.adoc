@@ -3,7 +3,7 @@
 :imagesdir: ./_images
 
 [NOTE]
-Alerts and Notifications are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager to external servers on premises or in the cloud. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
+Alerts and Notifications are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager ( both the cloud-based and on-premise versions) to external servers on premises or in the cloud. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
 
 == Prerequisites
 
@@ -25,7 +25,7 @@ This example illustrates:
 * How to send errors as notifications
 * How to send email alerts when notifications arrive
 
-You can create alerts in CloudHub with the software provided. If you want to create custom alerts, you need to get the CloudHub Connector and install it in Anypoint Studio.
+You can create alerts in CloudHub through the Runtime Manager console. If you want to create custom alerts, you need to get the CloudHub Connector and install it in Anypoint Studio.
 
 == Installing the CloudHub Connector
 

@@ -78,7 +78,7 @@ If you always want to create notifications on CloudHub, even when running locall
 
 == Deploying Your Application
 
-To deploy your application, in the Runtime Manager click *Deploy Application* from the *Applications* menu. For more information, see link:/runtime-manager/deploying-a-cloudhub-application[Deploying a CloudHub Application].
+To deploy your application, in the Runtime Manager click *Deploy Application* from the *Applications* menu. For more information, see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
 
 == Triggering Your Notification
 

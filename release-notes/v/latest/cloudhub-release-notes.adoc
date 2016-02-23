@@ -5,7 +5,7 @@ In addition to these release notes, see the complete link:/cloudhub[CloudHub] d
 
 == November 2015 R45
 
-The CloudHub November 2015 (R45) release features static IP self-service, which allows CloudHub users to assign static IP addresses to their applications. This service also supports pre-allocating static IP addresses to an application before it is deployed (for example, in a different region). 
+The CloudHub November 2015 (R45) release features static IP self-service, which allows CloudHub users to assign static IP addresses to their applications. This service also supports pre-allocating static IP addresses to an application before it is deployed (for example, in a different region).
 
 === Hardware and Software Requirements
 
@@ -13,11 +13,11 @@ No change.
 
 === Compatibility
 
-All supported Mule and API Gateway runtimes will have this new feature. 
+All supported Mule and API Gateway runtimes will have this new feature.
 
 === Features and Functionality
 
-* *Static IP Self Service*: CloudHub users will be able to assign static IP addresses to their applications, including pre-allocation of static IP addresses before an application is deployed. This will enable customers to set up network security rules for an application before it’s deployed.   
+* *Static IP Self Service*: CloudHub users will be able to assign static IP addresses to their applications, including pre-allocation of static IP addresses before an application is deployed. This will enable customers to set up network security rules for an application before it’s deployed.
 * *New Logs Screen Improvements*: Various improvements in the UI for enhanced log infrastructure.
 * *Enhancements to Log Aggregator Services*
 
@@ -26,7 +26,7 @@ None.
 
 ===	Resolved Issues
 
-* SE-2892: vCores cannot be changed on a running application in a Business Group 
+* SE-2892: vCores cannot be changed on a running application in a Business Group
 * SE-2406: Console logs not updated after the last restart
 * SE-2874: Priority for alerts getting reset
 * ION-4625: Accounts Expiration - search in Enhanced Logs with expired account gives 403 response
@@ -34,7 +34,7 @@ None.
 
 === Migration Guidance
 
-No migration required. 
+No migration required.
 
 
 == August 2015 R44 Update 2
@@ -205,7 +205,7 @@ A user must have “add server” permissions to create a server group.
 
 == R40 - October 25, 2014
 
-* Unification with the Anypoint Platform for APIs has resulted in significant changes to the link:/runtime-manager/deploying-a-cloudhub-application[user interface], link:/anypoint-platform-administration/managing-accounts-roles-and-permissions[roles and permissions], link:/anypoint-platform-administration/managing-cloudhub-environments[environments], and more. For more information on migrating from R39 to R40, see link:/release-notes/cloudhub-r40-migration-guide[CloudHub R40 Migration Guide].
+* Unification with the Anypoint Platform for APIs has resulted in significant changes to the link:/runtime-manager/deploying-to-cloudhub[user interface], link:/anypoint-platform-administration/managing-accounts-roles-and-permissions[roles and permissions], link:/anypoint-platform-administration/managing-cloudhub-environments[environments], and more. For more information on migrating from R39 to R40, see link:/release-notes/cloudhub-r40-migration-guide[CloudHub R40 Migration Guide].
 
 === R40 Known issues
 
@@ -244,7 +244,7 @@ Read our FAQ about Anypoint Platform for APIs and CloudHub unification
 
 == R34 - November 2, 2013
 
-* New link:/runtime-manager/deploying-a-cloudhub-application[worker sizing] capabilities for accounts that have link:/runtime-manager/cloudhub-fabric[CloudHub Fabric] enabled.
+* New link:/runtime-manager/deploying-to-cloudhub[worker sizing] capabilities for accounts that have link:/runtime-manager/cloudhub-fabric[CloudHub Fabric] enabled.
 * Support for link:/runtime-manager/worker-monitoring[worker monitoring and automatic restarts], including a link:/runtime-manager/alerts-and-notifications[new alert type] based on a nonresponsive worker.
 * Support for link:/runtime-manager/secure-application-properties[secure environment variables].
 
@@ -276,7 +276,7 @@ Read our FAQ about Anypoint Platform for APIs and CloudHub unification
 
 * Support for customer management in multi-tenanted applications (Beta)
 * Support for link:/runtime-manager/managing-schedules[schedule management]
-* Support for link:/runtime-manager/deploying-a-cloudhub-application[global deployment] 
+* Support for link:/runtime-manager/deploying-to-cloudhub[global deployment] 
 * Mule 3.4 support
 
 == R27 - March 16, 2013

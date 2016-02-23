@@ -107,7 +107,11 @@ To deploy your application to CloudHub, return to Anypoint Studio, and follow th
 +
 image:deploy+to+cloudhub.png[deploy+to+cloudhub]
 +
-. If this is your first time deploying in this way, a popup menu asks you to provide your login credentials for the Anypoint Platform. Studio stores your credentials and uses them automatically the next time you deploy to CloudHub. You can manage these credentials through the Studio *Preferences* menu, in *Anypoint Studio* > *Authentication*.
+. If this is your first time deploying in this way, a popup menu asks you to provide your login credentials for the Anypoint Platform. Studio stores your credentials and uses them automatically the next time you deploy to CloudHub.
++
+[TIP]
+You can manage these credentials through the Studio *Preferences* menu, in *Anypoint Studio* > *Authentication*.
+
 . After you sign in, the Deploy to CloudHub menu opens. Choose a unique domain in which to deploy the application. In this case, we enter *helloworld* (however, you can choose your own unique domain of up to 42 characters in length). When you choose a unique domain name, a green confirmation check mark displays. Select an *Environment* and a *Mule Version*.
  *Note*: After you add your domain name, the Mule Version fills in automatically. Change the value to *3.7.0* or newer. Click *Finish*. +
 image:studio+to+cloudhub2-1.png[studio+to+cloudhub2-1]

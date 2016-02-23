@@ -32,7 +32,7 @@ View the live status and detailed service history for the CloudHub management co
 
 An integration application is any integration that you've built using Mule Studio. These applications can do everything from synchronizing data from Salesforce to a database, to publishing a SOAP or REST API, to creating complex orchestrations of business processes.
 
-For more about creating and deploying integration applications, see link:/runtime-manager/getting-started-with-cloudhub[Getting Started with CloudHub] and link:/runtime-manager/deploying-a-cloudhub-application[Deploying a CloudHub Application].
+For more about creating and deploying integration applications, see link:/runtime-manager/getting-started-with-cloudhub[Getting Started with CloudHub] and link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
 
 === Management Console
 
@@ -78,7 +78,7 @@ CloudHub offers different worker clouds in different regions of the world: the U
 
 When your application is running in the EU, all HTTP services are also available over the eu.cloudhub.io domain. For example, if you create the application "myapp", then its domain is "myapp.eu.cloudhub.io." This load balancer is hosted in the EU, ensuring that your data is never transferred outside the EU when invoking HTTP services.
 
-For more information about deploying applications to different regions, refer to the link:/runtime-manager/deploying-a-cloudhub-application[deployment guide]. For more information about CloudHub's security and compliance, download the link:_attachments/Anypoint_Platform_Cloud_Security_and_Compliance.pdf[Anypoint Cloud Security & Compliance whitepaper].
+For more information about deploying applications to different regions, refer to link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]. For more information about CloudHub's security and compliance, download the link:_attachments/Anypoint_Platform_Cloud_Security_and_Compliance.pdf[Anypoint Cloud Security & Compliance whitepaper].
 
 === Workers and Multitenancy
 
@@ -99,7 +99,7 @@ All of CloudHub's platform services, from load balancing to the API layer, have 
 
 CloudHub monitors the worker clouds for any type of problems and provides a self-healing mechanism to recover from problems. If the underlying hardware suffers a failure, the platform migrates your application to a new worker automatically. In the case of an application crash – whether due to a problem with custom code or a bug in the underlying stack – the platform recognizes the crash and can restart the worker automatically. 
 
-For more information about application monitoring and automatic restarts, see the link:/runtime-manager/deploying-a-cloudhub-application[deployment guide].
+For more information about application monitoring and automatic restarts, see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
 
 === Zero Downtime Updates
 

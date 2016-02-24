@@ -12,6 +12,15 @@ You can deploy a Mule application to your own server through:
 
 This page describes the options on the *Deploy Application* page, which is identical in all of the cases above.
 
+[TIP]
+====
+Additionally, you can also deploy to your servers through:
+
+* The *link:/runtime-manager/runtme-manager-api[Runtime Manager API]*
+* Using the *link:/mule-user-guide/v/3.2/mule-maven-plugin[Mule-Maven Plugin]*
+====
+
+
 [NOTE]
 To deploy an app to link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub], see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloduHub]. Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On Premises Edition] or the link:/anypoint-platform-on-premises/[Runtime Manager On Premises Edition].
 

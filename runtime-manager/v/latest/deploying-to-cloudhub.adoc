@@ -9,7 +9,7 @@ You can deploy a CloudHub application from:
 This page describes the options on the *Deploy Application* page that is identical in both cases.
 
 [NOTE]
-Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On Premises Edition].
+Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On Premises Edition] or the link:/anypoint-platform-on-premises/[Runtime Manager On Premises Edition].
 
 == Accessing the Deploy Application Screen
 
@@ -25,9 +25,6 @@ image:APStartScreen.png[APStartScreen]
 . Click *Deploy application*:
 +
 image:DeployAppFromConsole.png[DeployAppFromConsole] 
-+
-[NOTE]
-*Note*: For more information on the Applications and Servers tabs, see link:/runtime-manager/managing-applications-and-servers-in-the-cloud-and-on-premises[Managing Applications and Servers in the Cloud and On Premises.]
 +
 .  The Deploy Application page opens:
 +

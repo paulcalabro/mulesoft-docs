@@ -130,4 +130,4 @@ You have now successfully created a new Anypoint Studio application and deployed
 == See Also
 
 * Take the next step in the CloudHub Getting Started Guide: link:/runtime-manager/getting-started-with-connectors[Getting Started with Connectors].
-* Learn the link:/mule-fundamentals/v/3.6/anypoint-studio-essentials[Anypoint Studio Essentials].
+* Learn the link:/mule-fundamentals/v/3.7/anypoint-studio-essentials[Anypoint Studio Essentials].

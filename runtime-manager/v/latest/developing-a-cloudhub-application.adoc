@@ -29,11 +29,11 @@ If you have other runtime settings that you want to configure differently when r
 
 == Logging
 
-All log messages from your application are captured by the CloudHub logging service and available through the log search tool in the Runtime Manager console. If you wish to expose additional information in your logs for diagnostic or audit purposes, Mule provides a link:/mule-user-guide/v/3.6/logger-component-reference[logger element] for fine grained logging of message content.
+All log messages from your application are captured by the CloudHub logging service and available through the log search tool in the Runtime Manager console. If you wish to expose additional information in your logs for diagnostic or audit purposes, Mule provides a link:/mule-user-guide/v/3.7/logger-component-reference[logger element] for fine grained logging of message content.
 
 == Packaging Third-Party Libraries
 
-CloudHub provides services in the platform that support connecting over many different protocols and transforming many data formats. All the standard Mule libraries are included and available to your application. If you have the need to include a different third party library, you can package that library in the `<mule application zip>/lib` folder of your link:/mule-user-guide/v/3.6/application-format[application package]. Any libraries that are packaged in your Mule application `lib` folder are available on the classpath to your application at run time.
+CloudHub provides services in the platform that support connecting over many different protocols and transforming many data formats. All the standard Mule libraries are included and available to your application. If you have the need to include a different third party library, you can package that library in the `<mule application zip>/lib` folder of your link:/mule-user-guide/v/3.7/application-format[application package]. Any libraries that are packaged in your Mule application `lib` folder are available on the classpath to your application at run time.
 
 == Accessing Resources Behind the Firewall
 

@@ -6,10 +6,19 @@ You can deploy a CloudHub application from:
 * *Anypoint Studio* - Right-click your project and click *Deploy to Anypoint Platform* -> *Cloud*.
 * *Runtime Manager* - in the cloud-based version of the link:anypoint.mulesoft.com[Anypoint Platform]. Go to the *Runtime Manager* section, and then from the *Applications* tab, click the *Deploy application* button.
 
-This page describes the options on the *Deploy Application* page that is identical in both cases.
+This page describes the options on the *Deploy Application* panel that is identical in both cases.
+
+[TIP]
+====
+Additionally, you can also deploy to CloudHub through:
+
+* The *link:/runtime-manager/cloudhub-api[CloudHub API]*
+* The *link:/runtime-manager/cloudhub-cli[CloudHub Command Line Interface]*
+* Using the *link:/mule-user-guide/v/3.2/mule-maven-plugin[Mule-Maven Plugin]*
+====
 
 [NOTE]
-Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On Premises Edition] or the link:/anypoint-platform-on-premises/[Runtime Manager On Premises Edition].
+Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On-Premise Edition] or the link:/anypoint-platform-on-premises/[Runtime Manager On-Premise Edition].
 
 == Accessing the Deploy Application Screen
 
@@ -66,7 +75,7 @@ If you already have any servers registered to the Anypoint Platform, you will se
 * On the CloudHub worker cloud
 * On an on-premises server, server group, or cluster
 
-This document focuses on deploying to CloudHub, for more information on deploying to servers, see link:/runtime-manager/deploying-to-your-own-servers[Deploying to Your Own Servers].
+This document focuses on deploying to CloudHub, for more information on deploying to servers, server groups and clusters, see link:/runtime-manager/deploying-to-your-own-servers[Deploying to Your Own Servers].
 
 
 == Application File
@@ -247,6 +256,7 @@ If an error occurs and the application cannot be deployed, the application statu
 == See Also
 
 * See a tutorial about deploying to CloudHub directly from Anypoint Studio link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub]
-* Deploy using the link:/runtime-manager/command-cli[CloudHub Command Line Interface].
 * A complete set of link:/runtime-manager/cloudhub-api[REST APIs] are also available for deployment.
 * link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] contains more information on how to manage your CloudHub application, make changes, scale workers, and perform other application management tasks.
+* Deploy using the link:/runtime-manager/command-cli[CloudHub Command Line Interface].
+* For more information on deploying to servers, server groups and clusters, see link:/runtime-manager/deploying-to-your-own-servers[Deploying to Your Own Servers].

@@ -39,8 +39,8 @@ image:APStartScreen.png[APStartScreen]
 +
 image:DeployAppFromConsole.png[DeployAppFromConsole] 
 +
-[NOTE]
-*Note*: For more information on the Applications and Servers tabs, see link:/runtime-manager/managing-applications-and-servers-in-the-cloud-and-on-premises[Managing Applications and Servers in the Cloud and On Premises.]
+[TIP]
+*Note*: For more information on the *Servers* tab, see link:/runtime-manager/managing-servers[Managing Servers].
 +
 .  The Deploy Application page opens:
 +

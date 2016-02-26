@@ -9,10 +9,10 @@
 *** link:/runtime-manager/building-an-https-service[Building an HTTPS Service]
 *** link:/runtime-manager/custom-application-alerts[Custom Application Alerts]
 
-** Managing Applications   (might not be needed / take stuff from managing applications and servers)
-*** link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]
-*** link:/runtime-manager/deploying-to-your-own-servers[Deploying to Your Own Servers]  (must be versionable)
-*** Managing non-cloudhub applications??
+
+** link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]
+** link:/runtime-manager/deploying-to-your-own-servers[Deploying to Your Own Servers]  ////w versions////
+** link:/runtime-manager/managing-deployed-applications[Managing Applications]
 *** link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications]
 **** link:/runtime-manager/alerts-and-notifications[Alerts and Notifications]
 **** link:/runtime-manager/cloudhub-insight[CloudHub Insight]
@@ -23,6 +23,7 @@
 **** link:/runtime-manager/worker-monitoring[Worker Monitoring]
 **** link:/runtime-manager/secure-data-gateway[Secure Data Gateway]
 **** link:/runtime-manager/managing-application-data-with-object-stores[Object Stores]
+*** Managing Applications on Your Own Servers ////w versions////
 
 ** link:/runtime-manager/managing-servers[Managing Servers]
 *** link:/runtime-manager/creating-and-managing-clusters[Creating and Managing Clusters]

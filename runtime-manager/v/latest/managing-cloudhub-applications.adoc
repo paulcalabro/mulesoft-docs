@@ -1,24 +1,28 @@
 = Managing CloudHub Applications
 :keywords: cloudhub, managing, monitoring, deploy, runtime manager, arm
 
-After you deploy an application to CloudHub, you can use the Runtime Manager to monitor and manage your application at runtime. This page introduces basic management tools in the console for stopping, updating, and restarting your application. See the additional topics below for information about the console's runtime management tools. 
+After you deploy an application to link:/runtime-manager/deploying-to-cloudhub[CloudHub], you can use the Runtime Manager to monitor and manage your application at runtime.
 
-== Accessing a Running Application's Settings
+Depending on if your application is deployed to link:/runtime-manager/deploying-to-cloudhub[CloudHub] or to link:/runtime-manager/deploying-to-your-own-servers[your own servers], there is a different set of possible actions you can perform on it, once deployed. This page focuses on the actions that are specific to CloudHub applications. To view the basic management tools that are common to both types of deployment targets, see link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications].
 
-Log in to the link:anypoint.mulesoft.com[Anypoint Platform] and view the *Applications* tab of the Runtime Manager. Select one of your running applications to open a panel on the right side. On that pannel, click the *Manage Application* button to open up the application's settings.
 
-image:cloudhub-manage-application.png[manage app]
+With applications deployed to link:/runtime-manager/managing-cloudhub-applications[CloudHub] you can manage the following:
 
-In this menu you will be able to change most of the settings you can configure when link:runtime-manager/deploying-to-cloudhub[Deploying to CloduHub]. You will also be able to access Log data, Insights, Alets, queues, set up and manage schedules and application data.
+* link:/runtime-manager/alerts-and-notifications[Notifications]
+* link:/runtime-manager/cloudhub-insight[Insight]
+* link:/runtime-manager/managing-queues[Queues]
+* link:/runtime-manager/managing-schedules[Schedules]
+* link:/runtime-manager/secure-application-properties[Secure Application Properties]
+* link:/runtime-manager/viewing-log-data[View application log data]
+* link:/runtime-manager/worker-monitoring[Worker Monitoring]
+* link:/runtime-manager/secure-data-gateway[Secure Data Gateway]
+* link:/runtime-manager/managing-application-data-with-object-stores[Object Stores]
 
-image:cloudhub-running-app.png[settings]
 
-== Starting, Stopping, and Deleting an Application
-
-For information, see link:/runtime-manager/managing-applications-and-servers-in-the-cloud-and-on-premises#start-stop-or-delete-an-application[Start, Stop, and Delete an Application] in link:/runtime-manager/managing-applications-and-servers-in-the-cloud-and-on-premises[Managing Applications and Servers in the Cloud and On Premises].
 
 [IMPORTANT]
 After you delete an application, your log data is no longer accessible through the console. CloudHub archives old log data for a limited period of time before being purged. This allows you to recover the data if needed. mailto:cloudhub-support@mulesoft.com[Contact Support] for more information.
+
 
 == Redeploying to a Different Region
 
@@ -90,18 +94,6 @@ CloudHub supports updating your application so users of your HTTP APIs experienc
 |image:image2014-10-24-16-3A44-3A47.png[image2014-10-24+16%3A44%3A47] |The updated version of the application didn't start correctly. Mule shuts down the new version and leaves the old application running.
 |===
 
-== Downloading a Copy of Your Deployed Application
-
-The application most recently deployed is always available for download from the console. Select the *Properties* tab on the application *Settings* page, then click *Choose file*. Specify a location on your computer to save the file.
-
-image:DownloadAppFile.png[DownloadAppFile]
-
-[NOTE]
-====
-*Link not available?*
-
-If you can see the application name, but the name is not a live link, your administrator has disabled application downloads for users with developer and support account types. Contact your administrator if you need a copy of the application.
-====
 
 == Static IPs
 
@@ -127,7 +119,7 @@ CloudHub specifies this port for you and automatically load-balances your domain
 Additional tools for managing your applications:
 
 * link:/runtime-manager/cloudhub-console-overview[CloudHub Console Overview]
-* link:/runtime-manager/managing-applications-and-servers-in-the-cloud-and-on-premises[Managing Applications and Servers in the Cloud and On Premises]
+* link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications]
 * link:/runtime-manager/cloudhub-administration[CloudHub Administration]
 * link:/runtime-manager/alerts-and-notifications[Alerts and Notifications]
 * link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]

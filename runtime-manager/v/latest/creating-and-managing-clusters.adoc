@@ -122,7 +122,7 @@ image:create_cluster_button.png[CreateCluster]
 +
 . Give the cluster a name. The cluster name must not start or end with a dash, must be at least 3 characters long, no more than 40 characters, must be unique, and contain only letters, numbers, or dashes.
 . Choose *Multicast* or *Unicast*. For more information, see link:multicast <<Multicast Versus Unicast, Multicast Versus Unicast>>.
-. Click the names of the servers to add to your cluster, and click *Create Cluster*. Multicast servers can be in any link:/runtime-manager/managing-servers#status-states[Status State], whereas unicast servers must have a Status of Running. All servers in a cluster must be running the same Mule Runtime version.
+. Click the names of the servers to add to your cluster, and click *Create Cluster*. Multicast servers can be in any link:/runtime-manager/managing-deployed-applications#status-states[Status State], whereas unicast servers must have a Status of Running. All servers in a cluster must be running the same Mule Runtime version.
 +
 image:CreateCluster_Multicast.png[CreateACluster]
 +
@@ -133,7 +133,7 @@ image:AddingServertoCluster_SidePanel.png[ClusterDetail]
 
 == Deleting a Server From a Cluster
 
-A server can only be removed from a cluster if its link:/runtime-manager/managing-servers#status-states[Status State] is Running.
+A server can only be removed from a cluster if its link:/runtime-manager/managing-deployed-applications#status-states[Status State] is Running.
 
 To delete a server from a cluster:
 

@@ -31,9 +31,9 @@ Want to learn more? Check out all the examples in link:/mule-fundamentals/v/3.7
 
 The Runtime Manager enables you to:
 
-* link:/runtime-manager/deploying-a-cloudhub-application[Deploy applications] to the cloud
-* link:/runtime-manager/managing-applications-in-the-cloud-and-on-premises[Manage applications and servers running on premises] from the cloud
-* link:/runtime-manager/creating-and-managing-clusters[Create and manage clusters] from the cloud
+* link:/runtime-manager/deploying-a-cloudhub-application[Deploy Applications] to the cloud
+* link:/runtime-manager/managing-deployed-applications[Manage Deployed Applications] from the cloud
+* link:/runtime-manager/creating-and-managing-clusters[Create and Manage Clusters] from the cloud
 
 == Building Connectors
 

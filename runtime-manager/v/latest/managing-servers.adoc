@@ -6,6 +6,9 @@ Through the Anypoint Runtime Manager, you can register and set up the properties
 
 Anypoint Runtime Manager provides a single management interface where you can manage applications running in the cloud, on local servers, on server groups that are on premises within your data center, or on clusters of servers. Applications that are on premises run on Mule Runtime instances on a single server or on a group of servers. For cluster information, see link:/runtime-manager/creating-and-managing-clusters[Creating and Managing Clusters].
 
+[TIP]
+Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, these features work identically in all of them.
+
 == Prerequisites
 
 In order to perform on-premises server management, you need to have one of the following installed on your on-premises server:

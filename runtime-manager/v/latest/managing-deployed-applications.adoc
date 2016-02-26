@@ -1,0 +1,281 @@
+= Managing Deployed Applications
+:keywords: cloudhub, managing, monitoring, deploy, runtime manager, arm
+
+After you deploy an application through the Runtime Manager, you can use the console to monitor and manage it at runtime.
+
+Depending on if your application is deployed to link:/runtime-manager/deploying-to-cloudhub[CloudHub] or to link:/runtime-manager/deploying-to-your-own-servers[your own servers], there is a different set of possible actions you can perform on it, once deployed.
+
+This page introduces the basic management tools in the console that are common to both ways of deploying:
+
+* Start, Stop, or Delete an Application
+
+Updating Your Application
+Downloading a Copy of Your Deployed Application
+
+
+
+
+
+
+With applications deployed to link:/runtime-manager/managing-applications-on-your-own-servers[your own servers] you can do the following:
+
+* link:/runtime-manager/managing-servers[Managing Servers]
+* link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[Sending Data from Runtime Manager to External Monitoring Software]
+* link:/runtime-manager/managing-servers[Create clusters and server groups]
+
+With applications deployed to link:/runtime-manager/managing-cloudhub-applications[CloudHub] you can manage the following:
+
+* link:/runtime-manager/alerts-and-notifications[Notifications]
+* link:/runtime-manager/cloudhub-insight[Insight]
+* link:/runtime-manager/managing-queues[Queues]
+* link:/runtime-manager/managing-schedules[Schedules]
+* link:/runtime-manager/secure-application-properties[Secure Application Properties]
+* link:/runtime-manager/viewing-log-data[View application log data]
+* link:/runtime-manager/worker-monitoring[Worker Monitoring]
+* link:/runtime-manager/secure-data-gateway[Secure Data Gateway]
+* link:/runtime-manager/managing-application-data-with-object-stores[Object Stores]
+
+[TIP]
+Before accessing the Runtime Manager Console, you must first link:/anypoint-platform-administration/creating-an-account[create an account]. After you have an account, you can log into the Anypoint Platform from the link:https://anypoint.mulesoft.com[Anypoint PLatform login page].
+
+
+== Getting Started
+
+https://anypoint.mulesoft.com/#/signin[Log in to Anypoint Platform] and click *Runtime Manager*:
+
+image:APStartScreen.png[APStartScreen]
+
+The Runtime Manager has two main tabs, *Applications* and *Servers*.
+
+=== Applications Tab
+
+In the Runtime Manager, an application is a Mule Application that is running on a Mule runtime or an API Gateway runtime instance. The instance can be running in CloudHub, in an on-premise server of your organization, in a group of servers, or in a cluster. For server groups, an application deployed to the group runs on every server in the group.
+
+=== Servers Tab
+
+In the Runtime Manager, a server is a Mule or API Gateway instance in a location other than CloudHub and that you must first register in the Runtime Manager console. Once registered and configured in this tab, you may deploy your applications to it through the Applications Tab.
+
+image:AMC_Servers.png[AMC_Servers]
+
+From the *Servers* tab, by selecting an entry as shown, you can perform these tasks:
+
+* Add a Serve (registers the server with the Anypoint Runtime Manager console)
+* Start Mule or API Gateway
+* Create a Server Group
+* Add a Server to a Server Group
+* Stop an Application on a Server
+* Remove a Server from a Server Group
+* Delete a Server
+* Delete a Server Group
+
+For more on the options offered by this tab, see link:/runtime-manager/managing-servers[Managing Servers].
+
+
+
+== Application Tasks
+
+From the *Applications* tab, by selecting an entry as shown, you can perform these tasks:
+
+Topics:
+
+* <<Deploy an Application>>
+* <<Start, Stop, and Delete an Application>>
+* <<Manage an Application>>
+
+
+== Dashboard Overview
+
+When you first log into the Anypoint Platform, click *CloudHub* from the top menu:
+
+image:APStartScreen.png[APStartScreen]
+
+You then see the *Applications* menu where you can get a quick view of the applications that are currently deployed and running for your account. Click an entry to display additional information (as shown below), or click *Manage Application* to see the CloudHub dashboard and the detailed page for the application:
+
+image:AMC_ManageApplication.png[AMC_ManageApplication]
+
+Creating an application is the first step to link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]. Each application must have a unique application domain. If you use the link:/runtime-manager/command-line-tools[Command Line Tools] or Anypoint Studio, you do not need to perform this step using the console. After you create at least one application, you can see your applications listed here, including the number of transactions and the percentage of CPU usage over the past hour.
+
+You can use link:/runtime-manager/managing-servers[Servers] in your organization to run applications that you manage with the Runtime Manager. In addition, you can create server groups and clusters to run an application and manage the server group from the Runtime Manager.
+
+Next to each application name, you can see an icon that represents the current status of the application.  The meaning of the status icons is summarized below:
+
+.Application Status
+[width="100a",cols="10a,90a",options="header"]
+|===
+|Icon |Description
+|image:console_overview_white_circle.png[console_overview_white_circle] |The application is not running.
+
+|image:console_overview_blue_circle.png[console_overview_blue_circle] |The application is deploying.
+
+|image:console_overview_green_circle.png[console_overview_green_circle] |The application is running.
+
+|image:console_overview_red_circle.png[console_overview_red_circle] |The application deployment failed.
+
+|image:console_overview_yellow_circle.png[console_overview_yellow_circle] |The application update failed.
+|===
+
+== Application Dashboard
+
+Click an application to show its overview menu, and click *Manage Applications* from the overview. This opens the dashboard where you can select one of the following menu options on the left:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== Deploy an Application
+
+Deploy an application means that you want your application to run on CloudHub, or a server or server group in your organization. Use Anypoint Studio to create an application as described in link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub]. 
+
+In the Applications screen, click *Deploy application*: 
+
+image:AMC_DeployApp.png[AMC_DeployApp]
+
+Specify:
+
+* *Application Name* - An application name that consists of at least 3 characters in length with a maximum of 40 characters, containing only letters, numbers, or dashes, and cannot start with a dash.
++
+* *Deployment Target* - From the drop-down list, click *CloudHub*, a server name, or a server group for where you want to deploy your application. CloudHub means you're deploying to the cloud, whereas a server or group means you're deploying an application to one or more servers in your organization's data center.
++
+If you click *CloudHub*, also supply:
++
+[cols=",",options="header",]
+|===
+|Tab |Values
+|*Runtime* |Runtime version, worker size, workers, region, and restart options
+|*Properties* |Key value pairs
+|*Insight* |link:/runtime-manager/cloudhub-insight[CloudHub Insight] values for metadata and replay
+|*Logging* |Log level and categories to include in logs
+|===
++
+* *Application File* - A zip file created by Anypoint Studio. To create the file in Studio, export your project from Studio as a zip file and import it into Anypoint Runtime Manager.
+
+The bell icon in the upper right corner lets you manage notifications. For more information, see link:/runtime-manager/alerts-and-notifications[Managing Notifications] in the link:/runtime-manager/alerts-and-notifications[Alerts and Notifications] guide.
+
+=== Start, Stop, or Delete an Application
+
+To start, stop, or delete an application, click an application, and click the status down-arrow (the menus differ by Status):
+
+image:AMC_StopStartDeleteApp.png[AMC_StopStartDeleteApp]
+
+Click *Start*, *Stop*, or *Delete* as needed. The *Start* command restarts stopped applications, and if the application is Undeployed, sends the application's zip file to the server to start the application on the server.
+
+[IMPORTANT]
+After you delete an application, your log data is no longer accessible through the console. CloudHub archives old log data for a limited period of time before being purged. This allows you to recover the data if needed. mailto:cloudhub-support@mulesoft.com[Contact Support] for more information.
+
+
+=== Manage an Application
+
+Managing an application lets you view a dashboard that lists Mule Messages, CPU use, memory use, and any of the categories of commands in the left navigation area, such as viewing logs, alerts, queues, change settings, debugging, and more.
+
+To manage an application, click *Manage Application*: 
+
+image:AMC_ManageApplication.png[AMC_ManageApplication]
+
+An example is (what displays may vary by permissions):
+
+image:ManageAppDashboard.png[ManageAppDashboard]urm
+
+For more information on the features, see the link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] in the MuleSoft documentation set.
+
+
+
+
+
+
+
+== Status States
+
+The following states appear in the *Status* column:
+
+=== Application Status States
+
+* Deployment Failed - Application stopped running due to a failure state. The cause of the failure appears in the console.
+* Partially Started  - Application is in the process of starting.
+* Started - Application is running.
+* Starting - Application is transitioning into a running state.
+* Stopped - Application stopped. Use <<Deploy an Application>> to return the application to Running.
+* Undeploying - Application has been removed from a server. Use <<Deploy an Application>> to redeploy an application. 
+* Undeployed - Application no longer resides in the server.
+* Updated - Application has been updated.
+
+=== Server Status States
+
+* Connected - Server available for use.
+* Created - Server was recently registered into the system and has never been connected.
+* Running - Server is up and running, and accepting requests. 
+* Disconnected - Server that is currently unavailable but is registered and ready to connect.
+
+=== Server Groups Status States
+
+* Connected - All servers in the server group are connected.
+* Created - Server group created. This state occurs temporarily after creating a group until Empty asserts.
+* Disconnected - All servers in the server group are unavailable. This state can occur if the network goes down or one or more servers in a group fail.
+* Empty - No servers currently assigned to this group.
+* Partial - One or more servers in the group have differing states.
+* Running - All servers in the server group are running.
+
+
+
+
+
+== Accessing a Running Application's Settings
+
+Log in to the link:anypoint.mulesoft.com[Anypoint Platform] and view the *Applications* tab of the Runtime Manager. Select one of your running applications to open a panel on the right side. On that pannel, click the *Manage Application* button to open up the application's settings.
+
+image:cloudhub-manage-application.png[manage app]
+
+In this menu you will be able to change most of the settings you can configure when link:runtime-manager/deploying-to-cloudhub[Deploying to CloduHub]. You will also be able to access Log data, Insights, Alets, queues, set up and manage schedules and application data.
+
+image:cloudhub-running-app.png[settings]
+
+
+== Updating Your Application
+
+If you made changes to your applications and would like to upload a new version, click *Choose file* on the Deployment screen for that application. The new filename appears in italicized text. Click *Apply changes* to use the new file for deployment. Within a few seconds, your application successfully redeploys. While redeploying, the application status indicator changes to blue, and then turns green after the deployment completes. You can click *Logs* to see a live redeployment of your application.
+
+
+== Downloading a Copy of Your Deployed Application
+
+The application most recently deployed is always available for download from the console. Select the *Properties* tab on the application *Settings* page, then click *Choose file*. Specify a location on your computer to save the file.
+
+image:DownloadAppFile.png[DownloadAppFile]
+
+[NOTE]
+====
+*Link not available?*
+
+If you can see the application name, but the name is not a live link, your administrator has disabled application downloads for users with developer and support account types. Contact your administrator if you need a copy of the application.
+====
+
+== See Also
+
+Additional tools for managing your applications:
+
+* link:/runtime-manager/cloudhub-console-overview[CloudHub Console Overview]
+* link:/runtime-manager/managing-servers[Managing Servers]
+* link:/runtime-manager/cloudhub-administration[CloudHub Administration]
+* link:/runtime-manager/alerts-and-notifications[Alerts and Notifications]
+* link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]
+* link:/runtime-manager/cloudhub-insight[CloudHub Insight]
+* link:/runtime-manager/managing-queues[Managing Queues]
+* link:/runtime-manager/managing-schedules[Managing Schedules]
+* link:/runtime-manager/managing-application-data-with-object-stores[Managing Application Data with Object Stores]
+* link:/runtime-manager/command-line-tools[Command Line Tools]
+* link:/runtime-manager/secure-application-properties[Secure Application Properties]
+* link:/runtime-manager/viewing-log-data[Viewing Log Data]
+* link:/runtime-manager/virtual-private-cloud[Virtual Private Cloud]
+* link:/runtime-manager/worker-monitoring[Worker Monitoring]
+* link:/runtime-manager/penetration-testing-policies[Penetration Testing Policies]
+* link:/runtime-manager/secure-data-gateway[Secure Data Gateway]
+
+ 

@@ -1,7 +1,7 @@
 = Deploying to Your Own Servers
 :keywords: cloudhub, cloud, deploy, manage, runtime manager, arm
 
-You can deploy a Mule application to your own server through:
+Once you have link:/runtime-manager/managing-servers#add-a-server[added a server (or server group/cluster)] to the Runtime Manager, you can deploy applications to it in the following ways:
 
 // * *Anypoint Studio* - Right-click your project and click *Deploy to Anypoint Platform* -> *Cloud*.
 

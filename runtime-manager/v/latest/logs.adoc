@@ -19,6 +19,9 @@ The logs API allows you to search your logs. All resources or methods that retur
 }
 ----
 
+
+
+
 == Log Object Properties
 
 The following are the properties for applications.

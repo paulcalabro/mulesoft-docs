@@ -12,7 +12,7 @@ With applications deployed to link:/runtime-manager/managing-applications-on-you
 * link:/runtime-manager/creating-and-managing-clusters[Create clusters and server groups]
 
 [TIP]
-Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, these features work identically in all of them.
+Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, features described in this page work identically in all of them.
 
 == See Also
 

@@ -7,6 +7,9 @@ link:/mule-management-console/v/3.7/managing-mule-high-availability-ha-clusters[
 
 This guide helps you manage on premises server clusters in Runtime Manager, both through the link:anypoint.mulesoft.com[online version] of the Anypoint Platform and the link:/anypoint-platform-on-premises[On Premise Edition]. An on-premise cluster enables up to 8 servers to participate in a high availability processing unit so that in case one server should fail, another server takes over processing applications. A cluster can run multiple applications. All servers in a cluster must run the same version of the Mule Runtime. A cluster can only be made up of servers that are not already in a server group or part of another cluster.
 
+[TIP]
+Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, features described in this page work identically in all of them.
+
 The minimum Mule version that supports this feature is Mule version 3.7.0 and newer.
 
 Runtime Manager lets you create clusters, add servers to a cluster, and delete servers from a cluster.

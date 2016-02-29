@@ -6,6 +6,10 @@ CloudHub provides access to log data so that you can monitor your application an
 [NOTE]
 Logs are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager to external servers on premises or in the cloud, in those cases you can send data link:runtime-manager/sending-data-from-arm-to-external-monitoring-software[to External Monitoring Software]. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
 
+
+[IMPORTANT]
+After you delete an application, your log data is no longer accessible through the console. CloudHub archives old log data for a limited period of time before being purged. This allows you to recover the data if needed. mailto:cloudhub-support@mulesoft.com[Contact Support] for more information.
+
 == Enhanced Log Management
 
 Starting with the August 2015 (r44) release, CloudHub provides a new optional user interface and expanded storage capabilities for logging. With the new Enhanced Log Management setting, logs can be up to 100 MB or up to 30 days, whichever limit is hit first.

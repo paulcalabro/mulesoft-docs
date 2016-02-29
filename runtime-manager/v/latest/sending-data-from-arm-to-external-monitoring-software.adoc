@@ -14,7 +14,7 @@ Future releases will also feature integrating with other third party systems.
 The goal of this document to enable you to integrate Runtime Manager with a third party tool such as Splunk or ELK.
 
 [TIP]
-Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, these features work identically in all of them.
+Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, features described in this page work identically in all of them.
 
 == Basic Architecture
 

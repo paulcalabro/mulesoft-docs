@@ -32,7 +32,7 @@ View the live status and detailed service history for the CloudHub management co
 
 An integration application is any integration that you've built using Mule Studio. These applications can do everything from synchronizing data from Salesforce to a database, to publishing a SOAP or REST API, to creating complex orchestrations of business processes.
 
-For more about creating and deploying integration applications, see link:/runtime-manager/getting-started-with-cloudhub[Getting Started with CloudHub] and link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
+For more about creating and deploying integration applications, see link:/runtime-manager/cloudhub[CloudHub] and link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
 
 === Management Console
 

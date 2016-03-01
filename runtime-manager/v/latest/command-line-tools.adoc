@@ -50,8 +50,8 @@ $ export PATH=/path/to/cloudhub-cli-18-SNAPSHOT/bin:$PATH
 [width="100a",cols="50a,50a",options="header"]
 |===
 |Environment Variable |Description
-|CLOUDHUB_USERNAME |Your CloudHub username
-|CLOUDHUB_PASSWORD |Your CloudHub password
+|CLOUDHUB_USERNAME |Your Anypoint Platform username
+|CLOUDHUB_PASSWORD |Your Anypoint Platform password
 |CLOUDHUB_DOMAIN |Your CloudHub application domain
 |===
 

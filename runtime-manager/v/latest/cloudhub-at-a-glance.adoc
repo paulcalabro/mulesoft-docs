@@ -38,17 +38,14 @@ Message processors allow you to do almost anything: connect to SaaS services, tr
 |link:/mule-user-guide/v/3.7/routers[Flow Controls] |Flow Controls allow you to route messages to different locations – whether another flows or different external service. They operate on collections of data, and can broadcast messages, and more.
 |===
 
-== Data Mapping
-
-While Anypoint DataMapper is technically a message processor, it deserves special mention here. It's responsible for helping you map different data formats - whether it's data from cloud services, or file formats like CSV, JSON, Excel files, or XML. It makes data integration a snap with it's easy to use drag and drop interface.
 
 == Applications
 
 Flows are packaged into applications, and then deployed to CloudHub. It's nearly an automated process from within Mule Studio, as Anypoint Studio handles the packaging and upload of your application. You can build, deploy and run your integration without ever leaving Anypoint Studio.
 
-== CloudHub Management Console
+== Runtime Management Console
 
-Once your application is deployed to CloudHub's multi-tenant runtime, you can link:http://anypoint.mulesoft.com[log in] to the Anypoint Platform, and then go to the Runtime Manager. It allows you to triage problems, view logs, set up alerts, view dashboards, and more. Follow the simple steps in the link:/runtime-manager/hello-world-on-cloudhub[Hello World] tutorial to setup your free Anypoint Platform account.
+Once your application is deployed to CloudHub's multi-tenant runtime, you can link:http://anypoint.mulesoft.com[log in] to the Anypoint Platform, and then go to the Runtime Manager. It allows you to triage problems, view logs, set up alerts, view dashboards, and more. Follow the simple steps in the link:/runtime-manager/hello-world-on-cloudhub[Hello World] tutorial to setup your free Anypoint Platform account and deploy your first application to it.
 
 == Next Steps
 

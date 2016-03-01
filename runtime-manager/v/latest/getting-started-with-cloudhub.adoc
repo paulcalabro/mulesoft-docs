@@ -3,11 +3,6 @@
 
 CloudHub is an integration platform as a service (iPaaS). With the Anypoint Runtime Manager, it allows you to deploy sophisticated cross-cloud integration applications in the cloud, and on premises to servers, groups of servers, and clusters, create new APIs on top of existing data sources, integrate on premises applications with cloud services, manage servers and server groups on premises, and much more. With Anypoint Studio – the user-friendly development tool – you can quickly build integration applications and deploy to CloudHub with just a few clicks. This guide helps you learn the basics, and get started developing your first application.
 
-[NOTE]
-====
-The topics in this document deal with app deployments on both the cloud-based and the on-premise versions of the Runtime Manager. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for a better understanding of the differences between both.
-====
-
 == Learn CloudHub Basics
 
 . Download link:https://www.mulesoft.com/lp/dl/studio[Anypoint Studio].

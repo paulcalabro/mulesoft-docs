@@ -139,7 +139,7 @@ If using the Anypoint Platform on premises, this section is named *Applications*
 Where `<token>` is the token displayed in the Add Servers screen, and `<server name>` is the name you select for your server.
 . Start your gateway.
 
-This should register your server with the Anypoint Management Console.
+This should register your server with the link:/runtime-manager[Runtime Manager console].
 . If your gateway is not running, start it.
 
 *Start your gateway*

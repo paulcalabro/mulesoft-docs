@@ -100,10 +100,10 @@ This is great for testing, but probably not ideal for the final implementation o
 
 
 
-link:/mule-fundamentals/v/3.4/deploying-mule-applications[Deploying Mule Applications]  +
-link:/mule-user-guide/v/3.4/deployment-scenarios[Deployment Scenarios] +
-link:/mule-management-console/v/3.4[Mule Management Console]  +
-link:/cloudhub[CloudHub] +
+link:/mule-fundamentals/v/3.4/deploying-mule-applications[Deploying Mule Applications]  
+link:/mule-user-guide/v/3.4/deployment-scenarios[Deployment Scenarios]
+link:/mule-management-console/v/3.4[Mule Management Console] 
+llink:/runtime-manager[Runtume Manager]
 http://www.youtube.com/watch?v=acSLHlG9p1Q&feature=youtu.be[30-second Video Glimpse] 
 |===
 

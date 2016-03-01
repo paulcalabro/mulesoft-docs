@@ -231,7 +231,7 @@ You can use the API Gateway to proxy your existing services with HTTP/HTTPS or W
 
 Because the API Gateway acts as an orchestration layer for services and APIs implemented elsewhere, it's technology-agnostic. You can proxy non-Mule services or APIs of any kind, as long as they expose HTTP/HTTPS, or endpoints for a Web Service Consumer. You can also proxy APIs that you design and build with API Designer and APIkit to the API Gateway to separate the orchestration from the implementation of those APIs.
 
-Refer to the link:/mule-user-guide/v/3.6[Mule User Guide] or the link:/cloudhub[CloudHub Documentation] for reference information about using your API Gateway, keeping in mind the previously described usage restrictions.
+Refer to the link:/mule-user-guide/v/3.6[Mule User Guide] or the link:/runtime-manager[CloudHub Documentation] for reference information about using your API Gateway, keeping in mind the previously described usage restrictions.
 
 == See Also
 

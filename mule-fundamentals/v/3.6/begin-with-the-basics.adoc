@@ -88,7 +88,7 @@ For more information on running applications, see:
 * link:/mule-fundamentals/v/3.6/deploying-mule-applications[Deploying Mule Applications]
 * link:/mule-user-guide/v/3.6/deployment-scenarios[Deployment Scenarios]
 * link:/mule-management-console/v/3.7[Mule Management Console]
-* link:/cloudhub[CloudHub]
+* link:/runtime-manager[Runtume Manager]
 * link:/anypoint-platform-for-apis/configuring-an-api-gateway[API Gateway]
 
 

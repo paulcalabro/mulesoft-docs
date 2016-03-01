@@ -63,7 +63,7 @@ You may be thinking, "So, is Mule similar to an application server like JBoss or
 ==== How to Get Started
 
 . To get started building integrations with Anypoint Studio, you’ll want to work through the rest of Mule Fundamentals, starting with link:/mule-fundamentals/v/3.6/begin-with-the-basics[Begin with the Basics].
-. If you're interested in diving into the operations side of the platform, check out link:/mule-management-console/v/3.7[Mule Management Console] (if you deploy on-premises) or link:/cloudhub[CloudHub] if you deploy to a VPC.
+. If you're interested in diving into the operations side of the platform, check out link:/mule-management-console/v/3.7[Mule Management Console] (if you deploy on-premises) orlink:/runtime-manager[Runtume Manager] if you deploy to a VPC.
 
 == Meet Mule
 
@@ -105,7 +105,7 @@ link:/mule-user-guide/v/3.6/datasense[DataSense] uses message metadata to proac
 |image:mule-server.png[mule-server]
 |Deploy to an *ESB Standalone server*, available as an Enterprise or Community product.
 |image:CloudHubLogo133high.png[CloudHubLogo133high]
-|Deploy to link:/cloudhub[CloudHub], the world's first integration Platform as a Service (iPaaS). Built on top of Mule, CloudHub allows you to integrate and orchestrate applications, data sources, and services across on-premise systems and the cloud.
+|Deploy to link:/runtime-manager[CloudHub], the world's first integration Platform as a Service (iPaaS). Built on top of Mule, CloudHub allows you to integrate and orchestrate applications, data sources, and services across on-premise systems and the cloud.
 |image:mulesoft-database-customapp.png[mulesoft-database-customapp]
 |Publish APIs or API proxies to an *link:/anypoint-platform-for-apis/configuring-an-api-gateway[API Gateway]* to enable effective governance and support service reuse within your organization.
 |===

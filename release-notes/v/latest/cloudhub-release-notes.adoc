@@ -138,7 +138,7 @@ With the August 2015 Release of CloudHub, you can use an improved logging infras
 
 ==== August 2015 Clustering Support
 
-With this release, you csn configure your on-premises Mule or API Gateway runtimes for high availability using clustering, from the CloudHub server management console. For more information, see link:/runtime-manager/creating-and-managing-clusters[Creating and Managing Clusters].
+With this release, you csn configure your on-premises Mule or API Gateway runtimes for high availability using clustering, from the CloudHub server management console. For more information, see link:/runtime-manager/managing-servers#create-a-cluster[Creating and Managing Clusters].
 
 === August 2015 Deprecated Features or Functionality
 

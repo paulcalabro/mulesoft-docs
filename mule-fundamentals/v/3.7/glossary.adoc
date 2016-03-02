@@ -75,7 +75,7 @@ Integration platform as a service that lets you manage applications in the cloud
 
 *cluster*
 
-A set of Mule instances that acts as, and can be managed as, a unit. A cluster is a virtual server composed of multiple nodes. You can manage cluster instances  link:/runtime-manager/creating-and-managing-clusters[from the cloud].
+A set of Mule instances that acts as, and can be managed as, a unit. A cluster is a virtual server composed of multiple nodes. You can manage cluster instances  link:/runtime-manager/managing-servers#create-a-cluster[cluster instances]from the cloud.
 
 *component*
 

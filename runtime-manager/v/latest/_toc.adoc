@@ -28,8 +28,6 @@
 ***** link:/runtime-manager/sending-event-data-from-arm-to-db[Sending Event Data from Runtime Manager to DB]
 
 ** link:/runtime-manager/managing-servers[Managing Servers]
-*** link:/runtime-manager/creating-and-managing-clusters[Creating and Managing Clusters]
-
 *** link:/runtime-manager/runtime-manager-api[Runtime Manager API]
 
 ** link:/runtime-manager/cloudhub[CloudHub]

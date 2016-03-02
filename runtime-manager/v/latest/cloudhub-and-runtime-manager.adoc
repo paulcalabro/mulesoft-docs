@@ -19,7 +19,7 @@ These different modalities offer different management features. The key reason b
 
 == Management Features
 
-CloudHub is a complete Platform as a Service that covers all of your server needs out of the box, including logging, analytics, alerts, scheduling, etc. Hosting your apps on your own servers allows for greater flexibility and tighter security (in case you deploy to your own secured on-premises environment) but requires that you sort out several considerations by your own means. When deploying to your own servers, you have the flexibility to group them into Server Groups or link:/cloudhub/creating-and-managing-clusters[Clusters] and configure various parameters to handle them.
+CloudHub is a complete Platform as a Service that covers all of your server needs out of the box, including logging, analytics, alerts, scheduling, etc. Hosting your apps on your own servers allows for greater flexibility and tighter security (in case you deploy to your own secured on-premises environment) but requires that you sort out several considerations by your own means. When deploying to your own servers, you have the flexibility to group them into link:/runtime-manager/managing-servers#create-a-server-group[Server Groups] or link:/runtime-manager/managing-servers#create-a-cluster[Clusters] and configure various parameters to handle them.
 
 The different available modalities also offer different management features because both communicate to deployment servers using a different version of the link:/mule-agent/[Mule Agent].
 

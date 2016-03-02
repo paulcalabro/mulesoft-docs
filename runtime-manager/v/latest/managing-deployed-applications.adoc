@@ -73,11 +73,12 @@ From the *Servers* tab, by selecting an entry as shown, you can perform these t
 * Add a Serve (registers the server with the Anypoint Runtime Manager console)
 * Start Mule or API Gateway
 * Create a Server Group
-* Add a Server to a Server Group
+* Create a Cluster
+* Add and remove Servers from a Server Group
+* Add and remove Servers from a Cluster
 * Stop an Application on a Server
-* Remove a Server from a Server Group
-* Delete a Server
-* Delete a Server Group
+* Delete a Server, Server Group or Cluster
+
 
 For more on the options offered by this tab, see link:/runtime-manager/managing-servers[Managing Servers].
 
@@ -142,7 +143,26 @@ The following states appear in the *Status* column:
 * Partial - One or more servers in the group have differing states.
 * Running - All servers in the server group are running.
 
+== Cluster Status States
 
+
+[width="100a",cols="25a,75a",options="header"]
+|===
+Icon
+|Description
+| image:status_green.png[green]
+| Running - all nodes are running
+| image:status_yellow.png[yellow]
+| Partial (x of y running)- some nodes are running and some are down
+| image:status_white.png[white]
+| Disconnected - all nodes are disconnected
+| image:status_black.png[black]
+| Created - a server/node is registered in the platform but never was started
+| image:status_yellow.png[yellow]
+| Running with communication issue - all nodes are running, visibility issues between them
+| image:status_yellow.png[yellow]
+| Partial (x of y running) with communication Issue - some nodes are running some are down, visibility issues between them
+|===
 
 == Accessing a Running Application's Settings
 

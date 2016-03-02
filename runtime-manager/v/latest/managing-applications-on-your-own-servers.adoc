@@ -9,7 +9,6 @@ With applications deployed to link:/runtime-manager/managing-applications-on-you
 
 * link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[Sending Data from Runtime Manager to External Monitoring Software]
 * link:/runtime-manager/managing-servers[Manage Servers]
-* link:/runtime-manager/creating-and-managing-clusters[Create clusters and server groups]
 
 [TIP]
 Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, features described in this page work identically in all of them.

@@ -1,10 +1,59 @@
-= Introducing CloudHub
+= Runtime Manager
 :keywords: cloudhub, cloud, saas, applications, servers, clusters, sdg, runtime manager, arm
-
-
-
 
 [NOTE]
 ====
 The topics in this document deal with app deployments on both the cloud-based and the on-premise versions of the Runtime Manager. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for a better understanding of the differences between both.
 ====
+
+
+=== Unrivaled Connectivity
+
+Easily integrate with popular SaaS, cloud, and social media platforms such as Salesforce.com, Intuit, Authorize.net, Amazon, Twitter, Facebook, and PayPal using our predefined connectors – then orchestrate data between these services and the enterprise. Plus, our development kit allows developers to create new connectors easily. You don't even need knowledge of the underlying integration infrastructure.
+
+=== Rock Solid Platform
+
+Built on our battle-tested Mule integration platform, Mule ESB is used by thousands of companies for mission-critical applications. It's the world's most widely used platform for integration.
+
+=== Don't Change the Way You Code
+
+Create CloudHub applications with the development tools you are already familiar with. Download link:https://www.mulesoft.com/ty/dl/studio[Anypoint Studio], it's free! Anypoint Studio is an Eclipse-based graphical environment that allows developers to easily choose to code in a visual environment with a palette of components, or in a familiar XML code view. You can even switch between the visual and code views as you build your application. Or, if you would rather use the command-line, we support Maven, as well as a command line tool.
+
+
+
+=== Building Connectors
+
+Are you interested in building your own connector? Use the link:/anypoint-connector-devkit/v/3.7/[Anypoint Connector DevKit] to rapidly build connectors and drop them inside of Studio.
+
+
+=== Mule Flows
+
+The underlying configuration for your CloudHub integration is a "Mule Flow". Mule flows are made of individual components called Message Processors. These components act as the building blocks for your integration. As you build your flow with message processors, you are defining how "messages" – or data-content – flows from one component to the next.
+
+As an example, a CloudHub integration can monitor, or poll, your Salesforce instance for any changes across all of your accounts. When a change occurs, the integration converts the changed data to a CSV file, and then uploads the file to your on-premises SFTP site. The Mule flow would contain three Message Processors and look like this:
+
+image:salesforce+flow.png[salesforce+flow]
+
+These flows are quickly assembled inside Mule Studio with just a few clicks and pieces of configuration. In just a few minutes you can have a complete working integration between your SaaS services and your on-premise systems.
+
+link:/mule-fundamentals/v/3.7/elements-in-a-mule-flow[Elements in a Mule Flow]
+
+=== Message Processors
+
+Message processors allow you to do almost anything: connect to SaaS services, transform data, connect to various protocols, filter data, and much more. Each message processor has an icon in the Mule Studio Palette so you can drag it inside of your flow and configure it. Message processors fall into one of six categories, and are easy to locate in the Mule Studio Palette within their appropriate category:
+
+[width="100a",cols="10a,90a",options="header"]
+|===
+|Category |Description
+|link:/mule-user-guide/v/3.7/anypoint-connectors[Anypoint Connectors] |Anypoint Connectors connect via protocols or to SaaS services and on-premises applications such as as Salesforce, MongoDB, CMIS, NetSuite, Magento, Intacct, and many more systems. For a full list, see our link:http://www.mulesoft.org/connectors[list of connectors].
+|link:/mule-user-guide/v/3.7/transformers[Transformers] |Transformers help you change from one data format to another. Use transformers out-of-the-box, or add scripts using your favorite scripting language.
+|link:/mule-user-guide/v/3.7/scopes[Scopes] |Scopes provide advanced processing, such as asynchronous invocations, polling, sub flows, and more.
+|link:/mule-user-guide/v/3.7/components[Components] |Components allow you to write reusable business logic with Java, or a scripting language, and also create or invoke web services.
+|link:/mule-user-guide/v/3.7/filters[Filters] |Filters determine how messages can proceed through your Mule flow.
+|link:/mule-user-guide/v/3.7/routers[Flow Controls] |Flow Controls allow you to route messages to different locations – whether another flows or different external service. They operate on collections of data, and can broadcast messages, and more.
+|===
+
+
+== Applications
+
+Flows are packaged into applications, and then deployed to CloudHub. It's nearly an automated process from within Mule Studio, as Anypoint Studio handles the packaging and upload of your application. You can build, deploy and run your integration without ever leaving Anypoint Studio.

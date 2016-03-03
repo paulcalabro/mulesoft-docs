@@ -64,7 +64,7 @@ You may be thinking, "So, is Mule similar to an application server like JBoss or
 ==== How to Get Started
 
 . To get started building integrations with Anypoint Studio, you can work through the rest of Mule Fundamentals, starting with link:/mule-fundamentals/v/3.8-m1/begin-with-the-basics[Begin with the Basics].
-. If you're interested in diving into the operations side of the platform, check out link:/mule-management-console/v/3.8-m1[Mule Management Console] (if you deploy on-premises) or link:/cloudhub[CloudHub] if you deploy to the cloud. You can also manage on premise servers from CloudHub.
+. If you're interested in diving into the operations side of the platform, check out link:/mule-management-console/v/3.8-m1[Mule Management Console] (if you deploy on-premises) or link:/runtime-manager/cloudhub[CloudHub] if you deploy to the cloud. You can also manage on premise servers from CloudHub.
 
 == Meet Mule
 
@@ -109,7 +109,7 @@ Let's take a quick tour of MuleSoft's Anypoint Platform and its related products
 
 |image:CloudHubLogo133high.png[CloudHubLogo133high]
 
-|Deploy to *link:/cloudhub[CloudHub]*, the world's first integration Platform as a Service (iPaaS). Built on top of Mule, CloudHub allows you to integrate and orchestrate applications, data sources, and services across on-premise systems and the cloud.
+|Deploy to *link:/runtime-manager/cloudhub[CloudHub]*, the world's first integration Platform as a Service (iPaaS). Built on top of Mule, CloudHub allows you to integrate and orchestrate applications, data sources, and services across on-premise systems and the cloud.
 
 |image:mulesoft-database-customapp.png[mulesoft-database-customapp]
 

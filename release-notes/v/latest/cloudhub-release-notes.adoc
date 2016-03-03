@@ -1,7 +1,7 @@
 = CloudHub Release Notes
 :keywords: release notes, cloudhub, cloud hub
 
-In addition to these release notes, see the complete link:/cloudhub[CloudHub] documentation.
+In addition to these release notes, see the complete link:/runtime-manager/cloudhub[CloudHub] documentation.
 
 == November 2015 R45
 

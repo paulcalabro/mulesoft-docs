@@ -20,7 +20,7 @@ A Mule message consists of a *header* and a *payload*. The payload contains t
 
 image:flow-1.png[flow-1]
 
-[NOTE] 
+[NOTE]
 The *CXF component* in the above example implements SOAP connectivity.
 
 == Message Processors
@@ -89,7 +89,7 @@ For more information on running applications, see:
 * link:/mule-fundamentals/v/3.7/deploying-mule-applications[Deploying Mule Applications]
 * link:/mule-user-guide/v/3.7/deployment-scenarios[Deployment Scenarios]
 * link:/mule-management-console/v/3.7[Mule Management Console]
-* link:/cloudhub[CloudHub]
+* link:/runtime-manager/cloudhub[CloudHub]
 * link:/anypoint-platform-for-apis/configuring-an-api-gateway[API Gateway]
 
 

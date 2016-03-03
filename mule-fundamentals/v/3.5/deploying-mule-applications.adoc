@@ -128,4 +128,4 @@ image:Chconsoledeploying.png[Chconsoledeploying]
 
 * **NEXT STEP:** Learn about how to http://www.mulesoft.org/documentation/display/current/Mule+Security[secure] your Mule application.
 * Learn more about the link:/mule-management-console/v/3.5[Mule Management Console].
-* Learn more about link:/docs/display/35X/CloudHub[CloudHub].
+* Learn more about link:/runtime-manager/cloudhub[CloudHub].

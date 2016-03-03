@@ -5,7 +5,7 @@ CloudHub provides an interface to display and interact with your applications th
 
 == Assumptions
 
-This document assumes that you are familiar with the link:/cloudhub/cloudhub-at-a-glance[basic concepts of Cloudhub] and that you are able to link:/cloudhub/managing-cloudhub-applications[manage your own applications on CloudHub].
+This document assumes that you are familiar with the link:/runtime-manager/cloudhub[basic concepts of Cloudhub] and that you are able to link:/runtime-manager/managing-cloudhub-applications[manage your own applications on CloudHub].
 
 == Installation
 

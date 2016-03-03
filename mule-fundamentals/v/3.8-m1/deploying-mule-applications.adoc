@@ -140,5 +140,5 @@ If you're deploying multiple applications to the same place, in whichever of the
 
 * *NEXT STEP:* Learn about how to link:/mule-fundamentals/v/3.8-m1/mule-security[secure] your Mule application.
 * Learn more about the link:/mule-management-console/v/3.8-m1[Mule Management Console].
-* Learn more about link:/cloudhub[CloudHub].
+* Learn more about llink:/runtime-manager/cloudhub[CloudHub].
 * Learn how to deploy multiple applications that link:/mule-user-guide/v/3.8-m1/shared-resources[Shared Resources] through any of these methods.

@@ -20,7 +20,7 @@ You can query the audit log filtering by:
 
 == How to Access It
 
-<<<<<<< HEAD
+
 To view the audit log, click the gear icon on the top nav bar: image:gearicon.png[gear-icon]
 
 Then select the *Audit Log* section
@@ -30,19 +30,6 @@ image:audit-logs.png[auditlogs]
 image:audit-logs-screenshot.png[screenshot]
 
 
-=======
-To view the audit log, click the gear icon
-
-image
-
-Then select the *Activity Log* section
-
-image
-
-
-screenshots
-
->>>>>>> ffa0fb7... audit losing first draft
 == About the Content of the Log
 
 Activities represented in the log are actions that occur at a particular time, involve one or more objects, have a type (such as 'delete' or 'approve') and optionally a payload which can store application-specific information (such as changed fields, environment information, etc).
@@ -53,15 +40,10 @@ Actions may involve more than a single object. For example, permission changes i
 
 Objects represent the entities about which actions are logged. Within an organization, objects are identified by a trio of properties:
 
-<<<<<<< HEAD
+
 * *Platform*: The system that owns the object. Examples: "cloudhub", "api platform", "core services".
 * *Type*: The business entity that the object represents. Examples: "api", "api version", "permission", "environment".
 * *Id*: The system-local id of the object. Can be a uuid, a number or any other key representation used by the object's platform.
-=======
-    Platform: The system that owns the object. Examples: "cloudhub", "api platform", "core services".
-    Type: The business entity that the object represents. Examples: "api", "api version", "permission", "environment".
-    Id: The system-local id of the object. Can be a uuid, a number or any other key representation used by the object's platform.
->>>>>>> ffa0fb7... audit losing first draft
 
 
 In addition, objects have a Name which is used as a user-friendly identifier. Since names change over time, object names will be updated any time an event is ingested whose object name does not match the name stored in the log.

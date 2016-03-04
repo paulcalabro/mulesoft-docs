@@ -259,7 +259,10 @@ If an error occurs and the application cannot be deployed, the application statu
 == See Also
 
 * See a tutorial about deploying to CloudHub directly from Anypoint Studio link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub]
-* A complete set of link:/runtime-manager/cloudhub-api[REST APIs] are also available for deployment.
-* link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] contains more information on how to manage your CloudHub application, make changes, scale workers, and perform other application management tasks.
+* Read more about what link:/runtime-manager/cloudhub[CloudHub] is and what features it has
+* link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] contains general information about hoy to manage your application once deployed
+* link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] contains more information on how to manage your applicationw with setting that are specific to CloudHub
+* link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application]
 * Deploy using the link:/runtime-manager/command-cli[CloudHub Command Line Interface].
-* For more information on deploying to servers, server groups and clusters, see link:/runtime-manager/deploying-to-your-own-servers[Deploying to Your Own Servers].
+* A link:/runtime-manager/cloudhub-api[REST API] is also available for automating deployments to CloudHub.
+* For information on deploying to servers, server groups and clusters, see link:/runtime-manager/deploying-to-your-own-servers[Deploying to Your Own Servers].

@@ -40,7 +40,8 @@ The CloudHub management console is integrated into the link:https://anypoint.mul
 
 Administrator account holders can use the management console to add and manage other users in the organization, define user roles, and create and manage sandbox environments. 
 
-For more information about the console, see link:/runtime-manager/cloudhub-console-overview[Runtime Manager Console Overview]. For more information about using the console for account management, see link:/anypoint-platform-administration[Account Management].
+For more general information about CloudHub, see link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications].
+For more information about using the console for account management, see link:/anypoint-platform-administration[Account Management].
 
 === Platform Services
 

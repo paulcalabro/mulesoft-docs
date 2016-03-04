@@ -166,5 +166,7 @@ If an error occurs and the application cannot be deployed, the application statu
 
 == See Also
 
-* You can also deploy applications directly from link:/runtime-manager/hello-world-on-cloudhub[Anypoint Studio] or the link:/runtime-manager/command-line-tools[Command Line Tools]. A complete set of link:/runtime-manager/cloudhub-api[REST APIs] are also available for deployment.
-* link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] contains more information on how to manage your CloudHub application, make changes, scale workers, and perform other application management tasks.
+* link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] contains more information on how to manage your application once deployed
+* link:/runtime-manager/managing-servers[Managing Servers] contains information about how to register servers, server groups and clusters to be able to deploy to them and how to adminster them.
+* See how you can link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[Send data from Runtime Manager to External Monitoring Software]
+* A link:/runtime-manager/runtime-manager-api[REST APIs] is also available for deployment to your servers.

@@ -1,7 +1,7 @@
 = Developing a CloudHub Application
 :keywords: cloudhub, cloud, Mule, api, runtime manager, arm
 
-The best way to learn how to develop a CloudHub application is to read the link:/runtime-manager/cloudhub[CloudHub] guide, which includes walkthroughs of basic concepts and examples to help get you familiar with the process of developing and deploying your applications in CloudHub. 
+The best way to learn how to develop a Mule application that is ready for CloudHub is to read the link:/runtime-manager/cloudhub[CloudHub] guide, which includes walkthroughs of basic concepts and examples to help get you familiar with the process of developing and deploying your applications in CloudHub. 
 
 This page covers additional details relevant to deployment.
 
@@ -23,13 +23,16 @@ http://0.0.0.0:${http.port}/service/path/two
 
 == Running Your Application Locally
 
-If you want to run a CloudHub application locally, create an link:/mule-user-guide/v/3.7/mule-application-deployment-descriptor[application properties] file named *mule-app.properties* in the `src/main/app` folder of your project. You need to do this whether you work in Anypoint Studio or another IDE. This allows you to define a local value for the variable `http.port` or `https.port`.
+If you want to run a Mule application locally, create an link:/mule-user-guide/v/3.7/mule-application-deployment-descriptor[application properties] file named *mule-app.properties* in the `src/main/app` folder of your project. You need to do this whether you work in Anypoint Studio or another IDE and want to deploy to Anypoint Studio's built in server. This allows you to define a local value for the variable `http.port` or `https.port`.
 
-If you have other runtime settings that you want to configure differently when running locally, you may also place them in the application properties file and refer to them using the syntax `${propertyname}` in your Mule application configuration. Each application can declare a set of environment variables when it is deploys to provide a different value when deploying on CloudHub. You can define these environment variables using the link:/runtime-manager/deploying-a-cloudhub-application[Runtime Manager Console] or the link:/runtime-manager/command-line-tools[Command Line Tools].
+If you have other runtime settings that you want to configure differently when running locally, you may also place them in the application properties file and refer to them using the syntax `${propertyname}` in your Mule application configuration. Each application can declare a set of environment variables when it is deploys to provide a different value when deploying on CloudHub. You can define these environment variables using the link:/runtime-manager/deploying-a-cloudhub-application[Runtime Manager Console] or the link:/runtime-manager/cloudhub-cli[Command Line Interface].
 
 == Logging
 
 All log messages from your application are captured by the CloudHub logging service and available through the log search tool in the Runtime Manager console. If you wish to expose additional information in your logs for diagnostic or audit purposes, Mule provides a link:/mule-user-guide/v/3.7/logger-component-reference[logger element] for fine grained logging of message content.
+
+[IMPORTANT]
+For CloudHub applications, after you delete an application, your log data is no longer accessible through the console. CloudHub archives old log data for a limited period of time before being purged. This allows you to recover the data if needed. mailto:cloudhub-support@mulesoft.com[Contact Support] for more information.
 
 == Packaging Third-Party Libraries
 
@@ -45,9 +48,27 @@ CloudHub includes connectors for many third party applications, such as Salesfor
 
 == Adding a UI for Your Application
 
-CloudHub applications can have a web UI using HTML and JavaScript. The AJAX Module provides support for interacting with your application from the browser and provides support for serving up static content.
+Applications deployed to CloudHub can have a web UI using HTML and JavaScript. The AJAX Module provides support for interacting with your application from the browser and provides support for serving up static content.
 
 == See Also
 
-* Learn about link:/runtime-manager/deploying-a-cloudhub-application[Deploying a CloudHub Application]
+* link:/runtime-manager/deploy-to-cloudhub[Deploy to CloudHub]
 * After you develop and deploy your application, see link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] at runtime.
+* Learn the link:/mule-fundamentals/v/3.7/anypoint-studio-essentials[Anypoint Studio Essentials].
+* link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications]
+* Read more about what link:/runtime-manager/cloudhub[CloudHub] is and what features it has
+* link:/runtime-manager/cloudhub-architecture[CloudHub architecture]
+* link:/runtime-manager/cloudhub-administration[CloudHub Administration]
+* link:/runtime-manager/alerts-and-notifications[Alerts and Notifications]
+* link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]
+* link:/runtime-manager/cloudhub-insight[CloudHub Insight]
+* link:/runtime-manager/managing-queues[Managing Queues]
+* link:/runtime-manager/managing-schedules[Managing Schedules]
+* link:/runtime-manager/managing-application-data-with-object-stores[Managing Application Data with Object Stores]
+* link:/runtime-manager/cloudhub-cli[Command Line Tools]
+* link:/runtime-manager/secure-application-properties[Secure Application Properties]
+* link:/runtime-manager/viewing-log-data[Viewing Log Data]
+* link:/runtime-manager/virtual-private-cloud[Virtual Private Cloud]
+* link:/runtime-manager/worker-monitoring[Worker Monitoring]
+* link:/runtime-manager/penetration-testing-policies[Penetration Testing Policies]
+* link:/runtime-manager/secure-data-gateway[Secure Data Gateway]

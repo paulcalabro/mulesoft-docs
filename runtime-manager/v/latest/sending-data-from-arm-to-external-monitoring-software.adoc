@@ -80,7 +80,7 @@ To obtain this code, you must do the following:
 . Log in to your Runtime Manager account
 +
 [TIP]
-To open Runtime Manager On-Premise Edition, make sure you've already initiated Runtime Manager. If you haven't then you must boot it by running docker. Once initiated, you can access it by navigating to https://localhost in a browser.
+To open Anypoint Platform On-Premise Edition, make sure you've already initiated Runtime Manager. If you haven't then you must boot it by running docker. Once initiated, you can access it by navigating to https://localhost in a browser.
 . Navigate to `Runtime Manager - > Servers`
 . Click `Add Server`. Without needing to actually add a new server, a sample command will be displayed in a popup window that includes the code for your particular organization. Copy this command, depending on where you wish to deploy, you may need to add extra arguments to it.
 
@@ -107,15 +107,15 @@ or on Windows:
 amc_setup.bat -H 1c3eded9-7917-4a5e-bbe0-f73f9d4f33c1---2 myServer
 ----
 
-The argument `-H` is an id that references your organization in the Anypoint platform On-Premise Edition and the Runtime Manager On-Premise Edition installations.
+The argument `-H` is an id that references your organization in the Anypoint platform On-Premise Edition installation.
 
 The final argument of this command is the name that you assign for your Mule Agent instance, in the above example, `myServer`. This name will then be visible when interacting with the agent from your Runtime Manager console.
 
 ....
-[tab,title="Runtime Manager On-Premise Edition"]
+[tab,title="Anypoint Platform On-Premise Edition"]
 ....
 
-When using Runtime Manager as an application running on premises, launch the agent with the following arguments:
+When using the Anypoint Platform as an application running on premises, launch the agent with the following arguments:
 
 [source, linenums]
 ----
@@ -129,7 +129,7 @@ or on Windows:
 amc_setup.bat -A http://localhost:8080/hybrid/api/v1 -W wss://localhost:8443/mule -C https://dev.anypoint.mulesoft.com/accounts -H 361755d7-c619-42ce-9187-19db7a6d94a0---2 myServer
 ----
 
-The argument `-H` is an id that references your organization in the Anypoint platform and Runtime Manager On-Premise Edition installation.
+The argument `-H` is an id that references your organization in the Anypoint Platform installation.
 
 The final argument of this command is the name that you assign for your Mule Agent instance, in the above example, `myServer`. This name will then be visible when interacting with the agent from your Runtime Manager console.
 
@@ -412,14 +412,14 @@ wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=https://analy
 ----
 wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=
 ----
-. When using Runtime Manager On-Premise Edition, there's one more parameter you need to change:
+. When using Anypoint Platform On-Premise Edition, there's one more parameter you need to change:
 +
 [source,java,linenums]
 ----
 wrapper.java.additional.<n>=-Danypoint.platform.on_prem=true
 ----
 +
-`anypoint.platfrom.on_prem` is set to `false` by default. To manage it through the Runtime Manager on premise, you must set it to `true`. To manage it throguh the Runtime Manager in the cloud, leave it as `false`.
+`anypoint.platfrom.on_prem` is set to `false` by default. To manage it through the Anypoint Platform on-premise, you must set it to `true`. To manage it throguh the Runtime Manager in the cloud, leave it as `false`.
 
 [TIP]
 Note that in the above code snippets, when lines that contain `.<n>`, that should be replaced with an integer number that is unique within the wrapper.

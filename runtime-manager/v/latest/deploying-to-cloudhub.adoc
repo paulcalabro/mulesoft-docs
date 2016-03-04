@@ -18,7 +18,7 @@ Additionally, you can also deploy to CloudHub through:
 ====
 
 [NOTE]
-Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On-Premise Edition] or the link:/anypoint-platform-on-premises/[Runtime Manager On-Premise Edition].
+Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On-Premise Edition].
 
 == Accessing the Deploy Application Screen
 

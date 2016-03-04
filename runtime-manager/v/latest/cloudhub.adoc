@@ -66,6 +66,7 @@ The same Runtime Manager console enables you to deploy and manage applications b
 * link:/runtime-manager/deploying-to-cloudhub[Deploy Applications] to the cloud
 * link:/runtime-manager/deploying-to-your-own-servers[Deploy Applications] to on premise servers
 * link:/runtime-manager/managing-deployed-applications[Manage Deployed Applications] from the cloud console
+* link:/runtime-manager/managing-cloudhub-applications[Manage CloudHub Applications] deals with settings specific to CloudHub
 * link:/runtime-manager/managing-servers[Register on-premise servers] to be managed via the cloud platform (as individual servers, as server groups or as parts of a cluster)
 
 
@@ -76,9 +77,12 @@ Do you need to automate tasks, or build CloudHub into your deployment process? C
 
 === Other Resources
 
+* link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]
+* link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] 
 * link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] 
-* link:/runtime-manager/reference-materials[Reference Materials]
-* link:/runtime-manager/community-and-support[Community and Support]
+* link:/runtime-manager/cloudhub-faq[CloudHub FAQ]
+
+
 * There are tons of APIs available. Check our MuleSoft Blog for a list of the link:http://blogs.mulesoft.org/top-10-weird-apis/[TOP 10 of the weirdest APIs] out there.
 
 You can also obtain more information about CloudHub and Anypoint Studio here:

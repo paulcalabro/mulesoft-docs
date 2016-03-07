@@ -4,17 +4,24 @@
 CloudHub supports *secure application properties*, where the name of a property is visible in the console, but the value is not displayed or retrievable by a user. CloudHub resolves the property at runtime without exposing the sensitive information.
 
 [NOTE]
-Application properties are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager to external servers on premises or in the cloud. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
+Application properties are a feature that is currently only available for setting via the Runtime Manager UI for applications deployed to CloudHub workers. For applications that you deploy via the Runtime Manager to external servers on premises or in the cloud, these can be set up via an 'application.properties' file bundled with your application zip file. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
+
+== Overview
+
+Application Properties are variables that act as placeholders in your Mule application, and which are set in your Mule server at runtime. The Mule server supplies the values for the variables using information you configure in the Runtime Manager console when you deploy an application or update an existing application in the configuration tab.
+
+
+The .zip file of the application you deploy to CloudHub can bundle secure property placeholder files which can contain encrypted property values. If a property name is listed with the 'secure.properties' entry (either in 'mule-app.properties', in another properties file, or if you enter it into the Properties tab in the Runtime Manager console), then once the application is deployed, the value of this secure property will be obfuscated in the Runtime Manager Properties tab. In fact the value is only stored in the Mule worker's memory and is never stored in any files, nor is it ever passed between any machines (including the Runtime Manager Console).
+
 
 == Use Case
 
-Application Properties are variables that act as placeholders in your Mule application, and which are set in your Mule server at runtime. The Mule server supplies the values for the variables using information you configure in the Runtime Manager console when you deploy an application or update an existing application in the Deployment tab.
 
 For example, you can configure a JDBC connector where the username is set to `${dbUsername}` and the password is set to `${dbPassword}`. In the Runtime Manager console, you can set these two properties as application properties, as shown below.
 
 image:dbproperties.png[dbproperties]
 
-However, for sensitive information, you may wish to flag these properties as secure so that, after they are entered and saved in the Runtime Manager console, their values are neither visible in the console nor passed between the console and the CloudHub server.
+For sensitive information, you may wish to flag these properties as secure so that, after they are entered and saved in the Runtime Manager console, their values are neither visible in the console nor passed between the console and the CloudHub server.
 
 == Creating Secure Application Properties
 
@@ -53,6 +60,15 @@ Once an application is deployed with secured properties, CloudHub maintains the 
 
 Note that when moving applications between link:/anypoint-platform-administration/managing-cloudhub-environments[sandboxes], secured application property values will _not_ be copied to the new environment. For all secured application properties, the name of the property will be copied, but the value will be left blank. 
 ====
+
+== Overriding Secure Properties
+
+This secure behavior allows you to replace a hidden secure property value with a new decrypted value, and once the application is deployed, this new value will override the encrypted value stored in the application's secure property placeholder. Just like the encrypted value stored in the secure property placeholder file, this new value is only stored in the Mule runtime's memory. It is never stored in any file and is never passed between any other servers, including the Runtime Manager Console. The new value is also hidden once the application is deployed and can never be viewed again.
+
+This means that when you override a secure property in the CloudHub application's Properties tab, the values never need to be encrypted. In this scenario, securing the values of sensitive properties is reduced to controlling which operators have access to those values when they deploy or redeploy the secure application.
+
+For example, if a production application needs to update the database user and password stored in two properties named db.user and db.password, then an operator would enter this new db.user and db.password into the CloudHub application's properties tab and then Start or Restart the application. This allows the new application to upgrade this secure login information with zero downtime. Once all dependant applications are migrated, the old account could be decomissioned.
+
 
 == See Also
 

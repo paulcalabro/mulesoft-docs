@@ -46,9 +46,15 @@ When developing an application that needs to access resources from inside your f
 
 CloudHub includes connectors for many third party applications, such as Salesforce, NetSuite, Twitter, and others. Anypoint Studio includes a few of the most common ones out of the box for developing with CloudHub, and the link:/anypoint-connector-devkit/v/3.7[Anypoint Connector DevKit] documentation provides more detail on how to find and deploy these connectors with your application.
 
+== Secure Properties
+
+Note that you can flag application properties as secure so that their values are not visible to users at runtime or passed between the server and the console. See link:/runtime-manager/secure-application-properties[Secure Application Properties] for more information.
+
 == Adding a UI for Your Application
 
 Applications deployed to CloudHub can have a web UI using HTML and JavaScript. The AJAX Module provides support for interacting with your application from the browser and provides support for serving up static content.
+
+
 
 == See Also
 

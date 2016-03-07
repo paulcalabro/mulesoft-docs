@@ -185,7 +185,8 @@ These application properties can be used inside your Mule configuration. For exa
 
 If you also have the same properties set in a mule-app.properties file inside your application, the application property settings in CloudHub override mule-app.properties when your application is deployed.
 
-Note that you can flag application properties as secure so that their values are not visible to users at runtime or passed between the server and the console. See link:/runtime-manager/secure-application-properties[Secure Application Properties] for more information.
+Note that you can flag application properties as secure so that their values are not visible to users at runtime or passed between the server and the console. You can also include an 'applications.properties' file in your application bundle, which can include properties that are marked as secure, and they will be automatically treated as such. These properties can also be overriden by new values you can set via the Runtime Manager console at runtime. See link:/runtime-manager/secure-application-properties[Secure Application Properties] for more information.
+
 
 == Insight Tab
 

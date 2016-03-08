@@ -51,15 +51,15 @@ Apps built with runtime 3.5.0 or older are deployed with JDK 1.6.
 
 == Managing Properties in CloudHub vs. On-Premises Mule Runtimes
 
-Just like with on-premises Mule runtime deployments, applications deployed to CloudHub can still bundle their own property placeholder or secure property placeholder files inside the deployable archive file and these properties will be substituted into the application when the application is started.
+Just like with on-premises Mule runtime deployments, applications that you deploy to CloudHub can still bundle their own property placeholder or secure property placeholder files inside the deployable archive file. CloudHub then loads these properties into the application when the application starts.
 
 === On Mule ESB
 
-With an on-premises Mule runtime, there are several ways to override property values bundled inside the application.
+With an on-premises Mule runtime, there are several ways you can override property values bundled inside the application.
 
 . You can configure an external location to add property placeholder or secure property placeholder files to override properties.
 
-. You you can set Java system environment variables at deployment time to override properties.
+. You can set Java system environment variables at deployment time to override properties.
 
 To use the second option, with an on-premises server you could deploy your application with the following command:
 

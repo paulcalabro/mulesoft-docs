@@ -15,7 +15,7 @@ CloudHub is an elastic cloud that scales on demand. You can start small and grow
 
 === Easy Transition Between Cloud and On-Premise Deployments
 
-You can deploy the same Mule applications interchangeably both to CloudHub or to an link:/runtime-manager/deploying-to-your-own-servers[on premise server]. Keep in mind that there are link:runtime-manager/mule-esb-and-cloudhub[some considerations] to take into account about how some features work between both kinds of environments.
+You can deploy the same Mule applications interchangeably both to CloudHub or to an link:/runtime-manager/deploying-to-your-own-servers[on premise server]. Keep in mind that there are link:/runtime-manager/cloudhub-and-runtime-manager[some considerations] to take into account about how some features work between both kinds of environments.
 
 
 === Integrate Cloud and Enterprise Applications
@@ -37,6 +37,17 @@ CloudHub is built on top of Mule, the most widely used integration platform. Wit
 === Runtime Management Console
 
 Once your application is deployed to CloudHub's multi-tenant runtime, you can link:http://anypoint.mulesoft.com[log in] to the Anypoint Platform, and then go to the Runtime Manager. From there you can link:/runtime-manager/managing-cloudhub-applications[manage running applications]. It also allows you to triage problems, view logs, set up alerts, view dashboards, and more. Follow the simple steps in the link:/runtime-manager/hello-world-on-cloudhub[Hello World] tutorial to setup your free Anypoint Platform account and deploy your first application to it.
+
+
+
+
+
+cloudhub vs on prem,  list of features
+
+
+
+
+
 
 == Next Steps
 

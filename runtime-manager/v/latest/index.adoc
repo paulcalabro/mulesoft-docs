@@ -29,6 +29,10 @@ Easily integrate with popular SaaS, cloud, and social media platforms such as Sa
 
 Built on our battle-tested Mule integration platform, Mule ESB is used by thousands of companies for mission-critical applications. It's the world's most widely used platform for integration.
 
+[NOTE]
+You can view the live status and detailed service history for the Runtime Manager console, platform services, and the CloudHub worker cloud on link:http://trust.mulesoft.com/[trust.mulesoft.com].
+
+
 === Don't Change the Way You Code
 
 Create CloudHub applications with the development tools you are already familiar with. Download link:https://www.mulesoft.com/ty/dl/studio[Anypoint Studio], it's free! Anypoint Studio is an Eclipse-based graphical environment that allows developers to easily choose to code in a visual environment with a palette of components, or in a familiar XML code view. You can even switch between the visual and code views as you build your application. Or, if you would rather use the command-line, we support Maven, as well as a command line tool.
@@ -66,6 +70,9 @@ Message processors allow you to do almost anything: connect to SaaS services, tr
 |link:/mule-user-guide/v/3.7/filters[Filters] |Filters determine how messages can proceed through your Mule flow.
 |link:/mule-user-guide/v/3.7/routers[Flow Controls] |Flow Controls allow you to route messages to different locations – whether another flows or different external service. They operate on collections of data, and can broadcast messages, and more.
 |===
+
+
+
 
 
 == Applications

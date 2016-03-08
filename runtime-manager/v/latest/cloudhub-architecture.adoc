@@ -1,23 +1,26 @@
 = CloudHub Architecture
 :keywords:cloudhub, cloud, manage, mmc, api, worker, runtime manager, arm
 
-CloudHub has been built from the ground up to provide enterprises with a multi-tenant, secure, elastic, and highly available integration platform as a service (iPaaS). This document describes how the underlying mechanisms of the CloudHub platform work to achieve these goals. 
+link:/runtime-manager/cloudhub[CloudHub] has been built from the ground up to provide enterprises with a multi-tenant, secure, elastic, and highly available integration platform as a service (iPaaS). This document describes how the underlying mechanisms of the CloudHub platform work to achieve these goals. 
+
+CloudHub is managed via the Runtime Manager console, in the Anypoint Platform. You can also link:/runtime-manager/deploying-to-cloudhub[deploy] to it directly from Anypoint Studio, via the link:/runtime-manager/cloudhub-api[CloudHub API] or via the link:/runtime-manager/cloudhub-cli[CloudHub Command Line Interface].
 
 [NOTE]
 ====
-The topics in this document deal with app deployments on both the cloud-based and the on-premise versions of the Runtime Manager. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for a better understanding of the differences between both.
+The topics in this document deal only with cloud deployments via the cloud-based version of the Runtime Manager. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for a better understanding of the differences between these and on-premse deployments.
 ====
 
 == CloudHub Architecture
 
-To understand CloudHub’s approach to security and availability, it’s important to understand the architecture behind CloudHub. CloudHub includes three major components: the management console, the platform services, and the worker cloud. These three components work together to run your integration applications.
+
+To understand CloudHub’s approach to security and availability, it’s important to understand the architecture behind CloudHub.  It includes two major components: the platform services, and the worker cloud. These two components and the Runtime Manager console through which you access them work together to run your integration applications.
 
 image:architecture-diagram.png[architecture-diagram]
 
 [width="99",cols="10a,45a,45a"]
 |===
 |  |<<Integration Applications>> |These are applications that you create and deploy to CloudHub to perform integration logic for your business.
-|image:blue-1.png[blue-1] |<<Management Console>> |The management console is the face of CloudHub, allowing you to deploy and monitor integrations, and configure your account, among other things.
+|image:blue-1.png[blue-1] |<<Management Console>> |The Runtime Manager console is the face of CloudHub, allowing you to deploy and monitor integrations, and configure your account, among other things.
 
 |image:blue-2.png[blue-2] |<<Platform Services>> |This set of shared CloudHub platform services and APIs includes CloudHub Insight, alerting, logging, account management, virtual private cloud/secure data gateway, load balancing, and others.
 
@@ -26,32 +29,32 @@ image:architecture-diagram.png[architecture-diagram]
 |===
 
 [NOTE]
-View the live status and detailed service history for the CloudHub management console, platform services, and the worker cloud on link:http://trust.mulesoft.com/[trust.mulesoft.com].
+You can view the live status and detailed service history for the Runtime Manager console, platform services, and the CloudHub worker cloud on link:http://trust.mulesoft.com/[trust.mulesoft.com].
 
 === Integration Applications
 
-An integration application is any integration that you've built using Mule Studio. These applications can do everything from synchronizing data from Salesforce to a database, to publishing a SOAP or REST API, to creating complex orchestrations of business processes.
+An integration application is any integration that you've built using link:/mule-fundamentals/v/3.7/build-a-hello-world-application[Anypoint Studio]. These applications can do everything from synchronizing data from Salesforce to a database, to publishing a SOAP or REST API, to creating complex orchestrations of business processes.
 
 For more about creating and deploying integration applications, see link:/runtime-manager/cloudhub[CloudHub] and link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
 
 === Management Console
 
-The CloudHub management console is integrated into the link:https://anypoint.mulesoft.com[Anypoint Platform]. Log in with your Anypoint Platform credentials to upload and manage your integration applications at runtime. The console surfaces useful monitoring information from the platform services and also works as a comprehensive dashboard for both application-level and account-level management. 
+The Runtime Manager console is integrated into the link:https://anypoint.mulesoft.com[Anypoint Platform]. Log in with your Anypoint Platform credentials to upload and manage your integration applications at runtime. The console surfaces useful monitoring information from the platform services and also works as a comprehensive dashboard for both application-level and account-level management. 
 
-Administrator account holders can use the management console to add and manage other users in the organization, define user roles, and create and manage sandbox environments. 
+Through this same console you can link:/runtime-manager/deploying-to-cloudhub[deploy to CloudHub] as well as to link:/runtime-manager/deploying-to-your-own-servers[other registered servers]. You can also link:link:/runtime-manager/managing-deployed-applications[manage deployed applications].
 
-For more general information about CloudHub, see link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications].
+Administrator account holders can use the Anypoint Platform to link:/anypoint-platform-administration/managing-accounts-roles-and-permissions[add and manage other users in the organization, define user roles], and link:/anypoint-platform-administration/managing-cloudhub-environments[create and manage sandbox environments]. 
+
+For more general information about CloudHub, see link:/runtime-manager/managing-deployed-applications[CloudHub].
 For more information about using the console for account management, see link:/anypoint-platform-administration[Account Management].
 
 === Platform Services
 
-CloudHub's platform services are responsible for coordinating all aspects of the platform. They coordinate deployment of applications, monitor integrations, provide analytics data, store application data, run scheduled jobs, and more. Many of these services are also exposed through RESTful APIs. 
-
-For more information about the CloudHub API, refer to the link:/runtime-manager/cloudhub-api[CloudHub API Reference].
+CloudHub's platform services are responsible for coordinating all aspects of the platform. They coordinate deployment of applications, monitor integrations, provide analytics data, store application data, run scheduled jobs, and more. Many of these services are also exposed through the link:/runtime-manager/cloudhub-api[CloudHub REST API].
 
 === CloudHub Workers
 
-Applications on CloudHub are run by one or more instances of Mule, called *workers*.
+Applications on CloudHub are run by one or more instances of Mule, called *workers*. These have the following characteristics:
 
 * *Capacity*: Each worker has a specific amount of capacity to process data, you can select the size of your workers when configuring an application.
 * *Isolation*: Each worker runs in a separate container from every other application.
@@ -73,6 +76,9 @@ Workers that use a link:https://aws.amazon.com/ec2/instance-types/#burst[fractio
 
 With link:/runtime-manager/cloudhub-fabric[CloudHub Fabric], you can also scale your applications horizontally by adding multiple workers and load distribution over queues. For more information about scaling workers, see link:/runtime-manager/cloudhub-fabric[Worker Scaleout]. For more information about using persistent queues on CloudHub, see link:/runtime-manager/cloudhub-fabric[Persistent Queues].
 
+[TIP]
+You can link:/runtime-manager/worker-monitoring[monitor your workers] and verify that they are all operating well. You can also enable automatic restarts in case any issue occurs with one.
+
 === Global Worker Clouds
 
 CloudHub offers different worker clouds in different regions of the world: the United States, the European Union, and Australia. This global distribution allows you to host your integration in a location that is closest to your services, thus reducing latency. It may also allow you to adhere with local laws, such as the EU Data Protection Directive. The management console and platform services are hosted in the United States.
@@ -90,7 +96,7 @@ Because different levels of security and isolation are needed depending on the s
 
 == CloudHub Availability and Scalability
 
-CloudHub has been designed to be highly available and scalable through redundancy, intelligent healing, and zero downtime updates. It also provides customers with the ability to scale and have added reliability through CloudHub Fabric. 
+CloudHub has been designed to be highly available and scalable through redundancy, intelligent healing, and zero downtime updates. It also provides customers with the ability to scale and have added reliability through link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]. 
 
 === Redundant Platform
 
@@ -98,9 +104,9 @@ All of CloudHub's platform services, from load balancing to the API layer, have 
 
 === Intelligent Healing
 
-CloudHub monitors the worker clouds for any type of problems and provides a self-healing mechanism to recover from problems. If the underlying hardware suffers a failure, the platform migrates your application to a new worker automatically. In the case of an application crash – whether due to a problem with custom code or a bug in the underlying stack – the platform recognizes the crash and can restart the worker automatically. 
+CloudHub monitors the worker clouds for any type of problems and provides a self-healing mechanism to recover from problems. If the underlying hardware suffers a failure, the platform migrates your application to a new worker automatically. In the case of an application crash – whether due to a problem with custom code or a bug in the underlying stack – the platform recognizes the crash and can link:/runtime-manager/worker-monitoring#enabling-automatic-restarts[restart the worker automatically]. 
 
-For more information about application monitoring and automatic restarts, see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
+For more information about application monitoring and automatic restarts, see link:/runtime-manager/worker-monitoring[Worker Monitoring].
 
 === Zero Downtime Updates
 
@@ -113,7 +119,7 @@ link:/runtime-manager/cloudhub-fabric#worker-scaleout[CloudHub Fabric worker sca
 
 ==== Worker Scale-Out and Data Center Redundancy
 
-With CloudHub Fabric, you can add multiple workers to your application to make it horizontally scale. This also adds additional reliability. CloudHub automatically distributes multiple workers for the same application across two or more datacenters for maximum reliability.
+With link:/runtime-manager/cloudhub-fabric[CloudHub Fabric], you can add multiple workers to your application to make it horizontally scale. This also adds additional reliability. CloudHub automatically distributes multiple workers for the same application across two or more datacenters for maximum reliability.
 
 When deploying your application to two or more workers, the HTTP load balancing service distributes requests across these workers, allowing you to scale your services horizontally. Requests are distributed on a round-robin basis.
 
@@ -132,6 +138,8 @@ CloudHub architecture provides a secure platform for your integrations.
 Securing your payload data is critically important. To this end, CloudHub does not inspect, store, or otherwise interact directly with payload data. CloudHub workers provide a secure facility for transmitting and processing data by giving each application its own virtual machine. This ensures complete isolation between tenants for payload security, and isolation from other tenants’ code. 
 
 CloudHub collects monitoring, analytics, and log data from CloudHub workers and may perform actions on behalf of the user on CloudHub workers. All communication between CloudHub platform services and the worker cloud is secured using SSL with client certificate authentication. This ensures that unauthorized parties cannot read data and that they cannot initiate unauthorized actions.
+
+link:/runtime-manager/secure-application-properties[Secure properties] can also be loaded as part of your application bundle. If a property is flagged as secure, it won't be viewable even through the Runtime Manager console, in fact, it is never propagated anywhere outside the CloudHub worker running the application.
 
 For more information about MuleSoft’s approach to security, please see the link:http://mulesoft.com/downloads/whitepapers/security-whitepaper.pdf[Anypoint Cloud Security & Compliance whitepaper].
 

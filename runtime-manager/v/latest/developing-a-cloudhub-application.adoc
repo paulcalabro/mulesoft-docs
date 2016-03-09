@@ -61,7 +61,6 @@ Applications deployed to CloudHub can have a web UI using HTML and JavaScript. T
 
 
 
-
 == See Also
 
 * Read about more special CludHub specific considerations in link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager]

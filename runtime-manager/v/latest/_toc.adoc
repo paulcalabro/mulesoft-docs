@@ -32,7 +32,6 @@
 
 ** link:/runtime-manager/cloudhub[CloudHub]
 *** link:/runtime-manager/cloudhub-faq[CloudHub FAQ]
-*** link:/runtime-manager/mule-esb-and-cloudhub[Mule and CloudHub]
 *** link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application]
 *** link:/runtime-manager/cloudhub-architecture[CloudHub Architecture]
 *** link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]

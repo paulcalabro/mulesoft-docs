@@ -5,5 +5,5 @@ Similarly, the Runtime Manager On-Premise Edition offers a reduced version of th
 
 * link:/anypoint-platform-on-premises/v/1.1.0/installing-anypoint-on-premises[Installing Anypoint On-Premises]
 * link:https://docs.mulesoft.com/anypoint-platform-for-apis/[Anypoint Platform for APIs]
-* link:https://docs.mulesoft.com/cloudhub/[Anypoint Runtime Manager]
+* link:https://docs.mulesoft.com/runtime-manager/[Anypoint Runtime Manager]
 * link:https://docs.mulesoft.com/anypoint-platform-administration/[Anypoint Platform Administration]

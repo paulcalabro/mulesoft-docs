@@ -223,6 +223,7 @@ If an application has static IPs reserved in multiple regions, it picks up the I
 If you need to free up some of your overall static IP allocation, you can release a static IP that is currently allocated to an application.
 
 
+
 == CloudHub Deployment
 
 After you complete the above steps, click *Create* and CloudHub uploads your application and automatically begins the deployment process. During this process, your view is switched to the log view allowing you to monitor the process of your application deployment. This process could take several minutes. During the deployment, the application status indicator changes to yellow to indicate deployment in progress.
@@ -257,12 +258,15 @@ If you've registered an API in the Anypoint Platform, you can easily run it thro
 
 If an error occurs and the application cannot be deployed, the application status indicator changes to red. You are alerted in the status area that an error occurred. Check the log details for any application deployment errors. You need to correct the error, upload the application, and deploy again.
 
+
+
 == See Also
 
 * See a tutorial about deploying to CloudHub directly from Anypoint Studio link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub]
 * Read more about what link:/runtime-manager/cloudhub[CloudHub] is and what features it has
 * link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] contains general information about hoy to manage your application once deployed
-* link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] contains more information on how to manage your applicationw with setting that are specific to CloudHub
+* link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] contains more information on how to manage your applications with setting that are specific to CloudHub
+* link:/runtime-manager/alerts-and-notifications[Alerts and Notifications] shows you how you can set up email alerts for whenever certain events occur with your application or workers
 * link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application]
 * Deploy using the link:/runtime-manager/command-cli[CloudHub Command Line Interface].
 * A link:/runtime-manager/cloudhub-api[REST API] is also available for automating deployments to CloudHub.

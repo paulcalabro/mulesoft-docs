@@ -46,9 +46,11 @@ image:DeployAppFromConsole.png[DeployAppFromConsole] 
 +
 image:DeployAppFirstScreen.png[DeployAppFirstScreen] 
 
+
+////
 === From Anypoint Studio
 
-. With your application open in Anpoint Studio as a Mule Project, Right-click on the project node in the package explorer. Then select *Deploy to Anypoint Platform* > *Cloud* from the cascading menu.
+. With your application open in Anpoint Studio as a Mule Project, Right-click on the project node in the package explorer. Then select *Deploy to Anypoint Platform* > *Runtime Manager* from the cascading menu.
 +
 image:deploy+to+cloudhub.png[deploy+to+cloudhub]
 +
@@ -62,8 +64,7 @@ You can manage these credentials through the Studio *Preferences* menu, in *Anyp
 +
 image:DeployAppFirstScreen.png[DeployAppFirstScreen] 
 
-[TIP]
-For an example of deploying to CloudHub directly from Anypoint Studio, see link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub].
+////
 
 == Creating an Application Name
 
@@ -82,12 +83,7 @@ If you already have any servers registered to the Anypoint Platform, you will se
 
 This document focuses on deploying to CloudHub, for more information on deploying to servers, see
 
-For more information on deploying to a server or server group, see
-
-
-
-
-
+For more information on how to register a server, see link:/runtime-manager/managing-servers[Managing Servers]
 
 
 
@@ -102,9 +98,9 @@ image:ApplicationFile.png[ApplicationFile]
 
 === Runtime Version
 
-Using the drop-down menu, select the *Runtime version* to which you to deploy:
+Since the server, server group or cluster you select implicitly has a single Runtime version installed in it, this is determined automatically by the server you select.
 
-image:RuntimeVersion2.png[RuntimeVersion2]
+Keep in mind that servers in a cluster must have the same Runtime version installed in all of them.
 
 [IMPORTANT]
 ====
@@ -113,25 +109,9 @@ image:RuntimeVersion2.png[RuntimeVersion2]
 ====
 
 
-=== Persistent Queues
-
-Check this box to enable persistent queues on your application. Persistent queues protect against message loss and allow you to distribute workloads across a set of workers. Before you can take advantage of persistent queueing, your application needs to be set up to use queues. See link:/runtime-manager/cloudhub-fabric[CloudHub Fabric] for more information.
-
-[IMPORTANT]
-If your mule application is using link:/mule-user-guide/v/3.7/batch-processing[Batch] component and persistent queues, then you might see batch record being processed multiple times. All batch records are stored in Amazon SQS and by default the visibility of the message is set to 70 seconds. If your batch process takes longer than 70 seconds, then batch process might see same message again and process it multiple times.  To avoid this issue please set 'persistent.queue.min.timeout' system parameter to a reasonable value, for example if your batch process takes 30 minutes to complete then set value to 'persistent.queue.min.timeout=2700000' milliseconds ( 45 Minutes). Maximum value of 43000000 milliseconds (12 hours) is supported. See screen shot below for setting the value in cloudhub
-image:MuleBatchWithPersistentQueueDuplicationSolution.png[MuleBatchWithPersistentQueues]
-
-=== Automatic Restart
-
-If you are deploying to a runtime that supports worker monitoring (3.4.0 runtime or later), you have the option to check *Automatically restart application when not responding*. With this box checked, CloudHub automatically restarts your application when the monitoring system discovers a problem with your application. If this box is not checked, CloudHub produces all the log messages, notifications, and any configured alerts, but takes no action to restart the application. 
-
-Read more about worker monitoring.
-
-
-
 == Configuring a Deployed Application
 
-Most of the settings discussed in the steps above can be edited once the application is already deployed to CloudHub. To do so you must:
+Most of the settings discussed in the steps above can be edited once the application is already deployed. To do so you must:
 
 . In the Applications tab, select an application entry and click *Manage Application*:
 +
@@ -142,24 +122,6 @@ image:AMC_ManageApplication.png[AMC_ManageApplication] 
 image:ViewingDeployedApp.png[ViewingDeployedApp]
 
 
-== Deploy to CloudHub from Anypoint Studio
-
-You can easily deploy your applications to CloudHub, straight from Anypoint Studio. This is specially helpful if you're still developing the application and want to deploy it often to an online test environment. To do this, left click on the application in the package explorer, *Deploy to Anypoint Platform*.
-
-image:CHDeployToCH.png[CHDeployToCH]
-
-If this is your first time deploying in this way, a popup menu asks you to provide your login credentials for the Anypoint Platform. Your credentials are then  stored and used automatically next time you deploy to Runtime Manager. You can manage these credentials through the Studio preferences menu, in *Anypoint Studio* > *Authentication*.
-
-image:studio-to-cloudhub3.png[studio to cloudhub3]
-
-Once you have signed in, the Deploy to CloudHub menu opens. Choose a unique domain to deploy the application to, the sub organization under which you deploy, an environment, and a Mule Version. You can also assign environment variables.
-
-image:deploy-from-studio.jpg[deploy-from-studio]
-
-== Automatically Deploying a Proxy from the Anypoint Platform for APIs
-
-If you've registered an API in the Anypoint Platform, you can easily run it through an auto generated proxy to track its usage and implement policies. You can deploy this proxy to CloudHub without ever needing to go into the CloudHub section of the Anypoint platform. From a menu in the API version page, you can trigger the deployment of your proxy and set up the application name in CloudHub, the CloudHub environment and the Gateway version to use. Then, you can optionally access the CloudHub deployment menu for this proxy and configure advanced settings. See link:/anypoint-platform-for-apis/proxying-your-api[Proxying Your API].
-
 == Deployment Errors
 
 If an error occurs and the application cannot be deployed, the application status indicator changes to red. You are alerted in the status area that an error occurred. Check the log details for any application deployment errors. You need to correct the error, upload the application, and deploy again.
@@ -168,5 +130,6 @@ If an error occurs and the application cannot be deployed, the application statu
 
 * link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] contains more information on how to manage your application once deployed
 * link:/runtime-manager/managing-servers[Managing Servers] contains information about how to register servers, server groups and clusters to be able to deploy to them and how to adminster them.
+* link:/runtime-manager/alerts-and-notifications[Alerts and Notifications] shows you how you can set up email alerts for whenever certain events occur with your application or servers
 * See how you can link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[Send data from Runtime Manager to External Monitoring Software]
 * A link:/runtime-manager/runtime-manager-api[REST APIs] is also available for deployment to your servers.

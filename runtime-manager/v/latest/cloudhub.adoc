@@ -45,7 +45,8 @@ CloudHub is built on top of Mule, the most widely used integration platform. Wit
 Once your application is deployed to CloudHub's multi-tenant runtime, you can link:http://anypoint.mulesoft.com[log in] to the Anypoint Platform, and then go to the Runtime Manager. From there you can link:/runtime-manager/managing-cloudhub-applications[manage running applications]. It also allows you to triage problems, view logs, set up alerts, view dashboards, and more. Follow the simple steps in the link:/runtime-manager/hello-world-on-cloudhub[Hello World] tutorial to setup your free Anypoint Platform account and deploy your first application to it.
 
 
-
+[NOTE]
+You can view the live status and detailed service history for the Runtime Manager console, platform services, and the CloudHub worker cloud on link:http://trust.mulesoft.com/[trust.mulesoft.com].
 
 
 cloudhub vs on prem,  list of features

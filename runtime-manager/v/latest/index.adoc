@@ -7,17 +7,11 @@ The topics in this document deal with app deployments through both the cloud-bas
 ====
 
 
+The Runtime Manager is the tool in the link:/mule-fundamentals/v/3.8-m1/anypoint-platform-primer[Anypoint Platform] with which you deploy and centrally manage all of your link:/mule-fundamentals/v/3.8-m1/begin-with-the-basics[Mule applications], whether they are running in the cloud or on-premises.
 
+After you've link:/mule-fundamentals/v/3.8-m1/build-a-hello-world-application[created a Mule application] (be it through Anypoint Studio or outside), you can deploy it so that it runs either in CloudHub – our cloud IPaaS platform – or on one of your own servers, server groups, or clusters.
 
-The Runtime Manager is the tool in the Anypoint Platform with which you deploy and manage your Mule applications.
-
-After you've created a Mule application (be it through Anypoint Studio or outside), you can deploy it so that it runs either in CloudHub – our cloud ipaas platform – or on one of your own servers, server groups, or clusters.
-
-It provides a dashboard that indicates the status of every deployed app and every monitored server, as well as a rich set of features that allow you to manage and track the running of your application.
-
-[NOTE]
-On Anypoint Studio, hitting the *Play* button deploys your application to a test server that is built into Studio, this server has limitations and is not meant for production deployments. Ultimately you will want to deploy your application to either CloudHub or a Mule Runtime instance running in a server, both of which are managed via the Runtime Manager.
-
+It provides a dashboard that indicates the status of every deployed app and every monitored server, as well as a rich set of features that allow you to manage and track activity on the applications that are already running.
 
 
 * link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager]
@@ -27,37 +21,22 @@ On Anypoint Studio, hitting the *Play* button deploys your application to a test
 * link:/runtime-manager/managing-servers[Managing Servers]
 * link:/runtime-manager/cloudhub[CloudHub]
 
+== Context
 
+After software developer teams create Mule applications using Anypoint Studio (or another IDE), they typically pass the Mule application to another team who deploys the application in a simulated environment for more rigorous testing. Afterwards, the application is run in production with strict requirements to be constantly available, performing at a certain rate, and continually working as expected. On Anypoint Studio, hitting the *Play* button deploys your application to a test server that is built into Studio, this server has limitations and is not meant for production deployments. Ultimately you will want to deploy your application to either CloudHub or to a Mule Runtime instance running on a server, both of which are managed via the Runtime Manager.
 
+The Runtime Manager is an enterprise management and monitoring tool designed specifically for Mule runtime instances. The Runtime Manager provides a comprehensive set of functionality for managing and monitoring running Mule instances, CloudHub workers, Mule clusters, applications within Mule instances, and the flows within those applications.
 
+The Runtime Manager provides a centralized, convenient, and intuitive web-based interface to monitor, manage, and administer the run-time aspects of Mule runtimes. It also provides a downloadable version that runs entirely on-premises, which allows you to keep all of your infrastructure secure under your required policies.
 
+[TIP]
+For managing apps on your own servers, you can still resort to the link:m/mule-management-console/v/3.7/index[Mule Management Console] as an alternative to the Runtime Manager. This older tool is no longer being developed, but has some features that are currently not yet implemented in the Runtime Manager for on-premise scenarios.
 
-/mule-fundamentals/v/3.7/elements-in-a-mule-flow
+== See Also
 
+For a basic introduction into what a Mule Application is and how to create one, see:
 
-
-=== Unrivaled Connectivity
-
-Easily integrate with popular SaaS, cloud, and social media platforms such as Salesforce.com, Intuit, Authorize.net, Amazon, Twitter, Facebook, and PayPal using our predefined connectors – then orchestrate data between these services and the enterprise. Plus, our development kit allows developers to create new connectors easily. You don't even need knowledge of the underlying integration infrastructure.
-
-=== Rock Solid Platform
-
-Built on our battle-tested Mule integration platform, Mule ESB is used by thousands of companies for mission-critical applications. It's the world's most widely used platform for integration.
-
-[NOTE]
-You can view the live status and detailed service history for the Runtime Manager console, platform services, and the CloudHub worker cloud on link:http://trust.mulesoft.com/[trust.mulesoft.com].
-
-
-
-
-==== Mule Flows
-
-
-
-As an example, a CloudHub integration can monitor, or poll, your Salesforce instance for any changes across all of your accounts. When a change occurs, the integration converts the changed data to a CSV file, and then uploads the file to your on-premises SFTP site. The Mule flow would contain three Message Processors and look like this:
-
-image:salesforce+flow.png[salesforce+flow]
-
-These flows are quickly assembled inside Mule Studio with just a few clicks and pieces of configuration. In just a few minutes you can have a complete working integration between your SaaS services and your on-premise systems.
-
-link:/mule-fundamentals/v/3.7/elements-in-a-mule-flow[Elements in a Mule Flow]
+* link:/mule-fundamentals/v/3.8-m1/anypoint-platform-primer[Anypoint Platform]
+* link:/mule-fundamentals/v/3.8-m1/begin-with-the-basics[Mule applications]
+* link:/mule-fundamentals/v/3.8-m1/elements-in-a-mule-flow[Elements in a Mule Flow]
+* link:/mule-fundamentals/v/3.8-m1/build-a-hello-world-application[created a Mule application]

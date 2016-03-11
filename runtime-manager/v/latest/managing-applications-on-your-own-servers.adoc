@@ -19,6 +19,7 @@ Additional tools for managing your applications:
 
 * link:/runtime-manager/managing-servers[Managing Servers] contains information about how to register servers, server groups and clusters to be able to deploy to them and how to adminster them.
 * Learn how to first link:/runtime-manager/deployed-to-your-own-servers[Deploy Applications to your Own Servers]
+* link:/runtime-manager/alerts-and-notifications[Alerts and Notifications] shows you how you can set up email alerts for whenever certain events occur with your application or servers
 * link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] contains more information on how to manage your application once deployed
 * See how you can link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[Send data from Runtime Manager to External Monitoring Software]
 * A link:/runtime-manager/runtime-manager-api[REST APIs] is also available for deployment to your servers.

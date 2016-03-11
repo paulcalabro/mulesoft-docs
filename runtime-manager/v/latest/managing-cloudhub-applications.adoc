@@ -122,7 +122,7 @@ Additional tools for managing your applications:
 * link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application]
 * link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager]
 * link:/runtime-manager/cloudhub-administration[CloudHub Administration]
-* link:/runtime-manager/alerts-and-notifications[Alerts and Notifications]
+* link:/runtime-manager/alerts-and-notifications[Alerts and Notifications] shows you how you can set up email alerts for whenever certain events occur with your application or workers
 * link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]
 * link:/runtime-manager/cloudhub-insight[CloudHub Insight]
 * link:/runtime-manager/managing-queues[Managing Queues]

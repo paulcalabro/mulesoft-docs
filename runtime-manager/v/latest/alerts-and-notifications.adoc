@@ -1,23 +1,25 @@
 = Alerts and Notifications
 :keywords: cloudhub, management, analytics, runtime manager, arm
 
-[NOTE]
-Alerts and Notifications are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager to external servers on premises or in the cloud. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
 
 == Overview
 
-*Notifications* are standard messages that appear in the Runtime Manager console to provide status information about your applications. 
+*Notifications* are standard messages that appear in the Runtime Manager console to provide status information about your applications. You can access them via the bell icon on the top-right corner
 
-*Alerts* give you the ability to trigger emails whenever certain events related to your application occur.
 
-CloudHub includes several out of the box *standard alert* types:
+*Alerts* give you the ability to trigger *emails* whenever certain events related to your application occur.
+
+Runtime Manager includes several out of the box *standard alert* types, for example:
 
 * You exceed a certain number of events processed in a certain time period.
 * A deployment completes with success or failure.
-* The secure data gateway gets connected or disconnected.
+* The CloudHub link:/runtime-manager/secure-data-gateway[secure data gateway] gets connected or disconnected.
 * CloudHub encounters a problem with the worker on an application via the worker monitoring system.
+* A link:/runtime-manager/managing-servers[server] is disconnected or deleted
 
-Creating a standard alert creates both a notification in the console and an alert action, such as email to a specific user.
+Creating a standard alert creates both a notification in the console and an email alert action.
+
+// check if this below is also for ARM
 
 CloudHub also lets you create your own *custom alerts* for your application. Custom alerts are triggered by notifications that your application sends to the Runtime Manager console (using the link:http://mulesoft.github.io/cloudhub-connector[CloudHub Connector]). For example, you can send a custom alert when:
 
@@ -27,11 +29,15 @@ CloudHub also lets you create your own *custom alerts* for your application. Cus
 
 Custom alerts differ from standard alerts in that you  receive a notification from your application inside the console UI regardless of whether you configure an alert.
 
+[NOTE]
+Custom alerts are only available for apps deployed to CloudHub, you can't set one up for an app that you link:/runtime-manager/deploying-to-your-own-servers[depoy to your own servers].
+
+
 == Managing Notifications
 
 Notifications appear by clicking the bell icon in the top-right of the Runtime Manager console. When you have new notifications, the bell turns red.
 
-image:image2014-10-24+17-41-16.png[image2014-10-24+17-41-16]
+image:notif-icon.png[notif-icon]
 
 Each notification has a priority level and a message associated with it. If the notification is associated with a specific application, the application name is also provided.
 
@@ -39,9 +45,15 @@ image:AlertMessage.png[AlertMessage]
 
 == Managing Alerts
 
-To view and configure your alerts, click an application, click *Manage Application*, and click *Alerts* in the left menu.
+To view and configure your alerts, you can:
+
+* Select the *Alerts* tab
+* Click an application, click *Manage Application*, and click *Alerts* in the left menu. ???
+* servers ????
 
 image:AlertsInNavBar.png[AlertsInNavBar]
+???
+
 
 To create an alert, click *New alert*:
 
@@ -67,7 +79,11 @@ See below for more information on each alert type.
 
 === Alert Events
 
-You can select one of these alert events:
+Depending on where your application is deployed to, different event types exist. Below are the event types for deployments to ClodudHub and Mule Servers.
+
+==== Events on CloudHub workers
+
+On an application that's deployed to CloudHub, you can select one of these alert events:
 
 * Custom application notification
 * Deployment failure
@@ -77,7 +93,37 @@ You can select one of these alert events:
 * Secure data gateway disconnected
 * Worker not responding
 
+[TIP]
 The *custom application notification* event type is described in the link:/runtime-manager/custom-application-alerts[Custom Application Alerts] tutorial.
+
+
+==== Events on Mule Servers
+
+On an application that's deployed to a Mule server, server group or cluster, you can select one of these alert events:
+
+
+* Server up
+* Server disconnected
+* New server registered
+* Agent's version changed
+* Runtime's version changed
+* Server added to a Server Group
+* Server removed from a Server Group
+* Server added to a Cluster
+* Server removed from a Cluster
+* Application deployment success
+* Application deployment failure
+* Application deployment status changed
+* Application deleted
+* Server deleted
+* Cluster is up
+* A cluster's node went down
+* Cluster is down
+* Cluster presents visibility issues
+* Server group is up
+* Server group is partially up (some servers are not running)
+* Server group is down
+
 
 == Alert Properties
 
@@ -91,6 +137,26 @@ The following properties are available and can be used in the alert Email to, Su
 |`${message}` |The message from the notification triggering the alert.
 |`${priority}` |The priority of the notification triggering the alert.
 |===
+
+== Switching Alerts On or Off
+
+All users of the Anypoint Platform, even those without permissions to create alerts, can switch the existing alerts that are already created into an active or inactive state for their user. This determines what email alerts will reach their inbox.
+
+[NOTE]
+Switching an alert off switches it off for the user that is currently logged in, other users may still have it active.
+
+=== For Applications
+
+image:alerts-on-applications.png[alerts on apps]
+
+=== For Servers
+
+
+
+//image:[alerts on servers]   SCREENSHOT MISSING
+
+
+
 
 == See Also
 

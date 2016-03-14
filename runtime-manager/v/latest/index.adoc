@@ -3,7 +3,7 @@
 
 [NOTE]
 ====
-The topics in this document deal with app deployments through both the cloud-based and the on-premise versions of the Runtime Manager console. It also deals with deployments to both CloudHub and on-premise environments. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for a better understanding of the differences between both.
+The topics in this document deal with app deployments through both the cloud-based and the on-premise versions of the Runtime Manager console. It also deals with deployments to both CloudHub and on-premise environments. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for a better understanding of the differences between both.
 ====
 
 
@@ -14,7 +14,7 @@ After you've link:/mule-fundamentals/v/3.8-m1/build-a-hello-world-application[cr
 It provides a dashboard that indicates the status of every deployed app and every monitored server, as well as a rich set of features that allow you to manage and track activity on the applications that are already running.
 
 
-* link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager]
+* link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule]
 * link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]
 * link:/runtime-manager/deploying-to-your-own-servers[Deploying to Your Own Servers]
 * link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications]

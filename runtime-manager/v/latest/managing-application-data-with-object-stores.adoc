@@ -9,7 +9,7 @@ CloudHub includes application data storage for each CloudHub application which i
 Your application can also store custom integration data as well, within the limits outlined below.
 
 [NOTE]
-Object stores are handled in the way described in this document only for applications deployed to CloudHub workers. For applications that you deploy via the Runtime Manager to external servers on premises or in the cloud, you must handle the storage of data in your own repository. See link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager] for more details.
+Object stores are handled in the way described in this document only for applications deployed to CloudHub workers. For applications that you deploy via the Runtime Manager to external servers on premises or in the cloud, you must handle the storage of data in your own repository. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for more details.
 
 == Storing and Retrieving Data
 
@@ -49,7 +49,7 @@ Internally, Mule has several different types of object stores. CloudHub provides
 * link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications]
 * Read more about what link:/runtime-manager/cloudhub[CloudHub] is and what features it has
 * link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application]
-* link:/runtime-manager/cloudhub-and-runtime-manager[CloudHub and Runtime Manager]
+* link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule]
 * link:/runtime-manager/cloudhub-architecture[CloudHub architecture]
 * link:/runtime-manager/cloudhub-administration[CloudHub Administration]
 * link:/runtime-manager/alerts-and-notifications[Alerts and Notifications]

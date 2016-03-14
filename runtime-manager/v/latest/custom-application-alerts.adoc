@@ -112,7 +112,7 @@ In addition to sending notifications from business events, you may want to send 
 [source,xml, linenums]
 ----
 <flow name="create notification from exception">
-    <inbound-endpoint address="http://localhost:${http.port}/create-notification-from-exception"/>
+    <inbound-endpoint address="http://0.0.0.0:${http.port}/create-notification-from-exception"/>
     <scripting:component>
         <scripting:script engine="groovy">
             throw new Exception("Could not connect to remote service.")

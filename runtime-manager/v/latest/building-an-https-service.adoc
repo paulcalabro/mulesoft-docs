@@ -10,11 +10,11 @@ You can now modify your existing service to use HTTPS as detailed in the followi
 First, if you don't have a keystore for your service, generate a new keystore. You can do this using the command line and the keytool utility from the JDK.
 
 [IMPORTANT]
-To generate a self signed certificate now you must specify the hostname in your command, the property 'SAN=DNS:localhost,IP:127.0.0.1' is key in the example below
+To generate a self signed certificate now you must specify the hostname in your command, the property 'SAN=DNS:0.0.0.0,IP:127.0.0.1' is key in the example below
 
 [source, code, linenums]
 ----
-keytool -genkeypair -keystore keystore.jks   -dname "CN=localhost, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown"  -keypass password  -storepass password  -keyalg DSA  -sigalg SHA1withDSA  -keysize 1024  -alias mule  -ext SAN=DNS:localhost,IP:127.0.0.1 -validity 9999
+keytool -genkeypair -keystore keystore.jks   -dname "CN=0.0.0.0, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown"  -keypass password  -storepass password  -keyalg DSA  -sigalg SHA1withDSA  -keysize 1024  -alias mule  -ext SAN=DNS:0.0.0.0,IP:127.0.0.1 -validity 9999
 ----
 
 This command creates a file named `keystore.jks`. Before proceeding, verify that this file exists and appears in the folder `src/main/resources`.

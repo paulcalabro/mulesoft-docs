@@ -88,10 +88,10 @@ The following diagram illustrates the process for a project containing an `api-p
 
 image:api-auto-discovery-v2.png[api-auto-discovery-v2]
 
-After your API is registered in the Anypoint Platform for APIs via auto-discovery, your API version and its endpoint 
-functions the same as any other API version or endpoint registered via other means. You can edit, update, or delete 
-applications via the Anypoint Platform for APIs web application or its API. If the API Gateway instance running 
-the API goes offline or you stop the underlying application, the API and endpoints remains in the Anypoint Platform 
+After your API is registered in the Anypoint Platform for APIs via auto-discovery, your API version and its endpoint
+functions the same as any other API version or endpoint registered via other means. You can edit, update, or delete
+applications via the Anypoint Platform for APIs web application or its API. If the API Gateway instance running
+the API goes offline or you stop the underlying application, the API and endpoints remains in the Anypoint Platform
 for APIs, but the endpoints are untracked by the agent.
 
 ....
@@ -154,7 +154,7 @@ If your application is an *APIkit project*, you can use the `apikit:config` glob
     <apikit:config name="myAPI" raml="myAPI.raml"/>
  
     <flow name="flow_apikit">
-        <http:inbound-endpoint host="localhost" port="${port}" path="apikit">
+        <http:inbound-endpoint host="0.0.0.0" port="${port}" path="apikit">
             <api-platform-gw:register-as apikit-ref="myAPI"/>
         </http:inbound-endpoint>
         <set-payload value="Test" />
@@ -309,7 +309,7 @@ Once it is registered in the Anypoint Platform for APIs via auto-discovery, your
     </api-platform-gw:api>
  
     <flow name="flow_api">
-        <http:inbound-endpoint host="localhost" port="${port}" path="api">
+        <http:inbound-endpoint host="0.0.0.0" port="${port}" path="api">
             <api-platform-gw:register-as api-ref="myAPI" />
         </http:inbound-endpoint>
         <set-payload value="Test" />

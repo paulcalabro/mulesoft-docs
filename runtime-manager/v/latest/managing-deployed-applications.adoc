@@ -143,7 +143,7 @@ The following states appear in the *Status* column:
 * Partial - One or more servers in the group have differing states.
 * Running - All servers in the server group are running.
 
-== Cluster Status States
+=== Cluster Status States
 
 
 [width="100a",cols="25a,75a",options="header"]
@@ -164,9 +164,19 @@ Icon
 | Partial (x of y running) with communication Issue - some nodes are running some are down, visibility issues between them
 |===
 
-== Accessing a Running Application's Settings
+== Applications Dashboard
 
-Log in to the link:anypoint.mulesoft.com[Anypoint Platform] and view the *Applications* tab of the Runtime Manager. Select one of your running applications to open a panel on the right side. On that pannel, click the *Manage Application* button to open up the application's settings.
+If you select any of the applications on the Applications tab, a pannel opens on the right. Here you will be able to read additional information about the application and access its settings.
+
+image:dashboard-ch.png[dashboard]
+
+What this dashboard displays depends on if your application is deployed on link:/runtime-manager/managing-cloudhub-applications[CloudHub] or on link:/runtime-manager/managing-applications-on-your-own-servers[a Mule server]. You will always see the status, the time of the last modification, and the deployed application .zip file, which you can change from this menu through the *Choose File* button. Applications on CloudHub additionally display info about the CloudHub worker they run on. Applications deployed on clusters and server groups additionally display the list of servers and the status of each.
+
+CloudHub applications also present buttons that allow you to view Logs, Insights and enter the *Manage Application* menu.
+
+== Accessing Settings for Apps on CloudHub
+
+Log in to the link:anypoint.mulesoft.com[Anypoint Platform] and view the *Applications* tab of the Runtime Manager. Select one of your CloudHub running applications to open a panel on the right side. On that pannel, click the *Manage Application* button to open up the application's settings.
 
 image:cloudhub-manage-application.png[manage app]
 

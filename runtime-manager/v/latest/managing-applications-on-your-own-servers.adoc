@@ -13,6 +13,23 @@ With applications deployed to link:/runtime-manager/managing-applications-on-you
 [TIP]
 Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, features described in this page work identically in all of them.
 
+
+== Applications Dashboard
+
+If you select any of the applications on the Applications tab, a pannel opens on the right. Here you will be able to read additional information about the application and access its settings.
+
+image:dashboard-mule.png[dashboard]
+
+What this dashboard displays depends on if your application is deployed on link:/runtime-manager/managing-cloudhub-applications[CloudHub] or on link:/runtime-manager/managing-applications-on-your-own-servers[a Mule server].
+
+Aplications deployed to Mule servers show you the status, the time of the last modification, the deployed application .zip file – which you can change from this menu through the *Choose File* button – Applications deployed on clusters and server groups additionally display the list of servers and the status of each.
+
+[TIP]
+You can verify info about the servers the application runs on via the *Servers* tab. See more on link:/runtime-manager/managing-servers#servers-dashboard[Servers Dashboard].
+
+
+
+
 == See Also
 
 Additional tools for managing your applications:

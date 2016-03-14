@@ -70,6 +70,22 @@ From the *Servers* tab, by selecting an entry as shown, you can perform these t
 * <<Delete a Cluster>>
 
 
+== Servers Dashboard
+
+If you select any of the servers, server groups or clusters on the Servers tab, a pannel opens on the right. Here you will be able to read additional information about it and access some configuration items.
+
+image:dashboard-server.png[dashboard]
+
+What this dashboard displays depends on if your application is deployed on the Agent version the server runs with, and wether it's a server, server group or cluster. You will always see the status, the Mule version installed in it (server groups and clusters must all have the same Mule version installed to work together), the Agent version, in case of clusters and server groups you will also see the type (unicast or multicsast).
+
+Applications deployed on clusters and server groups additionally display the list of servers and the status of each.
+
+A series of tabs in the bottom allow you to see details about
+* the servers in the server group/cluster and the status of each
+* the applications running and the status of each
+* any plugins, such as link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[Send data to External Monitoring Software]
+
+
 == Add a Server
 
 The server communicates with the Runtime Manager via an add-on to the Mule Runtime called link:/mule-agent/[The Mule Agent]. In order to make a server visible in the Runtime Manager console and be able to manage it, you must first register it with the Mule Agent.

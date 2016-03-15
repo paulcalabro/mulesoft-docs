@@ -13,7 +13,7 @@ Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/any
 
 This page introduces the basic management tools in the console that are common to both types of deployments:
 
-* <<Start, Stop, and Delete an Application>>
+* <<Start, Restart, Stop, and Delete an Application>>
 * <<Status States>>
 * <<Accessing a Running Application's Settings>>
 * <<Updating your Application>>
@@ -84,13 +84,13 @@ For more on the options offered by this tab, see link:/runtime-manager/managing-
 
 
 
-== Start, Stop, or Delete an Application
+== Start, Restart, Stop, or Delete an Application
 
-To start, stop, or delete an application, click an application, and click the status down-arrow (the menus differ by Status):
+To start, restart, stop, or delete an application, click an application, and click the status down-arrow (the menus differ by Status):
 
-image:AMC_StopStartDeleteApp.png[AMC_StopStartDeleteApp]
+image:AMC_RestartApp.png[AMC_StopStartDeleteApp]
 
-Click *Start*, *Stop*, or *Delete* as needed. The *Start* command restarts stopped applications, and if the application is Undeployed, sends the application's zip file to the server to start the application on the server.
+Click *Start*, *Restart*, *Stop*, or *Delete* as needed. The *Start* command restarts stopped applications, *Restart* resets applications that have already started and if the application is Undeployed, sends the application's zip file to the server to start the application on the server.
 
 [IMPORTANT]
 For CloudHub applications, after you delete an application, your log data is no longer accessible through the console. CloudHub archives old log data for a limited period of time before being purged. This allows you to recover the data if needed. mailto:cloudhub-support@mulesoft.com[Contact Support] for more information.
@@ -119,7 +119,7 @@ The following states appear in the *Status* column:
 === Application Status States
 
 * Deployment Failed - Application stopped running due to a failure state. The cause of the failure appears in the console.
-* Partially Started  - Application is in the process of starting.
+* Partial  - Application is in the process of starting.
 * Started - Application is running.
 * Starting - Application is transitioning into a running state.
 * Stopped - Application stopped. Use <<Deploy an Application>> to return the application to Running.

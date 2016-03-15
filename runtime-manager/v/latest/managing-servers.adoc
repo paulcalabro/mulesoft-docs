@@ -1,5 +1,5 @@
 = Managing Servers
-:keywords: cloudhub, application, server, server group, on-premise, runtime manager, arm
+:keywords: cloudhub, application, server, server group, on-premise, runtime manager, arm, cluster, clusters
 
 
 Through the Anypoint Runtime Manager, you can register and set up the properties of servers, server groups, and clusters that reside on premises in your organization or in an external cloud repository. Once these are set up, you can select them as the deployment target of your applications, as an alternative to deploying to link:/runtime-manager/deploying-to-cloudhub[CloudHub].
@@ -94,6 +94,7 @@ The server communicates with the Runtime Manager via an add-on to the Mule Runti
 *If the server you want to add is already registered with a different instance of the Runtime Manager*, you won't be able to add it until you remove if from the other instance. To do this, <<Delete a Server, remove the server>> from the server list on the Runtime Manager console and then delete the 'mule-agent.yaml' configuration file found on your '{RUNTIME PARENT FOLDER}/conf' folder.
 
 
+
 === Obtaining the Server Registration Token
 
 To be able to run the command that registers your server with the Mule Agent you must obtain the unique Token code for your particular instance of the Runtime Manager and environment.
@@ -147,6 +148,7 @@ The `amc_setup` script actually invokes the link:/mule-agent/v/1.3.0/[Mule agent
 
 The registration token provided by Anypoint Runtime Manager (included in the command with the `-H` parameter) is specific to a single environment. For example, if you register a server in a QA environment by clicking *Add Server*, you get one token. However if you try to register into your *Production* environment by also clicking *Add Server*,  you get a different token. Tokens are specific to the environment in which you register a server. You can only copy and paste a token to register multiple Mules if you want all servers to be in the same environment.
 
+
 == Start Mule or API Gateway
 
 . Start your Mule server or API Gateway. To do so, open a terminal and change directory to the MuleSoft `bin` directory:
@@ -162,6 +164,11 @@ See a full reference for server statuses in link:/runtime-manager/managing-deplo
 
 At this point, you have successfully added server `srv1`.
 
+== Restart an Application on a Server
+
+You can restart an application that is currently running on a server from the drop-down menu in the status menu:
+
+image:AMC_RestartApp.png[AMC_RestartApp]
 
 == Create a Server Group
 
@@ -185,7 +192,8 @@ The cluster name must not start or end with a dash, must be at least 3 character
 . Click the checkbox for each server to include in the group, and click *Create Group*.
 +
 [NOTE]
-All servers in a server group must be running the same Mule Runtime version.
+All servers in a server group must be running the same Mule Runtime version and the same Agent version. Also, a server group can be created from servers that all display the status 'Running' or 'Disconnected' but these can't be mixed with servers that display the status 'Created'. You can on the other hand create a server group out of only servers that display the status 'Created'.
+
 
 == Add a Server to a Server Group
 
@@ -254,9 +262,18 @@ Remember that you must first <<add a server, register>> each of the servers in t
 A cluster can only be made up of servers that are not already in a server group or part of another cluster.
 
 [NOTE]
-The minimum Mule version that supports this feature is Mule version 3.7.0 and newer.
+The minimum Mule version that supports this feature is Mule version 3.7.0 and newer. The minimum Mule Agent version that supports this feature is Agent version 1.1.1 and newer.
 
 To create a cluster in Runtime Manager:
+
+. Download and install link:https://www.mulesoft.com/platform/enterprise-integration[Mule Runtime] on two or more physical or virtual servers in your site.
+. Log into Anypoint Platform and click *Runtime Manager*:
++
+image:CloudHubStartPage.png[CloudHubStartPage]
++
+. Click the *Servers* tab and <<add a server, register each server to the platform>>.
++
+image:ServerStatus_No_Cluster_AllOnline.png[all servers]
 
 . After all servers are registered and visible in the Servers tab, click *Create Cluster*. Servers can be added to a cluster in any status.
 +
@@ -271,7 +288,7 @@ The cluster name must not start or end with a dash, must be at least 3 character
 . Click the checkboxes for the names of the servers to add to your cluster, and click *Create Cluster*.
 +
 [NOTE]
-All servers in a cluster must be running the same Mule Runtime version.
+Multicast servers can be in any link:/runtime-manager/managing-deployed-applications#status-states[Status State], whereas unicast servers must have a Status of 'Running'. All servers in a cluster must be running the same Mule Runtime version and Agent version.
 +
 image:CreateCluster_Multicast.png[CreateACluster]
 +
@@ -299,6 +316,8 @@ image:add_servers_button.png[AddServers]
 +
 image:AddingServertoCluster_SelectServer.png[AddAnotherServer]
 
+[NOTE]
+All servers in a cluster must run the same version of Mule runtime and of the Mule Agent.
 
 
 == Delete a Server From a Cluster
@@ -344,13 +363,15 @@ A cluster can be created in the Runtime Manager from servers that are already re
 
 * *Unicast*. A unicast cluster requires that you configure the IP addresses of which nodes to associate together. No special network configuration is necessary other than to indicate which are the server IP addresses that make up the cluster. Each server needs to be in Running status when it is added to a unicast cluster. If a server has multiple interfaces, use the internal IP, the one that allows a node to have a direct communication with other nodes. Clustering across different subnets is not supported.
 
++
 [NOTE]
 Mule relies on the IP address as the unique handle for identifying a server, which means it is impossible to have IP addresses dynamically assigned using DHCP for servers on a unicast cluster. If a server is restarted and uses DHCP to get a new IP address, it needs to be rejoined with the cluster using its new IP address.
 
 * *Multicast*. A multicast cluster groups servers that automatically detect each other. Servers that are part of a multicast cluster should be on the same network segment.
-
++
 One advantage of using multicast is that a server does not need to be running to be configured as a node in a cluster. Another is that you can add nodes to the cluster dynamically without restarting the cluster.
 
++
 [NOTE]
 Check with your network administrator if multicast is allowed within your network, as many networks block multicast functionalities.
 

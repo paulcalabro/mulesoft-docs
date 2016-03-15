@@ -4,7 +4,7 @@
 CloudHub supports *secure application properties*, where the name of a property is visible in the console, but the value is not displayed or retrievable by a user. CloudHub resolves the property at runtime without exposing the sensitive information.
 
 [NOTE]
-Application properties are a feature that is currently only available for setting via the Runtime Manager UI for applications deployed to CloudHub workers. For applications that you deploy via the Runtime Manager to external servers on premises or in the cloud, these can be set up via an 'application.properties' file bundled with your application zip file. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for more details.
+Application properties are a feature that is currently only available for setting via the Runtime Manager UI for applications deployed to CloudHub workers. For applications that you deploy via the Runtime Manager to local servers, these can be set up via an 'application.properties' file bundled with your application zip file. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for more details.
 
 == Overview
 

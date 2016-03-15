@@ -2,7 +2,7 @@
 :keywords: cloudhub, analytics, monitoring, insight, filter
 
 [NOTE]
-Insights is a feature that is currently only available for applications deployed to CloudHub workers. It is not available for applications that you deploy via the Runtime Manager to external servers on premises or in the cloud. See link:/cloudhub-and-mule[CloudHub and Mule] for more details.
+Insights is a feature that is currently only available for applications deployed to CloudHub workers. It is not available for applications that you deploy via the Runtime Manager to local servers on premises or in the cloud. See link:/cloudhub-and-mule[CloudHub and Mule] for more details.
 
 *CloudHub Insight* gives you in-depth visibility into business transactions and events on your Mule applications thay you deploy to CLoudHub. By tracking everything your data does in an application, Insight makes information searchable and helps you find and recover from any errors that occurred during message processing and replay your transactions instantly.
 

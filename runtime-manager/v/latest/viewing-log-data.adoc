@@ -4,7 +4,7 @@
 CloudHub provides access to log data so that you can monitor your application and diagnose any potential issues. CloudHub stores log data in Universal Time (UTC); however, the console displays the log using your computer's local time zone. 
 
 [NOTE]
-Logs are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager to external servers on premises or in the cloud, in those cases you can send data link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[to External Monitoring Software]. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for more details.
+Logs are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager to local servers, in those cases you can send data link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[to External Monitoring Software]. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for more details.
 
 
 [IMPORTANT]

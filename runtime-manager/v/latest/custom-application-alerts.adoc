@@ -1,9 +1,9 @@
-= Custom Application Alerts
+= Custom Application Alerts and Notifications
 :keywords: cloudhub, monitoring, api, runtime manager, arm
 :imagesdir: ./_images
 
 [NOTE]
-Alerts and Notifications are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager ( both the cloud-based and on-premise versions) to external servers on premises or in the cloud. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for more details.
+Custom Alerts and Notifications are a feature that is currently only available for applications deployed to CloudHub workers. They are not available for applications that you deploy via the Runtime Manager ( both the cloud-based and on-premise versions) to local servers on premises or in the cloud. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for more details.
 
 == Prerequisites
 

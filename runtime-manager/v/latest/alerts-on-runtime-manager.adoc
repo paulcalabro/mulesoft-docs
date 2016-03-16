@@ -45,6 +45,10 @@ Fill in the required fields:
 
 . Enter a unique alert *Name*.
 . Select a *Severity Level* (Critical, Warning or Info)
++
+[NOTE]
+Different severity levels currently have no effect on alerts, but will in the future when other features are released.
+
 . Select a *Source* to determine if this alert is to be related to a applications or servers
 . For applications, select an *Application Type* to determine if it is destined for applications deployed to link:/runtime-manager/cloudhub-and-mule[CloudHub or local servers].
 +
@@ -53,9 +57,9 @@ You can't create a single alert that spans applications both on CloudHub and a l
 
 . Select which *application(s)/server(s)* this alert should be applied to.
 . Select the *Condition* that needs to occur for the alert to be triggered. The options depend on wether your alert is linked to a server, to an application running on CloudHub, or to an application running locally. Selecting a condition is likely to open more menu options, explained in a section below.
-. Provide a *Subject* for the email that will be sent
-. Write a *Message* to fill the body of the email
-. List the users that will be recepients of this email
+. Provide a *Subject* for the email that will be sent. Your subject may include variable <<Alert Properties>>.
+. Write a *Message* to fill the body of the email. Your message may include variable <<Alert Properties>>.
+. List the recepients of this email. You can select users of the platform, or also freely write email addresses of people who aren't in the organiztion.
 . Click *Create Alert*.
 
 
@@ -69,82 +73,92 @@ See below for more information on the alert conditions available for each alert 
 
 == Alert Conditions
 
-Depending on wether your alert is related to applications or servers, and on where your application is deployed to, different event types exist. Below are the event types for servers and for deployments to CloudHub and Mule Servers.
+Depending on what your alert's source is, different event types exist. Below are the event types for servers and for deployments to CloudHub and local servers and for Mule Servers, server groups and clusters.
 
 === Conditions on CloudHub Applications
 
-On an application that's deployed to CloudHub, you can select one of these alert events. Each option opens up additional fields that need to be filled in
+On an application that's deployed to CloudHub, you can select any of these alert conditions. Some of these are self explaining notifications of different events such as 'Application Deployment Success', others require that you complete additional parameters that appear as new fields in the form.
 
-* CPU Usage - refers to the CPU usage of the CloudHub worker(s) that run the app
+* *CPU Usage* - refers to the CPU usage of the CloudHub worker(s) that run the app
 +
 image:cpu-usage.png[cpu]
 +
-You must then set up a few parameters for this condition to be enabled
+You must then set up a few parameters for this condition to be enabled, these specify a duration and capacity threshold that triggers the alert.
 
-* Memory Usage - the percentage of total memory allocated to the CloudHub worker(s) that run the app (includes the memory being consumed by jvm itself).
+* *Memory Usage* - the percentage of total memory allocated to the CloudHub worker(s) that run the app (includes the memory being consumed by jvm itself).
 +
 image:memory-usage.png[memo]
 +
-You must then set up a few parameters for this condition to be enabled
+You must then set up a few parameters for this condition to be enabled, these specify a duration and capacity threshold that triggers the alert.
 
-* Custom application notification
+* *Custom alert*
 +
 image:custom-alert.png[custom]
 +
-You must then set up a few parameters for this condition to be enabled. See the link:/runtime-manager/custom-application-alerts[Custom Application Alerts] tutorial.
+You must then set up a few parameters for this condition to be enabled, these reference the notifications that are the output of a *CloudHub connector* that must priorly exist in your application. An alert is raised when the text in one of the notifications matches or contains the string that you provide in the *Contains* field. See the link:/runtime-manager/custom-application-alerts[Custom Application Alerts] tutorial.
 
-* Exceeds event traffic threshold
+* *Exceeds event traffic threshold*
 +
 image:alert-traffic.png[traffic]
-You must then set up a few parameters for this condition to be enabled
++
+You must then set up a few parameters for this condition to be enabled, these specify a duration and capacity threshold that triggers the alert.
 
-* Secure data gateway disconnected
-* Secure data gateway connected
-* Worker not responding
-* Autoscaled.  See link:/runtime-manager/      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-* Deployment success
-* Deployment failure
+* *Secure data gateway disconnected*
+* *Secure data gateway connected*
+* *Worker not responding*
+* *Autoscaled*.  See link:/runtime-manager/      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* *Deployment success*
+* *Deployment failure*
 
 === Conditions on Locally Deployed Applications
 
-* Application Deployment success
-* Application Deployment failure
-* Application Deployment status changed
-* Application Deleted
+On an application that's deployed to local servers, you can select any of these alert events. All of these are self explaining events such as 'Application Deployment Success'.
+
+* *Application Deployment success*
+* *Application Deployment failure*
+* *Application Deployment status changed*
+* *Application Deleted*
 
 
 === Conditions on Mule Servers
 
-On an application that's deployed to a Mule server, server group or cluster, you can select one of these alert events:
 
+The available alert events vary depending on the *Server Type* field, that lets you select between Server, Server Group, or Cluster. All of the alert conditions are self explaining events that require no additional parameters.
 
 ==== Servers
 
+* *Server up*
+* *Server disconnected*
+* *New server registered*
+* *Agent's version changed*
+* *Runtime's version changed*
+* *Server deleted*
+
 ==== Server Groups
+
+* *Server added to a Server Group*
+* *Server removed from a Server Group*
+* *Server added to a Server Group*
+* *Server removed from a Server Group*
+* *Server group is up*
+* *Server group is partially up (some servers are not running)*  !!!!!!
+* *Server group is down*
+* *A server group's node came up*
+* *A server group's node went down*
+
 
 ==== Clusters
 
-* Server up
-* Server disconnected
-* New server registered
-* Agent's version changed
-* Runtime's version changed
-* Server added to a Server Group
-* Server removed from a Server Group
-* Server added to a Cluster
-* Server removed from a Cluster
-* Application deployment success
-* Application deployment failure
-* Application deployment status changed
-* Application deleted
-* Server deleted
-* Cluster is up
-* A cluster's node went down
-* Cluster is down
-* Cluster presents visibility issues
-* Server group is up
-* Server group is partially up (some servers are not running)
-* Server group is down
+* *Cluster Created*
+* *Cluster Deleted*
+* *Server added to a Cluster*
+* *Server removed from a Cluster*
+* *Cluster is up*
+* *Cluster is down*
+* *A cluster's node came up*
+* *A cluster's node went down*
+* *Cluster presents visibility issues*
+
 
 
 == Alert Properties
@@ -160,24 +174,42 @@ The following properties are available and can be used in the alert Email to, Su
 |`${priority}` |The priority of the notification triggering the alert.
 |===
 
-== Switching Alerts On or Off
+== Editing Existing Alerts
+
+If you view the panel of an application or server, you will see a *View Alerts* link. In there you will be able to see and manage the alerts that are sourced from it. You can also click on the *Alerts* link on the left panel to view all alerts together.
+
+image:view-alerts.png[alerts]
+
+
+From this menu you can filter the displayed alerts, click on an alert name to directly edit it, or click on the icon next to one to open its panel to view its settings. From this panel you can click the *edit* icon next to the name.
+
+image:edit-alert.png[edit]
+
+
+
+=== Switching an Alert Off
+
+Select one or multiple alerts in the alert menu and click the switch to change its state form *on* to *off* or viceversa.
+
+image:alert-on.png[on]
 
 All users of the Anypoint Platform, even those without permissions to create alerts, can switch the existing alerts that are already created into an active or inactive state for their user. This determines what email alerts will reach their inbox.
 
 [NOTE]
 Switching an alert off switches it off for the user that is currently logged in, other users may still have it active.
 
-=== For Applications
+=== Duplicating an Alert
 
-image:alerts-on-applications.png[alerts on apps]
+Select one or several alerts and then, from the alert pannel, simply click the *duplicate* icon. You're then free to edit your new alert at will.
 
-=== For Servers
-
-
-
-//image:[alerts on servers]   SCREENSHOT MISSING
+image:duplicate-alert.png[duplicate]
 
 
+=== Deleting an Alert
+
+Select one or several a alerts and then, from the alert pannel, simply click the *delete* icon.
+
+image:delete-alert.png[duplicate]
 
 
 == See Also

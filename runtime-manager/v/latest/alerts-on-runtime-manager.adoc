@@ -15,94 +15,114 @@ Runtime Manager includes several out of the box *standard alert* types, for exam
 * CloudHub encounters a problem with the worker on an application via the worker monitoring system.
 * A link:/runtime-manager/managing-servers[server] is disconnected or deleted
 
-Creating a standard alert creates both a notification in the console and an email alert action.
+[TIP]
+Creating a standard alert also creates a link:/runtime-manager/notifications-on-runtime-manager[notification] that will be visible when navigating the Anypoint Platform. Notifications are standard messages that appear in the Runtime Manager console to provide status information about your applications. You can access them via the bell icon on the top-right corner of the screen.
 
-
-*Notifications* are standard messages that appear in the Runtime Manager console to provide status information about your applications. You can access them via the bell icon on the top-right corner
-
-
-// check if this below is also for ARM
-
-CloudHub also lets you create your own *custom alerts* for your application. Custom alerts are triggered by notifications that your application sends to the Runtime Manager console (using the link:http://mulesoft.github.io/cloudhub-connector[CloudHub Connector]). For example, you can send a custom alert when:
-
-* Your application is unable to connect to a remote service.
-* An error occurs which requires human intervention, such as a problem with data mapping.
-* You want to create a summary of what occurred inside your application, such as the number of orders processed.
-
-Custom alerts differ from standard alerts in that you  receive a notification from your application inside the console UI regardless of whether you configure an alert.
 
 [NOTE]
-Custom alerts are only available for apps deployed to CloudHub, you can't set one up for an app that you link:/runtime-manager/deploying-to-your-own-servers[depoy to your own servers].
+CloudHub also lets you create your own *custom alerts* for your application. Custom alerts are triggered by notifications that your application sends to the Runtime Manager console (using the link:http://mulesoft.github.io/cloudhub-connector[CloudHub Connector]). See link:/runtime-manager/custom-application-alerts[Custom Application Alerts] for more on this. Custom alerts are only available for apps deployed to CloudHub, you can't set one up for an app that you link:/runtime-manager/deploying-to-your-own-servers[deploy locally].
 
 
-== Managing Notifications
-
-Notifications appear by clicking the bell icon in the top-right of the Runtime Manager console. When you have new notifications, the bell turns red.
-
-image:notif-icon.png[notif-icon]
-
-Each notification has a priority level and a message associated with it. If the notification is associated with a specific application, the application name is also provided.
-
-image:AlertMessage.png[AlertMessage]
-
-== Managing Alerts
+== Access Alerts
 
 To view and configure your alerts, you can:
 
-* Select the *Alerts* tab
-* Click an application, click *Manage Application*, and click *Alerts* in the left menu. ???
-* servers ????
+* Select the *Alerts* tab to display a full list of alerts on your account
+* On the *Applications* tab, click an application to open the link:/runtime-manager/managing-deployed-applications#applications-dashboard[application dashboard], click the *View Associated Alerts* link
+* On the *Servers* tab, click a server to open the link:/runtime-manager/managing-servers#servers-dashboard[servers dashboard], click the *View Associated Alerts* link
 
-image:AlertsInNavBar.png[AlertsInNavBar]
-???
+== Create an Alert
 
+If you access the alerts screen through any of the paths listed above and you don't have any alerts set up yet, you will see the following screen:
 
-To create an alert, click *New alert*:
+image:create-first-alert.png[first-alert]
 
-image:NewAlert.png[NewAlert]
+Click the plus sign next to *Create your first alert*
+
+image:create-alert.png[create alert]
 
 Fill in the required fields:
 
-. Enter a unique alert name.
-. Select which application(s) this alert should apply to.
-. Select an event type (deployment succeeds, secure data gateway is disconnected, etc.) to indicate what should trigger the alert.
-. Fill out any custom data for the event type (see below).
-. Select the destination email addresses and subjects for the alert.
-. Click *Create*.
+. Enter a unique alert *Name*.
+. Select a *Severity Level* (Critical, Warning or Info)
+. Select a *Source* to determine if this alert is to be related to a applications or servers
+. For applications, select an *Application Type* to determine if it is destined for applications deployed to link:/runtime-manager/cloudhub-and-mule[CloudHub or local servers].
 +
-image:NewAlertMenu.png[NewAlertMenu]
+[NOTE]
+You can't create a single alert that spans applications both on CloudHub and a local servers. You must create two separate alerts to reach both types.
+
+. Select which *application(s)/server(s)* this alert should be applied to.
+. Select the *Condition* that needs to occur for the alert to be triggered. The options depend on wether your alert is linked to a server, to an application running on CloudHub, or to an application running locally. Selecting a condition is likely to open more menu options, explained in a section below.
+. Provide a *Subject* for the email that will be sent
+. Write a *Message* to fill the body of the email
+. List the users that will be recepients of this email
+. Click *Create Alert*.
+
+
 +
 . If a failure occurs, an email like the following is sent:
 +
 image:AlertEmailMsg.png[AlertEmailMsg] 
 
 
-See below for more information on each alert type.
+See below for more information on the alert conditions available for each alert source.
 
-=== Alert Events
+== Alert Conditions
 
-Depending on where your application is deployed to, different event types exist. Below are the event types for deployments to ClodudHub and Mule Servers.
+Depending on wether your alert is related to applications or servers, and on where your application is deployed to, different event types exist. Below are the event types for servers and for deployments to CloudHub and Mule Servers.
 
-==== Events on CloudHub workers
+=== Conditions on CloudHub Applications
 
-On an application that's deployed to CloudHub, you can select one of these alert events:
+On an application that's deployed to CloudHub, you can select one of these alert events. Each option opens up additional fields that need to be filled in
+
+* CPU Usage - refers to the CPU usage of the CloudHub worker(s) that run the app
++
+image:cpu-usage.png[cpu]
++
+You must then set up a few parameters for this condition to be enabled
+
+* Memory Usage - the percentage of total memory allocated to the CloudHub worker(s) that run the app (includes the memory being consumed by jvm itself).
++
+image:memory-usage.png[memo]
++
+You must then set up a few parameters for this condition to be enabled
 
 * Custom application notification
-* Deployment failure
-* Deployment success
++
+image:custom-alert.png[custom]
++
+You must then set up a few parameters for this condition to be enabled. See the link:/runtime-manager/custom-application-alerts[Custom Application Alerts] tutorial.
+
 * Exceeds event traffic threshold
-* Secure data gateway connected
++
+image:alert-traffic.png[traffic]
+You must then set up a few parameters for this condition to be enabled
+
 * Secure data gateway disconnected
+* Secure data gateway connected
 * Worker not responding
+* Autoscaled.  See link:/runtime-manager/      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* Deployment success
+* Deployment failure
 
-[TIP]
-The *custom application notification* event type is described in the link:/runtime-manager/custom-application-alerts[Custom Application Alerts] tutorial.
+=== Conditions on Locally Deployed Applications
+
+* Application Deployment success
+* Application Deployment failure
+* Application Deployment status changed
+* Application Deleted
 
 
-==== Events on Mule Servers
+=== Conditions on Mule Servers
 
 On an application that's deployed to a Mule server, server group or cluster, you can select one of these alert events:
 
+
+==== Servers
+
+==== Server Groups
+
+==== Clusters
 
 * Server up
 * Server disconnected

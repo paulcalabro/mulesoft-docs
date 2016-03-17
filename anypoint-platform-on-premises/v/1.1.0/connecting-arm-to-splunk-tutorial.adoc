@@ -48,7 +48,7 @@ All the information about hosts and users is listed below:
 
 == How to Run the Demo
 
-This demo can be used to show that you can integrate your onprem systems (like Splunk, ELK or any other third party systems) to consume information produced by Mule such as Business Events, API analytics, logs, etc.
+This demo can be used to show that you can integrate your on-premise systems (like Splunk, ELK or any other third party systems) to consume information produced by Mule such as Business Events, API analytics, logs, etc.
 
 The demo consists on:
 

@@ -4,16 +4,20 @@
 
 link:http://www.mulesoft.com/cloudhub/ipaas-cloud-based-integration-demand[CloudHub] is an integration platform as a service (iPaaS). Through the link:/runtime-manager/[Anypoint Runtime Manager], it allows you to deploy sophisticated cross-cloud integration applications in the cloud, create new APIs on top of existing data sources, integrate on premises applications with cloud services, and much more. This guide helps you learn the basics, and get started developing your first application.
 
-Before going into details, it's important to understand some basic concepts. After this short overview, you can build your first CloudHub integration with the link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub] tutorial.
+This page deals with some basic concepts about CloudHub. After this short overview, you can build your first CloudHub integration with the link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub] tutorial.
 
 [TIP]
 Through the same link:/runtime-manager/[Runtime Manager] console that you deploy applications to CloudHub, you can also link:/runtime-manager/deploying-to-your-own-servers[deploy] to link:/runtime-manager/managing-servers[servers, server groups and clusters] on-premises.
 
-== Why CloudHub?
+== Benefits of CloudHub
 
-=== Start Small, Think Big
+=== Easy Scalability
 
 CloudHub is an elastic cloud that scales on demand. You can start small and grow as your needs grow, all without changing your application. CloudHub provides you with a scalable architecture – one you can build integration applications on, publish REST APIs or Web Services, and much more. You can also manage servers in your organization from CloudHub and organize servers into groups that run an application.
+
+////
+you can also do autoscaling!!!!
+////
 
 === Easy Transition Between Cloud and On-Premise Deployments
 
@@ -24,37 +28,33 @@ You can deploy the same Mule applications interchangeably both to CloudHub or to
 
 
 
+cloudhub vs on prem,  list of features
 
 
-=== Integrate Cloud and Enterprise Applications
-
-The Virtual Private Cloud (VPC) feature provides a secure pipe to the enterprise, breaking down the "cloud silo." CloudHub allows you to integrate and orchestrate applications, data sources, and services across the enterprise and cloud.
 
 
-=== Visibility and Control with the Anypoint Runtime Manager
+=== Visibility and Control through the Anypoint Runtime Manager
 
 With CloudHub, you also get our intuitive cloud console where you can manage your applications and servers, scale up and scale down, view event traffic, and much more. The Anypoint Runtime Manager allows you to manage every aspect of your CloudHub applications from one place. In addition, with link:/runtime-manager/managing-servers[server management] and link:/runtime-manager/managing-servers#create-a-cluster[cluster management] you can manage your on-premise servers, server groups, and clusters, plus applications from your CloudHub console, giving you a single management pane of glass for all your applications and servers.
 
 
-== CloudHub and Anypoint Studio
-
-
-CloudHub is built on top of Mule, the most widely used integration platform. With Anypoint Studio – the user-friendly development tool – you can quickly build these integration applications and deploy to CloudHub with just a few clicks, without even leaving Anypoint Studio, see link:.
-
-
-=== Runtime Management Console
-
-Once your application is deployed to CloudHub's multi-tenant runtime, you can link:http://anypoint.mulesoft.com[log in] to the Anypoint Platform, and then go to the Runtime Manager. From there you can link:/runtime-manager/managing-cloudhub-applications[manage running applications]. It also allows you to triage problems, view logs, set up alerts, view dashboards, and more. Follow the simple steps in the link:/runtime-manager/hello-world-on-cloudhub[Hello World] tutorial to setup your free Anypoint Platform account and deploy your first application to it.
+From there you can link:/runtime-manager/managing-cloudhub-applications[manage running applications]. It also allows you to triage problems, view logs, set up alerts, view dashboards, and more. Follow the simple steps in the link:/runtime-manager/hello-world-on-cloudhub[Hello World] tutorial to setup your free Anypoint Platform account and deploy your first application to it.
 
 
 [NOTE]
 You can view the live status and detailed service history for the Runtime Manager console, platform services, and the CloudHub worker cloud on link:http://trust.mulesoft.com/[trust.mulesoft.com].
 
-
-cloudhub vs on prem,  list of features
-
+=== Integration with Anypoint Studio
 
 
+CloudHub is built on top of Mule, the most widely used integration platform. With Anypoint Studio – the user-friendly development tool – you can quickly build these integration applications and deploy to CloudHub with just a few clicks, without even leaving Anypoint Studio, see link:.
+
+Once your application is deployed to CloudHub's multi-tenant runtime, you can link:http://anypoint.mulesoft.com[log in] to the Anypoint Platform, and then go to the Runtime Manager. You'll see your application running and will be able to perform management tasks on it like any other application deployed through the platform.
+
+
+=== Integrate Cloud and Enterprise Applications
+
+The Virtual Private Cloud (VPC) feature provides a secure pipe to the enterprise, breaking down the "cloud silo." CloudHub allows you to integrate and orchestrate applications, data sources, and services across the enterprise and cloud.
 
 
 
@@ -101,7 +101,6 @@ Do you need to automate tasks, or build CloudHub into your deployment process? C
 * link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] 
 * link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] 
 * link:/runtime-manager/cloudhub-faq[CloudHub FAQ]
-
 
 * There are tons of APIs available. Check our MuleSoft Blog for a list of the link:http://blogs.mulesoft.org/top-10-weird-apis/[TOP 10 of the weirdest APIs] out there.
 

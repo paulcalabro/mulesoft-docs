@@ -44,16 +44,9 @@ Each notification has a priority level and a message associated with it. If the 
 image:AlertMessage.png[AlertMessage]
 
 == Managing Alerts
-
-To view and configure your alerts, you can:
-
-* Select the *Alerts* tab
-* Click an application, click *Manage Application*, and click *Alerts* in the left menu. ???
-* servers ????
+To view and configure your alerts, click an application, click *Manage Application*, and click *Alerts* in the left menu.
 
 image:AlertsInNavBar.png[AlertsInNavBar]
-???
-
 
 To create an alert, click *New alert*:
 
@@ -77,13 +70,10 @@ image:AlertEmailMsg.png[AlertEmailMsg] 
 
 See below for more information on each alert type.
 
+
 === Alert Events
 
-Depending on where your application is deployed to, different event types exist. Below are the event types for deployments to ClodudHub and Mule Servers.
-
-==== Events on CloudHub workers
-
-On an application that's deployed to CloudHub, you can select one of these alert events:
+You can select one of these alert events:
 
 * Custom application notification
 * Deployment failure
@@ -93,36 +83,7 @@ On an application that's deployed to CloudHub, you can select one of these alert
 * Secure data gateway disconnected
 * Worker not responding
 
-[TIP]
-The *custom application notification* event type is described in the link:/runtime-manager/custom-application-alerts[Custom Application Alerts] tutorial.
-
-
-==== Events on Mule Servers
-
-On an application that's deployed to a Mule server, server group or cluster, you can select one of these alert events:
-
-
-* Server up
-* Server disconnected
-* New server registered
-* Agent's version changed
-* Runtime's version changed
-* Server added to a Server Group
-* Server removed from a Server Group
-* Server added to a Cluster
-* Server removed from a Cluster
-* Application deployment success
-* Application deployment failure
-* Application deployment status changed
-* Application deleted
-* Server deleted
-* Cluster is up
-* A cluster's node went down
-* Cluster is down
-* Cluster presents visibility issues
-* Server group is up
-* Server group is partially up (some servers are not running)
-* Server group is down
+The *custom application notification* event type is described in the link:/cloudhub/custom-application-alerts[Custom Application Alerts] tutorial.
 
 
 == Alert Properties
@@ -137,25 +98,6 @@ The following properties are available and can be used in the alert Email to, Su
 |`${message}` |The message from the notification triggering the alert.
 |`${priority}` |The priority of the notification triggering the alert.
 |===
-
-== Switching Alerts On or Off
-
-All users of the Anypoint Platform, even those without permissions to create alerts, can switch the existing alerts that are already created into an active or inactive state for their user. This determines what email alerts will reach their inbox.
-
-[NOTE]
-Switching an alert off switches it off for the user that is currently logged in, other users may still have it active.
-
-=== For Applications
-
-image:alerts-on-applications.png[alerts on apps]
-
-=== For Servers
-
-
-
-//image:[alerts on servers]   SCREENSHOT MISSING
-
-
 
 
 == See Also

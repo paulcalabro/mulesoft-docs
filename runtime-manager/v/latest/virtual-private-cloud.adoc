@@ -1,7 +1,7 @@
 = Virtual Private Cloud
 :keywords: cloudhub, vpc, ipsec, ssl, openvpn
 
-CloudHub's Virtual Private Cloud (VPC) enables you to connect to your corporate data centers – whether on-premises or in other clouds – as if they were all part of a single, private network. You can configure these networks to use IPsec or SSL and create them at hardware or software levels.
+The Virtual Private Cloud (VPC) offering enables you to connect to your corporate data centers – whether on-premises or in other clouds – through an IPsec or SSL based VPN  as if they were all part of a single, private network. You can create these networks at hardware or software levels.
 
 == How VPC Works
 

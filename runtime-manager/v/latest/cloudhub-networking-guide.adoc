@@ -30,19 +30,19 @@ The following DNS records are exposed for your CloudHub applications:
 |===
 |*myapp.cloudhub.io* |Load balancer. Ports 80 and 443 forward to  `${http.port}` and `${https.port}` respectively.
 |*mule-worker-myapp.cloudhub.io* |The external IP address of the Mule workers. HTTP services are exposed on: `${http.port}` and `${https.port}`
-|*mule-worker-internal-myapp.cloudhub.io* |The internal IP address of the Mule workers. The IPs for this DNS record are only accessible within a customer's private VPC. *These IPs are not accessible for workers running in the MuleSoft shared VPC.* Public HTTP services are exposed on `${http.port}` and `${https.port}.` Internal HTTP services are exposed on ports 8091/8092.
+|*mule-worker-internal-myapp.cloudhub.io* |The internal IP address of the Mule workers. The IPs for this DNS record are only accessible within a customer's private link:/runtime-manager/virtual-private-cloud[VPC]. *These IPs are not accessible for workers running in the MuleSoft shared VPC.* Public HTTP services are exposed on `${http.port}` and `${https.port}.` Internal HTTP services are exposed on ports 8091/8092.
 |===
 
 In certain situations, you may want to know an application’s internal IPs:
 
-* When communicating with the worker directly within the customer's VPC without sending data over the public internet
+* When communicating with the worker directly within the customer's link:/runtime-manager/virtual-private-cloud[VPC] without sending data over the public internet
 * When you wish to setup your own load balancer (see below)
 
 These IP addresses can be accessed through the `mule-worker-internal-myapp.cloudhub.io` record, from within the customer's VPC. If you access the workers directly, any load distribution benefits from the CloudHub load balancing layer are lost.
 
 == Firewall Rules and Port Access
 
-The only two ports exposed externally are `${http.port}` and `${https.port}`. If you wish to access other ports, you can do so through a VPC.
+The only two ports exposed externally are `${http.port}` and `${https.port}`. If you wish to access other ports, you can do so through the CloudHub link:/runtime-manager/virtual-private-cloud[Virtual Private Cloud (VPC)] offering.
 
 If you wish to expose HTTP services only inside a VPC, these services can be exposed on ports 8091 and 8092, which are open by default on the internal network. In this case, these services are not accessible on the public IPs or the load-balancer, ensuring that they can be accessed securely.
 
@@ -54,7 +54,8 @@ As CloudHub deploys on Amazon EC2, IP addresses are chosen from the Amazon EC2 I
 
 CloudHub supports allocating a static IP for applications so that they can be whitelisted for other services. To enable a static IP for your application, go to the *Static IPs* tab in the application settings page on the Runtime Manager UI, then enable the *Use Static IP* checkbox. By default, you are allocated a number of static IPs equal to twice the number of Production vCores in your subscription. To increase this limit, please contact link:mailto:cloudhub-support@mulesoft.com[MuleSoft Support]. After a static IP has been allocated for your application, it is visible in the *Static IPs* tab in the application settings. For more details, see link:/runtime-manager/deploying-to-cloudhub#static-ips-tab[Deploying to CloudHub].
 
-Static IPs are not supported for private IP addresses inside a VPC and it is only supported for applications with 1 worker.
+[NOTE]
+Static IPs are not supported for private IP addresses inside a CloudHub VPC and it is only supported for applications with 1 worker.
 
 
 == Regional Services

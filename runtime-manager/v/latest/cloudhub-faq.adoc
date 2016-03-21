@@ -20,9 +20,6 @@ An link:https://anypoint.mulesoft.com/#/signup[Anypoint Platform account] gives 
 
 * link:/anypoint-platform-administration/creating-an-account[Creating an Account]
 * link:/anypoint-platform-administration/managing-accounts-roles-and-permissions[Managing Accounts Roles and Permissions]
-* link:/anypoint-platform-administration/manage-your-organization-and-business-groups[Manage your Organization and Business Groups]
-* link:/anypoint-platform-administration/managing-cloudhub-specific-settings[Managing CloudHub Specific Settings]
-** link:/anypoint-platform-administration/managing-cloudhub-environments[Managing CloudHub Environments]
 
 == Where can I get Anypoint Studio?
 
@@ -135,11 +132,11 @@ Yes, you can stop and start the application, you may upload a new project zip fi
 
 There are some specific scenarios where your static IP may be removed or reassigned. You should be aware of the following scenarios:
 
-* Deleting an application  also removes its Static IP. If you create a new application with the same name, it has a new dynamically assigned IP address.
+* Deleting an application also removes its Static IP. If you create a new application with the same name, it has a new dynamically assigned IP address.
 * Adding a new application by moving it from Sandbox to Production. This requires a new application name, hence a new Static IP
-* If a Virtual Private Cloud (VPC) is built for your organization, any existing applications   not already in the VPC   receives a new IP address when it is restarts inside the VPC.
+* If a link:/runtime-manager/virtual-private-cloud[Virtual Private Cloud (VPC)] is built for your organization, any existing application that is not already in the VPC receives a new IP address when it restarts inside the VPC.
 * An application is re-deployed to a different geographic region. You can pre-allocate a static IP in the new region in the *Static IPs* tab in the application settings page.
-* An application is deployed to multiple Cloudhub workers (such as Fabric). Fabric deployments do not support Static IPs. 
+* An application is deployed to multiple Cloudhub workers (such as link:/runtime-manager/cloudhub-fabric[Fabric]). Fabric deployments do not support Static IPs. 
 
 == Can I request a specific Static IP?
 
@@ -147,7 +144,7 @@ No. Cloudhub utilizes a pool of Static IP’s, which are only assigned to a Clou
 
 == I am running in a Cloudhub Virtual Private Network, how do I assign a Static IP to my internal private IP?
 
-Cloudhub is able to set the worker's public IP address to Static. However, the internal private IP address always remains Dynamic. The private IP address is assigned from the range specified in the Cloudhub Worker's Address Space, which was determined at the creation of your VPC.
+Cloudhub is able to set the worker's public IP address to Static. However, the internal private IP address always remains Dynamic. The private IP address is assigned from the range specified in the Cloudhub Worker's Address Space, which was determined at the creation of your link:/runtime-manager/virtual-private-cloud[VPC].
 
 == What are the possible IP ranges that can be assigned to Static IPs?
 

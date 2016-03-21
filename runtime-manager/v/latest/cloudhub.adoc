@@ -54,7 +54,7 @@ Once your application is deployed to CloudHub's multi-tenant runtime, you can li
 
 === Integrate Cloud and Enterprise Applications
 
-The Virtual Private Cloud (VPC) feature provides a secure pipe to the enterprise, breaking down the "cloud silo." CloudHub allows you to integrate and orchestrate applications, data sources, and services across the enterprise and cloud.
+The CloudHub link:/runtime-manager/virtual-private-cloud[Virtual Private Cloud (VPC)] offering allows you to construct a secure pipe to the enterprise through an IPsec or SSL based VPN.
 
 
 

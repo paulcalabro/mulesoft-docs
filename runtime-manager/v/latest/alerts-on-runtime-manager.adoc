@@ -211,6 +211,10 @@ Select one or several a alerts and then, from the alert pannel, simply click the
 
 image:delete-alert.png[duplicate]
 
+////
+== Viewing Alert Logs
+////
+
 
 == See Also
 

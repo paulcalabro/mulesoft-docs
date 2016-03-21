@@ -3,6 +3,8 @@
 
 The Virtual Private Cloud (VPC) offering enables you to connect to your corporate data centers – whether on-premises or in other clouds – through an IPsec or SSL based VPN as if they were all part of a single, private network. You can create these networks at hardware or software levels.
 
+
+
 == How VPC Works
 
 The Virtual Private Cloud enables you to create secure connections between CloudHub and the internal networks behind your firewall (see image below). Its light-weight configuration options offer connectivity for mission critical applications by providing redundant, hardware-level connections which can scale.
@@ -35,6 +37,13 @@ image:CHVPC03.png[CHVPC03]
 The diagram below illustrates a host-to-network topology, which you can configure via OpenVPN tunnels. In this configuration, CloudHub acts only as a server and cannot initiate the connection or restart the tunnel if it goes down.
 
 For this topology, you need to provide a VPN network that does not overlap with any existing networks in your infrastructure. CloudHub automatically assigns IP addresses for the tunnel based on the network you define. 
+
+IPsec is, in general, the recommended solution for VPC to on-premise connectivity. It provides a standardized, secure way to connect, which integrates well with existing IT infrastructure such as routers/appliances.
+
+OpenVPN can also be used to connect networks/hosts to a CloudHub VPC. It's recommended when you need to connect through a SOCKS/HTTP proxy, do not have a IPsec gateway or you need to perform multiple host to network configurations.
+
+If the services you are connecting to are hosted on Amazon, then the easiest way to connect is to use VPC peering:
+
 
 image:CHVPC04.png[CHVPC04]
 

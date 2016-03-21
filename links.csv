@@ -322,7 +322,7 @@ CloudHub Architecture,Runtime Manager,latest,cloudhub-architecture.adoc,/runtime
 CloudHub at a Glance,Runtime Manager,latest,cloudhub-at-a-glance.adoc,/runtime-manager/cloudhub-at-a-glance
 CloudHub Console Overview,Runtime Manager,latest,cloudhub-console-overview.adoc,/runtime-manager/cloudhub-console-overview
 CloudHub Fabric,Runtime Manager,latest,cloudhub-fabric.adoc,/runtime-manager/cloudhub-fabric
-CloudHub Insight,Runtime Manager,latest,cloudhub-insight.adoc,/runtime-manager/cloudhub-insight
+CloudHub Insight,Runtime Manager,latest,link:/runtime-manager/insight[.adoc,/runtime-manager/link:/runtime-manager/insight[
 CloudHub Networking Guide,Runtime Manager,latest,cloudhub-networking-guide.adoc,/runtime-manager/cloudhub-networking-guide
 Command Line Tools,Runtime Manager,latest,command-line-tools.adoc,/runtime-manager/command-line-tools
 CloudHub Community and Support,Runtime Manager,latest,community-and-support.adoc,/runtime-manager/community-and-support

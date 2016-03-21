@@ -35,7 +35,7 @@ Although the long term plan is to converge the features of these deployment scen
 |===
 Deploying to a CloudHub worker | Deploying to a server you manage |
 link:/runtime-manager/logs[Logs are handled] by CloudHub | You can configure the Runtime Manager to send data link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[to External Monitoring Software] such as Splunk or ELK|
-CloudHub has its own link:/runtime-manager/cloudhub-insight[Insight Engine]| You can configure the Runtime Manager to send data link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[to External Monitoring Software] such as Splunk or ELK|
+CloudHub has its own link:/runtime-manager/link:/runtime-manager/insight[[Insight Engine]| You can configure the Runtime Manager to send data link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[to External Monitoring Software] such as Splunk or ELK|
 You can manage link:/runtime-manager/managing-schedules[Schedules] through the Runtime Manager UI | You must use the link:/mule-user-guide/v/3.7/poll-schedulers[Poll Scheduler] element in your flows to schedule tasks |
 CloudHub has its own preconfigured default link:/runtime-manager/managing-application-data-with-object-stores[Object Store] you can reference. To use it, simply add an link:/mule-user-guide/v/3.7/mule-object-stores[Object Store connector] and set its 'config_ref' to point to the default CloudHub Object Store.|
 To use link:/mule-user-guide/v/3.7/mule-object-stores[Object Stores] you must configure your own database to store data |
@@ -129,7 +129,7 @@ Note that you can flag application properties as secure so that their values are
 
 == Analytics
 
-Applications deployed to CloudHub can make use of link:/runtime-manager/cloudhub-insight[CloudHub Insight], applications deployed to local servers can link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[send data to external tools, such as Splunk or ELK].
+Applications deployed to CloudHub can make use of link:/runtime-manager/link:/runtime-manager/insight[[CloudHub Insight], applications deployed to local servers can link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[send data to external tools, such as Splunk or ELK].
 
 
 == Scheduling
@@ -162,7 +162,7 @@ There are also a few components which CloudHub has limited support for currently
 * link:/runtime-manager/cloudhub-administration[CloudHub Administration]
 * link:/runtime-manager/alerts-and-notifications[Alerts and Notifications]
 * link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]
-* link:/runtime-manager/cloudhub-insight[CloudHub Insight]
+* link:/runtime-manager/link:/runtime-manager/insight[[CloudHub Insight]
 * link:/runtime-manager/managing-queues[Managing Queues]
 * link:/runtime-manager/managing-schedules[Managing Schedules]
 * link:/runtime-manager/managing-application-data-with-object-stores[Managing Application Data with Object Stores]

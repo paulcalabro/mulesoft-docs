@@ -1,4 +1,4 @@
-= CloudHub Insight
+= Insight
 :keywords: cloudhub, analytics, monitoring, insight, filter
 
 [NOTE]

@@ -99,7 +99,7 @@ Zero downtime deploys are not fully supported in this situation. If you set your
 * link:/runtime-manager/cloudhub-administration[CloudHub Administration]
 * link:/runtime-manager/alerts-and-notifications[Alerts and Notifications]
 * link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]
-* link:/runtime-manager/cloudhub-insight[CloudHub Insight]
+* link:/runtime-manager/link:/runtime-manager/insight[[CloudHub Insight]
 * link:/runtime-manager/managing-queues[Managing Queues]
 * link:/runtime-manager/managing-schedules[Managing Schedules]
 * link:/runtime-manager/managing-application-data-with-object-stores[Managing Application Data with Object Stores]

@@ -121,7 +121,7 @@ If your organization's security policies require that you carry out everything o
 
 === Setup the Runtime Manager
 
-* It is ready to use! Click link:/runtime-manager/cloudhub[[here] to learn how to begin using the Runtime Manager!
+* It is ready to use! Click link:/runtime-manager/[[here] to learn how to begin using the Runtime Manager!
 
 === Use the Platform
 

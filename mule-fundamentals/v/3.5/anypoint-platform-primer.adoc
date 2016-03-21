@@ -63,7 +63,7 @@ You may be thinking, "So, is Mule similar to an application server like JBoss or
 ==== How to Get Started
 
 . To get started building integrations with Anypoint Studio, you’ll want to work through the rest of Mule Fundamentals, starting with link:/mule-fundamentals/v/3.6/begin-with-the-basics[Begin with the Basics].
-. If you're interested in diving into the operations side of the platform, check out link:/mule-management-console/v/3.7[Mule Management Console] (if you deploy on-premises) orlink:/runtime-manager[Runtume Manager] if you deploy to a VPC.
+. If you're interested in diving into the operations side of the platform, check out link:/runtime-manager[Runtume Manager].
 
 == Meet Mule
 

@@ -5,7 +5,7 @@
 == Overview
 
 
-*Alerts* give you the ability to trigger *emails* whenever certain events related to your application or servers occur. This mechanism works in the same way for applications deployed both to link:/runtime-manager/cloudhub[CloudHub] and to link:/runtime-manager/managing-applications-on-your-own-servers[local servers].
+You can set up *Alerts* that trigger the sending of *emails* whenever certain events related to your application or servers occur. This mechanism works in the same way for applications deployed both to link:/runtime-manager/cloudhub[CloudHub] and to link:/runtime-manager/managing-applications-on-your-own-servers[local servers].
 
 Runtime Manager includes several out of the box *standard alert* types, for example:
 
@@ -28,8 +28,8 @@ CloudHub also lets you create your own *custom alerts* for your application. Cus
 To view and configure your alerts, you can:
 
 * Select the *Alerts* tab to display a full list of alerts on your account
-* On the *Applications* tab, click an application to open the link:/runtime-manager/managing-deployed-applications#applications-dashboard[application dashboard], click the *View Associated Alerts* link
-* On the *Servers* tab, click a server to open the link:/runtime-manager/managing-servers#servers-dashboard[servers dashboard], click the *View Associated Alerts* link
+* On the *Applications* tab, click an application to open the link:/runtime-manager/managing-deployed-applications#applications-dashboard[application dashboard], then click the *View Associated Alerts* link
+* On the *Servers* tab, click a server to open the link:/runtime-manager/managing-servers#servers-dashboard[servers dashboard], then click the *View Associated Alerts* link
 
 == Create an Alert
 
@@ -47,24 +47,24 @@ Fill in the required fields:
 . Select a *Severity Level* (Critical, Warning or Info)
 +
 [NOTE]
-Different severity levels currently have no effect on alerts, but will in the future when other features are released.
+Different severity levels currently have no effect on alerts, but will in the future when further features are released.
 
-. Select a *Source* to determine if this alert is to be related to a applications or servers
+. Select a *Source* to determine if this alert is to be related to applications or servers. This field may not appear if your Anypoint Platform account doesn't support link:/runtime-manager/managing-servers[local servers].
 . For applications, select an *Application Type* to determine if it is destined for applications deployed to link:/runtime-manager/cloudhub-and-mule[CloudHub or local servers].
 +
 [NOTE]
 You can't create a single alert that spans applications both on CloudHub and a local servers. You must create two separate alerts to reach both types.
 
++ For servers, select a *Server Type* to determine if you're managing a single Server, a Server Group, or a Cluster. If your servers aren't available on your menu, see link:/runtime-manager/managing-servers[Managing Servers].
+
 . Select which *application(s)/server(s)* this alert should be applied to.
-. Select the *Condition* that needs to occur for the alert to be triggered. The options depend on wether your alert is linked to a server, to an application running on CloudHub, or to an application running locally. Selecting a condition is likely to open more menu options, explained in a section below.
+. Select the *Condition* that needs to occur for the alert to be triggered. The options depend on wether your alert is linked to a server, to an application running on CloudHub, or to an application running locally. Certain conditions require additional data, explained in a <<Alert Conditions, section below>>.
 . Provide a *Subject* for the email that will be sent. Your subject may include variable <<Alert Properties>>.
 . Write a *Message* to fill the body of the email. Your message may include variable <<Alert Properties>>.
-. List the recepients of this email. You can select users of the platform, or also freely write email addresses of people who aren't in the organiztion.
+. List the recepients of this email. You can select users of the platform, or also freely write email addresses of people who aren't in the organization.
 . Click *Create Alert*.
 
-
-+
-. If a failure occurs, an email like the following is sent:
+. If a an event that meets an alert condition occurs, an email like the following is sent:
 +
 image:AlertEmailMsg.png[AlertEmailMsg] 
 
@@ -73,11 +73,11 @@ See below for more information on the alert conditions available for each alert 
 
 == Alert Conditions
 
-Depending on what your alert's source is, different event types exist. Below are the event types for servers and for deployments to CloudHub and local servers and for Mule Servers, server groups and clusters.
+Depending on what your alert's source is, different event types exist. Below are the event types for each.
 
 === Conditions on CloudHub Applications
 
-On an application that's deployed to CloudHub, you can select any of these alert conditions. Some of these are self explaining notifications of different events such as 'Application Deployment Success', others require that you complete additional parameters that appear as new fields in the form.
+On an application that's deployed to CloudHub, you can select any of these alert conditions. Some of these are self explaining notifications for different events such as 'Application Deployment Success', others require that you complete additional parameters that appear as new fields in the form.
 
 * *CPU Usage* - refers to the CPU usage of the CloudHub worker(s) that run the app
 +
@@ -91,11 +91,11 @@ image:memory-usage.png[memo]
 +
 You must then set up a few parameters for this condition to be enabled, these specify a duration and capacity threshold that triggers the alert.
 
-* *Custom alert*
+* *Custom alert* – looks at custom notifications and alerts when one contains a certain text
 +
 image:custom-alert.png[custom]
 +
-You must then set up a few parameters for this condition to be enabled, these reference the notifications that are the output of a *CloudHub connector* that must priorly exist in your application. An alert is raised when the text in one of the notifications matches or contains the string that you provide in the *Contains* field. See the link:/runtime-manager/custom-application-alerts[Custom Application Alerts] tutorial.
+You must set up a few parameters for this condition to be enabled, these reference the notifications that are the output of a *CloudHub connector* that must priorly exist in your application. An alert is raised when the text in one of the notifications matches or contains the string that you provide in the *Contains* field. See the link:/runtime-manager/custom-application-alerts[Custom Application Alerts] tutorial.
 
 * *Exceeds event traffic threshold*
 +
@@ -106,13 +106,13 @@ You must then set up a few parameters for this condition to be enabled, these sp
 * *Secure data gateway disconnected*
 * *Secure data gateway connected*
 * *Worker not responding*
-* *Autoscaled*.  See link:/runtime-manager/      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* *Autoscaled*.  See link:/runtime-manager/autoscaling-in-cloudhub[Autoscaling in CloudHub]
 * *Deployment success*
 * *Deployment failure*
 
 === Conditions on Locally Deployed Applications
 
-On an application that's deployed to local servers, you can select any of these alert events. All of these are self explaining events such as 'Application Deployment Success'.
+On an application that's deployed to local servers, you can select any of these alert events. All of them are self explaining events such as 'Application Deployment Success'.
 
 * *Application Deployment success*
 * *Application Deployment failure*
@@ -172,16 +172,17 @@ The following properties are available and can be used in the alert Email to, Su
 |`${app}` |The name of the application which is triggering the alert.
 |`${message}` |The message from the notification triggering the alert.
 |`${priority}` |The priority of the notification triggering the alert.
+|`${severity}` | The severity of the notification triggering the alert.
 |===
 
 == Editing Existing Alerts
 
-If you view the panel of an application or server, you will see a *View Alerts* link. In there you will be able to see and manage the alerts that are sourced from it. You can also click on the *Alerts* link on the left panel to view all alerts together.
+If you view the panel for an application or server, you will see a *View Alerts* link. In there you will be able to see and manage the alerts that are sourced from it. You can also click on the *Alerts* link on the left panel to view all alerts together.
 
 image:view-alerts.png[alerts]
 
 
-From this menu you can filter the displayed alerts, click on an alert name to directly edit it, or click on the icon next to one to open its panel to view its settings. From this panel you can click the *edit* icon next to the name.
+From this menu you can filter the displayed alerts, click on an alert name to directly edit it, or click on the icon next to one to open its panel to view its settings. From this panel you can click the *edit* icon next to the name to edit the same options you have when creating a new one.
 
 image:edit-alert.png[edit]
 
@@ -196,11 +197,11 @@ image:alert-on.png[on]
 All users of the Anypoint Platform, even those without permissions to create alerts, can switch the existing alerts that are already created into an active or inactive state for their user. This determines what email alerts will reach their inbox.
 
 [NOTE]
-Switching an alert off switches it off for the user that is currently logged in, other users may still have it active.
+Switching an alert off has an effect for the user that is currently logged in, the state of the alert for other users is unaffected.
 
 === Duplicating an Alert
 
-Select one or several alerts and then, from the alert pannel, simply click the *duplicate* icon. You're then free to edit your new alert at will.
+Select one or several alerts and then, from the alert pannel, simply click the *duplicate* icon. You can then edit your new alert freely.
 
 image:duplicate-alert.png[duplicate]
 

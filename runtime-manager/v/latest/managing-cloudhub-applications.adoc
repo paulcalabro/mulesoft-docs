@@ -1,20 +1,17 @@
 = Managing CloudHub Applications
 :keywords: cloudhub, managing, monitoring, deploy, runtime manager, arm
 
-After you deploy an application to link:/runtime-manager/deploying-to-cloudhub[CloudHub], you can use the Runtime Manager to monitor and manage your application at runtime.
+After you deploy an application to link:/runtime-manager/deploying-to-cloudhub[CloudHub], you can use the Runtime Manager to manage your application at runtime.
 
 Depending on if your application is deployed to link:/runtime-manager/deploying-to-cloudhub[CloudHub] or to link:/runtime-manager/deploying-to-your-own-servers[your own servers], there is a different set of possible actions you can perform on it, once deployed. This page focuses on the actions that are specific to CloudHub applications. To view the basic management tools that are common to both types of deployment targets, see link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications].
 
 
 With applications deployed to link:/runtime-manager/managing-cloudhub-applications[CloudHub] you can manage the following:
 
-* link:/runtime-manager/alerts-and-notifications[Notifications]
 * link:/runtime-manager/link:/runtime-manager/insight[[Insight]
 * link:/runtime-manager/managing-queues[Queues]
 * link:/runtime-manager/managing-schedules[Schedules]
 * link:/runtime-manager/secure-application-properties[Secure Application Properties]
-* link:/runtime-manager/viewing-log-data[View application log data]
-* link:/runtime-manager/worker-monitoring[Worker Monitoring]
 * link:/runtime-manager/secure-data-gateway[Secure Data Gateway]
 * link:/runtime-manager/managing-application-data-with-object-stores[Object Stores]
 
@@ -132,17 +129,14 @@ Additional tools for managing your applications:
 * link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application]
 * link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule]
 * link:/runtime-manager/cloudhub-administration[CloudHub Administration]
-* link:/runtime-manager/alerts-and-notifications[Alerts and Notifications] shows you how you can set up email alerts for whenever certain events occur with your application or workers
+* link:/runtime-manager/monitoring-applications[Monitoring Applications] shows you how you can set up email alerts for whenever certain events occur with your application or workers
 * link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]
-* link:/runtime-manager/link:/runtime-manager/insight[[CloudHub Insight]
 * link:/runtime-manager/managing-queues[Managing Queues]
 * link:/runtime-manager/managing-schedules[Managing Schedules]
 * link:/runtime-manager/managing-application-data-with-object-stores[Managing Application Data with Object Stores]
 * link:/runtime-manager/cloudhub-cli[Command Line Tools]
 * link:/runtime-manager/secure-application-properties[Secure Application Properties]
-* link:/runtime-manager/viewing-log-data[Viewing Log Data]
 * link:/runtime-manager/virtual-private-cloud[Virtual Private Cloud]
-* link:/runtime-manager/worker-monitoring[Worker Monitoring]
 * link:/runtime-manager/penetration-testing-policies[Penetration Testing Policies]
 * link:/runtime-manager/secure-data-gateway[Secure Data Gateway]
 

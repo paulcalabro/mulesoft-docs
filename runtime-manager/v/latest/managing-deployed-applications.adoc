@@ -174,6 +174,10 @@ What this dashboard displays depends on if your application is deployed on link:
 
 CloudHub applications also present buttons that allow you to view Logs, Insights and enter the *Manage Application* menu.
 
+== Monitoring Applications
+
+Depending on if your application is deployed to CloudHub or your own servers, different tools exist for monitoring events that may occur on your application and the performance of the server or virutal server it's running on, see link:/runtime-manager/monitoring-applications[Monitoring Applications] for more details.
+
 == Accessing Settings for Apps on CloudHub
 
 Log in to the link:anypoint.mulesoft.com[Anypoint Platform] and view the *Applications* tab of the Runtime Manager. Select one of your CloudHub running applications to open a panel on the right side. On that pannel, click the *Manage Application* button to open up the application's settings.
@@ -225,16 +229,13 @@ Additional tools for managing your applications:
 * See how you can link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[Send data from Runtime Manager to External Monitoring Software]
 * link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule]
 * link:/runtime-manager/cloudhub-administration[CloudHub Administration]
-* link:/runtime-manager/alerts-and-notifications[Alerts and Notifications] shows you how you can set up email alerts for whenever certain events occur with your application, workers or servers
+* link:/runtime-manager/monitoring-applications[Monitoring Applications] shows you how you can set up email alerts for whenever certain events occur with your application, workers or servers
 * link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]
-* link:/runtime-manager/link:/runtime-manager/insight[[CloudHub Insight]
 * link:/runtime-manager/managing-queues[Managing Queues]
 * link:/runtime-manager/managing-schedules[Managing Schedules]
 * link:/runtime-manager/managing-application-data-with-object-stores[Managing Application Data with Object Stores]
 * link:/runtime-manager/secure-application-properties[Secure Application Properties]
-* link:/runtime-manager/viewing-log-data[Viewing Log Data]
 * link:/runtime-manager/virtual-private-cloud[Virtual Private Cloud]
-* link:/runtime-manager/worker-monitoring[Worker Monitoring]
 * link:/runtime-manager/penetration-testing-policies[Penetration Testing Policies]
 * link:/runtime-manager/secure-data-gateway[Secure Data Gateway]
 

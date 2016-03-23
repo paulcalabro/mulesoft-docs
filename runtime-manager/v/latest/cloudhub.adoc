@@ -101,6 +101,7 @@ Do you need to automate tasks, or build CloudHub into your deployment process? C
 * link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] 
 * link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] 
 * link:/runtime-manager/cloudhub-faq[CloudHub FAQ]
+* link:/runtime-manager/monitoring-applications[Monitoring Applications]
 
 * There are tons of APIs available. Check our MuleSoft Blog for a list of the link:http://blogs.mulesoft.org/top-10-weird-apis/[TOP 10 of the weirdest APIs] out there.
 

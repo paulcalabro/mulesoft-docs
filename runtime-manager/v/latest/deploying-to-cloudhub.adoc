@@ -224,7 +224,7 @@ If you need to free up some of your overall static IP allocation, you can releas
 
 
 
-== CloudHub Deployment
+== Deployment Execution
 
 After you complete the above steps, click *Create* and CloudHub uploads your application and automatically begins the deployment process. During this process, your view is switched to the log view allowing you to monitor the process of your application deployment. This process could take several minutes. During the deployment, the application status indicator changes to yellow to indicate deployment in progress.
 

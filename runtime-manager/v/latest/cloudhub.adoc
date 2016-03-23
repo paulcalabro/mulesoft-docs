@@ -16,29 +16,36 @@ Through the same link:/runtime-manager/[Runtime Manager] console that you deploy
 CloudHub is an elastic cloud that scales on demand. You can start small and grow as your needs grow, all without changing your application. CloudHub provides you with a scalable architecture – one you can build integration applications on, publish REST APIs or Web Services, and much more. You can also manage servers in your organization from CloudHub and organize servers into groups that run an application.
 
 ////
-you can also do autoscaling!!!!
+With the link:/runtime-manager/autoscaling-in-cloudhub[Autoscaling] feature, you can give your apps access to a varying amount of processing resources depending on how much they have been using, and you can define the rules and thresholds for triggering automatic changes.
+
 ////
 
 === Easy Transition Between Cloud and On-Premise Deployments
 
-Create CloudHub applications with the development tools you are already familiar with. Download link:https://www.mulesoft.com/ty/dl/studio[Anypoint Studio], it's free! Anypoint Studio is an Eclipse-based graphical environment that allows developers to easily choose to code in a visual environment with a palette of components, or in a familiar XML code view. You can even switch between the visual and code views as you build your application. Or, if you would rather use the command-line, we support Maven, as a command line tool.
-
 
 You can deploy the same Mule applications interchangeably both to CloudHub or to an link:/runtime-manager/deploying-to-your-own-servers[on premise server]. Keep in mind that there are link:/runtime-manager/cloudhub-and-mule[some considerations] to take into account about how some features work between both kinds of environments.
 
-
-
-cloudhub vs on prem,  list of features
-
-
+See:
+* link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for an overview on how applications built for delpoying to CloudHub differ from those meant for deploying on premises
+* link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub] for an overview on how to deploy applications on CloudHub
 
 
 === Visibility and Control through the Anypoint Runtime Manager
 
-With CloudHub, you also get our intuitive cloud console where you can manage your applications and servers, scale up and scale down, view event traffic, and much more. The Anypoint Runtime Manager allows you to manage every aspect of your CloudHub applications from one place. In addition, with link:/runtime-manager/managing-servers[server management] and link:/runtime-manager/managing-servers#create-a-cluster[cluster management] you can manage your on-premise servers, server groups, and clusters, plus applications from your CloudHub console, giving you a single management pane of glass for all your applications and servers.
+You handle your applications on CloudHub through the link:/runtime-manager[Runtime Manager], an intuitive cloud console where you can link:/runtime-manager/managing-deployed-applications[manage] and link:/runtime-manager/monitoring-applications[monitor] every aspect of your applications, all from one place. In addition to that, through the same Runtime Manager console you can link:/runtime-manager/managing-servers[manage] your on-premise servers, server groups, and clusters, as well as any link:/runtime-manager/managing-deployed-applications[applications deployed to them], giving you a single management pane of glass for all your applications and servers.
 
 
-From there you can link:/runtime-manager/managing-cloudhub-applications[manage running applications]. It also allows you to triage problems, view logs, set up alerts, view dashboards, and more. Follow the simple steps in the link:/runtime-manager/hello-world-on-cloudhub[Hello World] tutorial to setup your free Anypoint Platform account and deploy your first application to it.
+See:
+* link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] for an overview on what you can do with applications in general on the Runtime Manager
+* link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] for an overview on what you can do specifically with CloudHub applications on the Runtime Manager
+* link:/runtime-manager/monitoring-applications[Monitoring Applications] for an overview on the different ways that the Runtime Manager allows you to monitor your running applications
+
+
+
+
+
+It also allows you to triage problems, view logs, set up alerts, view dashboards, and more. Follow the simple steps in the link:/runtime-manager/hello-world-on-cloudhub[Hello World] tutorial to setup your free Anypoint Platform account and deploy your first application to it.
+
 
 
 [NOTE]
@@ -46,10 +53,9 @@ You can view the live status and detailed service history for the Runtime Manage
 
 === Integration with Anypoint Studio
 
+With link:/mule-fundamentals/v/3.7/anypoint-studio-essentials[Anypoint Studio] you can quickly build integration applications and deploy to CloudHub with just a few clicks, without even leaving the Studio IDE, see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
 
-CloudHub is built on top of Mule, the most widely used integration platform. With Anypoint Studio – the user-friendly development tool – you can quickly build these integration applications and deploy to CloudHub with just a few clicks, without even leaving Anypoint Studio, see link:.
-
-Once your application is deployed to CloudHub's multi-tenant runtime, you can link:http://anypoint.mulesoft.com[log in] to the Anypoint Platform, and then go to the Runtime Manager. You'll see your application running and will be able to perform management tasks on it like any other application deployed through the platform.
+Once your application is deployed to CloudHub's multi-tenant runtime, you can see it by link:http://anypoint.mulesoft.com[logging in] to the Anypoint Platform, and then going to the Runtime Manager. You'll see your application running and will be able to link:/runtime-manager/managing-deployed-applications[manage] and link:/runtime-manager/monitoring-applications[monitor] it like any other application deployed through the platform.
 
 
 === Integrate Cloud and Enterprise Applications
@@ -95,16 +101,10 @@ The same Runtime Manager console enables you to deploy and manage applications b
 Do you need to automate tasks, or build CloudHub into your deployment process? CloudHub has a link:/runtime-manager/cloudhub-api[REST API] with which you can perform tasks such as manage and monitor your applications, scale your applications up or down, and more.
 
 
-=== Other Resources
+== Other Resources
 
 * link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]
 * link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] 
 * link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] 
 * link:/runtime-manager/cloudhub-faq[CloudHub FAQ]
 * link:/runtime-manager/monitoring-applications[Monitoring Applications]
-
-* There are tons of APIs available. Check our MuleSoft Blog for a list of the link:http://blogs.mulesoft.org/top-10-weird-apis/[TOP 10 of the weirdest APIs] out there.
-
-You can also obtain more information about CloudHub and Anypoint Studio here:
-
-* link:/mule-fundamentals/v/3.7/elements-in-a-mule-flow[Elements in a Mule Flow]

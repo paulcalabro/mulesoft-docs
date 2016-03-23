@@ -6,9 +6,8 @@ After you deploy an application to link:/runtime-manager/deploying-to-cloudhub[C
 Depending on if your application is deployed to link:/runtime-manager/deploying-to-cloudhub[CloudHub] or to link:/runtime-manager/deploying-to-your-own-servers[your own servers], there is a different set of possible actions you can perform on it, once deployed. This page focuses on the actions that are specific to CloudHub applications. To view the basic management tools that are common to both types of deployment targets, see link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications].
 
 
-With applications deployed to link:/runtime-manager/managing-cloudhub-applications[CloudHub] you can manage the following:
+With applications deployed to link:/runtime-manager/managing-cloudhub-applications[CloudHub] you can handle the following features:
 
-* link:/runtime-manager/link:/runtime-manager/insight[[Insight]
 * link:/runtime-manager/managing-queues[Queues]
 * link:/runtime-manager/managing-schedules[Schedules]
 * link:/runtime-manager/secure-application-properties[Secure Application Properties]
@@ -27,6 +26,12 @@ What this dashboard displays depends on if your application is deployed on link:
 Applications deployed to CloudHub display the status, the time of the last modification, and the deployed application .zip file, which you can change from this menu through the *Choose File* button.
 
 They also display additional info about the CloudHub worker they run on, namely the Mule Runtime version, worker size, worker amount and region. You will also see buttons that allow you to view Logs, Insights and enter the *Manage Application* menu.
+
+
+== Monitoring Applications
+
+If your application is deployed to CloudHub, a rich set of tools exists for monitoring events that may occur on your application and the performance of the virutal servers it's running on. See link:/runtime-manager/monitoring-applications[Monitoring Applications] for more details.
+
 
 == Redeploying to a Different Region
 

@@ -7,11 +7,11 @@ Depending on if your application is deployed to link:/runtime-manager/deploying-
 
 With applications deployed to link:/runtime-manager/managing-applications-on-your-own-servers[your own servers] you can do the following:
 
-* link:/runtime-manager/sending-data-from-arm-to-external-monitoring-software[Sending Data from Runtime Manager to External Monitoring Software]
+* link:/runtime-manager/monitoring-applications[Monitor Applications] and the servers they run on
 * link:/runtime-manager/managing-servers[Manage Servers]
 
 [TIP]
-Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, features described in this page work identically in all of them.
+Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, the features described in this page work identically in all of them.
 
 
 == Applications Dashboard
@@ -27,7 +27,9 @@ Aplications deployed to Mule servers show you the status, the time of the last m
 [TIP]
 You can verify info about the servers the application runs on via the *Servers* tab. See more on link:/runtime-manager/managing-servers#servers-dashboard[Servers Dashboard].
 
+== Monitoring Applications
 
+If your application is deployed to one of your own servers a set of tools exists for monitoring events that may occur on your application and the performance of the servers, server groups or clusters it's running on. See link:/runtime-manager/monitoring-applications[Monitoring Applications] for more details.
 
 
 == See Also

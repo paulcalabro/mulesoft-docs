@@ -151,3 +151,4 @@ For more information about MuleSoft’s approach to security, please see the lin
 * Find out more differences between link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule].
 * Refer to our link:/runtime-manager/maintenance-and-upgrade-policy[Maintenance and Upgrade Policy].
 * Learn how to access link:http://forum.mulesoft.org/mulesoft/products/mulesoft_cloudhub[Community and Support] resources.
+* You can view the live status and detailed service history for the Runtime Manager console, platform services, and the CloudHub worker cloud on link:http://trust.mulesoft.com/[trust.mulesoft.com].

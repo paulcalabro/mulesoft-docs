@@ -9,7 +9,33 @@ This page deals with some basic concepts about CloudHub. After this short overvi
 [TIP]
 Through the same link:/runtime-manager/[Runtime Manager] console that you deploy applications to CloudHub, you can also link:/runtime-manager/deploying-to-your-own-servers[deploy] to link:/runtime-manager/managing-servers[servers, server groups and clusters] on-premises.
 
-== Benefits of CloudHub
+
+
+== 1. Create a CloudHub Application
+
+Follow one of our tutorials to learn how to build CloudHub applications.
+
+* link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub]
+* link:/runtime-manager/building-an-https-service[Building an HTTPS Service on CloudHub]  
+
+* link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule]
+* link:/mule-fundamentals/v/3.7/anypoint-studio-essentials[Studio Essentials]
+* link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application]
+
+[TIP]
+Want to see examples of more elaborate applications? Check out all the examples in link:/mule-fundamentals/v/3.7/anypoint-exchange[Anypoint Exchange].
+
+
+
+== 2. Deploy your Applications to the CloudHub
+
+* link:/runtime-manager/deploying-to-cloudhub[Deploy Applications] to the cloud
+* link:/runtime-manager/managing-deployed-applications[Manage Deployed Applications] from the cloud console
+* link:/runtime-manager/managing-cloudhub-applications[Manage CloudHub Applications] deals with settings specific to CloudHub
+
+[TIP]
+The same Runtime Manager console also enables you to deploy and manage applications to your own servers, handling everything from a single interface.
+
 
 === Easy Scalability
 
@@ -29,6 +55,13 @@ See:
 * link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for an overview on how applications built for delpoying to CloudHub differ from those meant for deploying on premises
 * link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub] for an overview on how to deploy applications on CloudHub
 
+=== Integration with Anypoint Studio
+
+With link:/mule-fundamentals/v/3.7/anypoint-studio-essentials[Anypoint Studio] you can quickly build integration applications and deploy to CloudHub with just a few clicks, without even leaving the Studio IDE, see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
+
+Once your application is deployed to CloudHub's multi-tenant runtime, you can see it by link:http://anypoint.mulesoft.com[logging in] to the Anypoint Platform, and then going to the Runtime Manager. You'll see your application running and will be able to link:/runtime-manager/managing-deployed-applications[manage] and link:/runtime-manager/monitoring-applications[monitor] it like any other application deployed through the platform.
+
+== 3. Manage your CloudHub Application
 
 === Visibility and Control through the Anypoint Runtime Manager
 
@@ -43,19 +76,11 @@ See:
 
 
 
-
 It also allows you to triage problems, view logs, set up alerts, view dashboards, and more. Follow the simple steps in the link:/runtime-manager/hello-world-on-cloudhub[Hello World] tutorial to setup your free Anypoint Platform account and deploy your first application to it.
-
 
 
 [NOTE]
 You can view the live status and detailed service history for the Runtime Manager console, platform services, and the CloudHub worker cloud on link:http://trust.mulesoft.com/[trust.mulesoft.com].
-
-=== Integration with Anypoint Studio
-
-With link:/mule-fundamentals/v/3.7/anypoint-studio-essentials[Anypoint Studio] you can quickly build integration applications and deploy to CloudHub with just a few clicks, without even leaving the Studio IDE, see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub].
-
-Once your application is deployed to CloudHub's multi-tenant runtime, you can see it by link:http://anypoint.mulesoft.com[logging in] to the Anypoint Platform, and then going to the Runtime Manager. You'll see your application running and will be able to link:/runtime-manager/managing-deployed-applications[manage] and link:/runtime-manager/monitoring-applications[monitor] it like any other application deployed through the platform.
 
 
 === Integrate Cloud and Enterprise Applications
@@ -63,48 +88,26 @@ Once your application is deployed to CloudHub's multi-tenant runtime, you can se
 The CloudHub link:/runtime-manager/virtual-private-cloud[Virtual Private Cloud (VPC)] offering allows you to construct a secure pipe to the enterprise through an IPsec or SSL based VPN.
 
 
-
-== Next Steps
-
-
-=== Learn CloudHub Basics
-
-* Download link:https://www.mulesoft.com/lp/dl/studio[Anypoint Studio].
-* Follow our easy link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub] tutorial to get your first integration application up and running with Anypoint Studio and CloudHub.
-* Ready to deploy an application?  See link:/runtime-manager/deploying-a-cloudhub-application[Deploying a CloudHub Application].
-* Still don't understand how CloudHub can be of use to you? Read more about link:http://www.mulesoft.com/cloudhub/ipaas-cloud-based-integration-demand[things you can do with CloudHub].
-
-=== Build CloudHub Applications
-
-Follow one of our tutorials to learn how to build CloudHub applications.
-
-* link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub]
-
-* link:/runtime-manager/building-an-https-service[Building an HTTPS Service on CloudHub]  
-* link:/runtime-manager/custom-application-alerts[Custom Application Alerts] 
-
-Want to learn more? Check out all the examples in link:/mule-fundamentals/v/3.7/anypoint-exchange[Anypoint Exchange].
-
-=== Deploy Applications to the Cloud or On Premises
-
-The same Runtime Manager console enables you to deploy and manage applications both on CloudHub and on premises.
-
-* link:/runtime-manager/deploying-to-cloudhub[Deploy Applications] to the cloud
-* link:/runtime-manager/deploying-to-your-own-servers[Deploy Applications] to on premise servers
-* link:/runtime-manager/managing-deployed-applications[Manage Deployed Applications] from the cloud console
-* link:/runtime-manager/managing-cloudhub-applications[Manage CloudHub Applications] deals with settings specific to CloudHub
-* link:/runtime-manager/managing-servers[Register on-premise servers] to be managed via the cloud platform (as individual servers, as server groups or as parts of a cluster)
-
-
 === CloudHub API
 
-Do you need to automate tasks, or build CloudHub into your deployment process? CloudHub has a link:/runtime-manager/cloudhub-api[REST API] with which you can perform tasks such as manage and monitor your applications, scale your applications up or down, and more.
+If you need to automate tasks or build CloudHub into your deployment process, CloudHub has a link:/runtime-manager/cloudhub-api[REST API] with which you can perform tasks such as manage and monitor your applications, scale your applications up or down, and more.
+
+== 4. Monitor your Applications
+
+* link:/runtime-manager/monitoring-applications[Monitoring Applications]
 
 
 == Other Resources
 
-* link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]
-* link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications] 
-* link:/runtime-manager/managing-cloudhub-applications[Managing CloudHub Applications] 
+
 * link:/runtime-manager/cloudhub-faq[CloudHub FAQ]
-* link:/runtime-manager/monitoring-applications[Monitoring Applications]
+* link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application]
+* link:/runtime-manager/cloudhub-architecture[CloudHub Architecture]
+* link:/runtime-manager/cloudhub-fabric[CloudHub Fabric]
+* link:/runtime-manager/cloudhub-networking-guide[CloudHub Networking Guide]
+* link:/runtime-manager/penetration-testing-policies[Penetration Testing Policies]
+* link:/runtime-manager/cloudhub-cli[CloudHub Command Line Interface]
+
+
+* link:/runtime-manager/managing-servers[Register on-premise servers] to be managed via the cloud platform (as individual servers, as server groups or as parts of a cluster)
+* Still don't understand how CloudHub can be of use to you? Read more about link:http://www.mulesoft.com/cloudhub/ipaas-cloud-based-integration-demand[things you can do with CloudHub].

@@ -17,6 +17,7 @@ It provides a dashboard that indicates the status of every deployed app and ever
 
 * link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule]
 * link:/mule-fundamentals/v/3.7/anypoint-studio-essentials[Studio Essentials]
+* link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application]
 
 . Deploy your Application
 

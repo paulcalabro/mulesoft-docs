@@ -23,7 +23,13 @@ image:basic_anatomy.png[basic_anatomy]
 
 The *Interface* is, as the name suggests, the mediator between the service exposed to the world, and the internal assets that need to be exposed.
 
-As the definition of the API, its job is to designate the resource(s) which either contain or access the data assets. Essentially, the interface is the part of the API that defines the data to which end users have access, and specifies the actions against the data you wish to make available through your API (GET, PUT, etc.). In APIkit, this relationship is known as a "resource-action pairing."  Use RESTful API Modeling Language (http://raml.org/[RAML]) to define your interface. You can write your RAML file in the editor that exists in the link:anypoint.mulesoft.com[Anypoint Platform] or in Anypoint Studio. You can also import a RAML file from the Anypoint Platform into Anypoint Studio, and keep both versions in sync by pulling and pushing changes from Studio.
+As the definition of the API, the job of the interface is to designate the resource(s) which either contain or access the data assets. Essentially, the interface is the part of the API that defines the data to which end users have access, and specifies the actions against the data you wish to make available through your API (GET, PUT, etc.). In APIkit, this relationship is known as a "resource-action pairing."  Use RESTful API Modeling Language (http://raml.org/[RAML]) to define your interface. You can write your RAML file in the editor that exists in the link:anypoint.mulesoft.com[Anypoint Platform] or in Anypoint Studio.
+
+== Using a RAML with Studio and Anypoint Platform
+
+You can also export the RAML file from the Anypoint Platform and import it into Anypoint Studio where you can add capabilities.
+
+You can deploy a Studio project to Anypoint Platform CloudHub, set up a proxy, and manage the proxy on Anypoint Platform.
 
 
 [TIP]
@@ -90,9 +96,9 @@ RAML offers a broad range of functionality for defining APIs. APIkit is designed
 
 The *Main flow* manages three critical functions:
 
-. it exposes the API via HTTP or Jetty
-. it routes requests between the interface (defined in RAML) and the backend flows (defined in XML)
-. it references exception strategies specially designed to produce HTTP-status-code-friendly responses
+. Exposes the API via HTTP or Jetty
+. Routes requests between the interface (defined in RAML) and the backend flows (defined in XML)
+. References exception strategies specially designed to produce HTTP-status-code-friendly responses
 
 Essentially, this flow is where you "wire everything together", enabling the API to accept requests and send responses, and facilitating communication between the interface and the processes which do its bidding. In Mule, the Main flow in your config file handles the calls and routing. See example below.
 

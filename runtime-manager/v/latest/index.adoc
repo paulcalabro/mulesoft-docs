@@ -3,15 +3,19 @@
 
 [NOTE]
 ====
-The topics in this document deal with app deployments through both the cloud-based and the on-premise versions of the Runtime Manager console. It also deals with deployments to both CloudHub and on-premise environments. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for a better understanding of the differences between both.
+The topics in this document deal with app deployments through the Runtime Manager both through the cloud-based and the on-premise versions of the Anypoint Platform. It also deals with deployments to both CloudHub and on-premise environments. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for a better understanding of the differences between both.
 ====
 
+== Overview
 
 The Runtime Manager is the tool in the link:/mule-fundamentals/v/3.8-m1/anypoint-platform-primer[Anypoint Platform] with which you deploy and centrally manage all of your link:/mule-fundamentals/v/3.8-m1/begin-with-the-basics[Mule applications], whether they are running in the cloud or on-premises.
 
 After you've link:/mule-fundamentals/v/3.8-m1/build-a-hello-world-application[created a Mule application] (be it through Anypoint Studio or outside), you can deploy it so that it runs either in CloudHub – our cloud IPaaS platform – or on one of your own servers, server groups, or clusters.
 
-It provides a dashboard that indicates the status of every deployed app and every monitored server, as well as a rich set of features that allow you to manage and track activity on the applications that are already running.
+The Runtime Manager provides a dashboard that indicates the status of every deployed app and every monitored server, as well as a rich set of features that allow you to manage and track activity on the applications that are already running.
+
+== Main Topics
+
 
 . Create a Mule Application
 
@@ -48,7 +52,6 @@ A downloadable version also exists as part of the Anypoint Platform On-Premise E
 
 [TIP]
 For managing apps on your own servers, you can still resort to the link:m/mule-management-console/v/3.7/index[Mule Management Console] as an alternative to the Runtime Manager. This older tool is no longer being developed, but has some features that are currently not yet implemented in the Runtime Manager when it comes to on-premise deployment scenarios.
-
 
 
 

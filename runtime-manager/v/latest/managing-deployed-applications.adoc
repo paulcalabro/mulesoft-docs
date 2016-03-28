@@ -176,7 +176,7 @@ CloudHub applications also present buttons that allow you to view Logs, Insights
 
 == Monitoring Applications
 
-Depending on if your application is deployed to CloudHub or your own servers, different tools exist for monitoring events that may occur on your application and the performance of the server or virutal server it's running on, see link:/runtime-manager/monitoring-applications[Monitoring Applications] for more details.
+Depending on if your application is deployed to CloudHub or your own servers, different tools exist for monitoring events that may occur on your application and the performance of the servers or virutal servers it's running on. See link:/runtime-manager/monitoring-applications[Monitoring Applications] for more details.
 
 == Accessing Settings for Apps on CloudHub
 

@@ -12,7 +12,7 @@ The Anypoint Runtime Manager offers you several different ways to deploy your Mu
 
 image:arm-vs-ch1.png[diagram1]
 
-These different modalities offer different management features. The key reason behind these differences is that both use a different link:/mule-agent/[Mule Agent] in their communication to the servers.
+Although the link:/mule-fundamentals/v/3.7/begin-with-the-basics[basics] of building a Mule application are the same, these different modalities offer different management features. The key reason behind these differences is that both use a different link:/mule-agent/[Mule Agent] in their communication to the servers.
 * When deploying to CloudHub, the old agent is used. This agent was originally created for link:/mule-management-console/[MMC].
 * When deploying to a server you manage, regardless of if you do this through the cloud console or the on-premises Runtime Manager console, the new link:/mule-agent/[Mule Agent] is used.
 

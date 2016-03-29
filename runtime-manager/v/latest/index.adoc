@@ -1,6 +1,8 @@
 = Runtime Manager
 :keywords: cloudhub, cloud, saas, applications, servers, clusters, sdg, runtime manager, arm
 
+image:runtime-manager-logo.png[runtime manager]
+
 [NOTE]
 ====
 The topics in this document deal with app deployments through the Runtime Manager both through the cloud-based and the on-premise versions of the Anypoint Platform. It also deals with deployments to both CloudHub and on-premise environments. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for a better understanding of the differences between both.

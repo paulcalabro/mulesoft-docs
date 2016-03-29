@@ -1,6 +1,8 @@
 = Deploying to CloudHub
 :keywords: cloudhub, cloud, deploy, manage, runtime manager, arm
 
+image:cloudhub-logo.png[cloudhub]
+
 You can deploy a CloudHub application from:
 
 * *Anypoint Studio* - Right-click your project and click *Deploy to Anypoint Platform* -> *Cloud*.

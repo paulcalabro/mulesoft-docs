@@ -1,6 +1,11 @@
 = Working with Notifications
 :keywords: cloudhub, cloudhub api, manage, cloud, enterprise, notifications, get, post, put
 
+image:cloudhub-logo.png[cloudhub]
+
+[TIP]
+This document deals with calling the link:/runtime-manager/cloudhub-api[CloudHub API]. For instructions on how to perform these same tasks more easily via the Runtime Manager UI, see link:/runtime-manager/cloudhub[CloudHub] and its child pages.
+
 The notifications API allows you to list notifications, create notifications and mark as read. All resources or methods that return or accept a type (except where noted) use the application JSON type. As an example, here's an example of what the result from the notifications resource looks like.
 
 [NOTE]

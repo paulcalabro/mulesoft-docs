@@ -1,6 +1,8 @@
 = Autoscaling in CloudHub
 :keywords: cloudhub, management, runtime manager, arm, workers, vcores, capacity, clusters
 
+image:cloudhub-logo.png[cloudhub]
+
 == Overview
 
 CloudHub allows you to make the processing power behind your apps responsive to changes in their usage. You can set up *policies* that can respond the persistent  to CPU or Memory usage thresholds by either scaling up or scaling down the processing resources used by an application.

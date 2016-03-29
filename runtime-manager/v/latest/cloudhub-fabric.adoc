@@ -2,6 +2,8 @@
 :keywords: cloudhub, fabric, vm, queues, worker, datacenter, cloud, manage, runtime manager, arm
 :license-info: Enterprise
 
+image:cloudhub-logo.png[cloudhub]
+
 CloudHub Fabric provides scalability, workload distribution, and added reliability to CloudHub applications. These capabilities are powered by CloudHub's scalable load-balancing service,  *<<Worker Scaleout>>*, and *<<Persistent Queues>>* features.
 
 You can <<Enabling CloudHub Fabric Features, Enable CloudHub Fabric Features>> on a per-application basis using the Runtime Manager console when you deploy a new application or redeploy an existing application.

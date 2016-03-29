@@ -1,6 +1,8 @@
 = Managing Deployed Applications
 :keywords: cloudhub, managing, monitoring, deploy, runtime manager, arm
 
+image:runtime-manager-logo.png[runtime manager]
+
 Deploying an application is the first step to take on Runtime Manager, regardless of if you're targeting link:/runtime-manager/deploying-to-cloudhub[CloudHub] or link:/runtime-manager/deploying-to-your-own-servers[your own servers].
 
 [TIP]

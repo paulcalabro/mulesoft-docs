@@ -1,6 +1,8 @@
 = Managing Applications On Your Own Servers
 :keywords: cloudhub, managing, monitoring, deploy, runtime manager, arm
 
+image:hybrid-logo-color.png[hybrid]
+
 After you have link:/runtime-manager/managing-servers#add-a-server[added a server] and link:link:/runtime-manager/deploying-to-your-own-servers[deployed an application] to it, you can use the Runtime Manager to monitor and manage your application.
 
 Depending on if your application is deployed to link:/runtime-manager/deploying-to-cloudhub[CloudHub] or to link:/runtime-manager/deploying-to-your-own-servers[your own servers], there is a different set of possible actions you can perform on it, once deployed. This page focuses on the actions that are specific to applications deployed to your own servers, wether on the cloud or on premises. To view the basic management tools that are common to both types of deployment targets, see link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications].

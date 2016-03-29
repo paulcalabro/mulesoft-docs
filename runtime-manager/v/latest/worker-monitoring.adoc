@@ -1,6 +1,7 @@
 = Worker Monitoring
 :keywords: cloudhub, monitoring, worker, restarts
 
+image:cloudhub-logo.png[cloudhub]
 
 [NOTE]
 Worker Monitoring is a feature that is only available for applications deployed to CloudHub workers. It is not available for applications that you deploy via the Runtime Manager to local servers. See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] and link:/runtime-manager/monitoring-applications[Monitoring Applications] for more details.

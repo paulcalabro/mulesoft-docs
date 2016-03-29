@@ -1,6 +1,8 @@
 = Command Line Interface Shell.
 :keywords: cloudhub, cloud, cli
 
+image:cloudhub-logo.png[cloudhub]
+
 CloudHub provides an interface to display and interact with your applications through a command line that supports both interactive shell and standard CLI modes.
 
 == Assumptions

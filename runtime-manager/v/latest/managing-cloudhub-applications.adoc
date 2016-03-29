@@ -1,6 +1,8 @@
 = Managing CloudHub Applications
 :keywords: cloudhub, managing, monitoring, deploy, runtime manager, arm
 
+image:cloudhub-logo.png[cloudhub]
+
 After you deploy an application to link:/runtime-manager/deploying-to-cloudhub[CloudHub], you can use the Runtime Manager to manage your application at runtime.
 
 Depending on if your application is deployed to link:/runtime-manager/deploying-to-cloudhub[CloudHub] or to link:/runtime-manager/deploying-to-your-own-servers[your own servers], there is a different set of possible actions you can perform on it, once deployed. This page focuses on the actions that are specific to CloudHub applications. To view the basic management tools that are common to both types of deployment targets, see link:/runtime-manager/managing-deployed-applications[Managing Deployed Applications].

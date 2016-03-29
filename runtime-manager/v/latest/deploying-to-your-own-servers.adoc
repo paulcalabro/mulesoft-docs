@@ -1,6 +1,8 @@
 = Deploying to Your Own Servers
 :keywords: cloudhub, cloud, deploy, manage, runtime manager, arm
 
+image:hybrid-logo-color.png[hybrid]
+
 Once you have link:/runtime-manager/managing-servers#add-a-server[added a server (or server group/cluster)] to the Runtime Manager, you can deploy applications to it in the following ways:
 
 // * *Anypoint Studio* - Right-click your project and click *Deploy to Anypoint Platform* -> *Cloud*.
@@ -76,15 +78,12 @@ image:DeployAppName.png[DeployAppName]
 
 == Deployment Target
 
-If you already have any servers registered to the Anypoint Platform, you will see a Deployment Target field that lets you specify where you want to deploy your application:
+If you already have servers link:link:/runtime-manager/managing-servers[registered to the Anypoint Platform], you will see a Deployment Target field that lets you specify where you want to deploy your application:
 
 * On the CloudHub worker cloud
 * On a server on premises, in a different cloud repo, a server group, or a cluster
 
-This document focuses on deploying to CloudHub, for more information on deploying to servers, see
-
-For more information on how to register a server, see link:/runtime-manager/managing-servers[Managing Servers]
-
+This document focuses on deploying to on-premise servers, for more information on deploying to CloudHub, see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]
 
 
 == Application File

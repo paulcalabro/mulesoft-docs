@@ -1,21 +1,25 @@
 = Virtual Private Cloud
 :keywords: cloudhub, vpc, ipsec, ssl, openvpn
 
+
 image:cloudhub-logo.png[cloudhub]
 
-The Virtual Private Cloud (VPC) offering enables you to connect to your corporate data centers – whether on-premises or in other clouds – through an IPsec or SSL based VPN as if they were all part of a single, private network. You can create these networks at hardware or software levels.
-
+The Virtual Private Cloud (VPC) offering allows you to virtually create a private and isolated network in the cloud to host your integration work loads, and, through several secure connectivity methods (such as IPSec or SSL based VPN), to connect your VPC to your corporate intranet – whether on-premises or in other clouds – as if they were all part of a single, private network.
 
 
 == How VPC Works
 
-The Virtual Private Cloud enables you to create secure connections between CloudHub and the internal networks behind your firewall (see image below). Its light-weight configuration options offer connectivity for mission critical applications by providing redundant, hardware-level connections which can scale.
+The Virtual Private Cloud creates a logically private and isolated network to host your CloudHub worker instances. +
+By configuring your VPC to follow any of the <<VPC Topologies>> , you can create safe connections between CloudHub and the internal networks behind your firewall and extend your corporate intranet into the cloud (see image below).
 
 image:CHVPC01.png[CHVPC01]
 
-VPC can be configured to use IPSec, SSL (over OpenVPN) or Amazon VPC peering to connect to your on-premises data centers. IPsec connections can be configured at the hardware level in addition to a software client. If you already use Amazon, you should use VPC peering. Otherwise, IPsec is in general the recommended solution for VPC to on-premises connectivity. It provides a standardized, secure way to make connections and integrates well with existing IT infrastructure such as routers and appliances. 
+VPC can be configured to use IPSec, SSL (over OpenVPN) or Amazon VPC peering to connect to your corporate data centers or cloud infrastructure. +
+IPsec connections can be configured at the hardware level in addition to a software client. You can leverage IPSec (Strongswan) or Amazon Web Services (AWS) Direct Connect to connect to remote networks. +
+If your remote network is also hosted in AWS, you should use VPC peering so your CloudHub VPC and your AWS VPC are in the same region. Note that to leverage AWS Direct Connect you must be able to set up the direct connections within AWS.
+Otherwise, IPsec is in general the recommended solution for VPC to on-premises connectivity. It provides a standardized, secure way to make connections and integrates well with existing IT infrastructure such as routers and appliances. 
 
-You can also use OpenVPN to connect networks or hosts to a CloudHub VPC. Indeed, Open VPN is recommended when any of the following are true:
+You can also use OpenVPN to connect networks or hosts to a CloudHub VPC. Indeed, Open VPN is recommended when any of the following statements are true:
 
 * You need to connect through a SOCKS/HTTP proxy
 * You do not have an IPsec gateway

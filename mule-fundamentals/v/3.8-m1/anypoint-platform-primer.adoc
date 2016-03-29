@@ -107,7 +107,7 @@ Let's take a quick tour of MuleSoft's Anypoint Platform and its related products
 
 |Deploy to an link:/mule-user-guide/v/3.8-m1/starting-and-stopping-mule-esb[ESB Standalone server] – available as an Enterprise or Community product – via the command line.
 
-|image:CloudHubLogo133high.png[CloudHubLogo133high]
+|image:runtime-manager-logo.png[CloudHubLogo133high]
 
 |Deploy via the link:/runtime-manager/[Runtime Manager] to either:
 
@@ -116,7 +116,7 @@ Let's take a quick tour of MuleSoft's Anypoint Platform and its related products
 
 Built on top of Mule, Runtime Manager allows you to integrate and orchestrate applications, data sources, and services across on-premise systems and the cloud. You can also manage and monitor them through the same platform.
 
-|image:mulesoft-database-customapp.png[mulesoft-database-customapp]
+|image:api-logo.png[mulesoft-database-customapp]
 
 |Publish APIs or API proxies to an *link:/anypoint-platform-for-apis/configuring-an-api-gateway[API Gateway]* to enable effective governance and support service reuse within your organization.
 
@@ -129,7 +129,7 @@ Built on top of Mule, Runtime Manager allows you to integrate and orchestrate a
 [width="100a",cols="30a,70a,",options="header"]
 |===
 2.+|Manage and Monitor
-|image:CloudHubLogo133high.png[CloudHubLogo133high]
+|image:runtime-manager-logo.png[CloudHubLogo133high]
 
 |The link:/runtime-manager/[Runtime Manager] offers multiple tools to link:/runtime-manager/managing-deployed-applications[Manage] and link:/runtime-manager/monitoring-applications[Monitor] your applications.
 
@@ -141,7 +141,7 @@ The tools for those deployed to CloudHub differ from those deployed to Mule serv
 |MMC provides robust runtime management capabilities for on-premises deployments.
 
 
-|image:AnypointAPI_manager.png[AnypointAPI_manager]
+|image:api-logo.png[AnypointAPI_manager]
 
 |*link:/anypoint-platform-for-apis[Anypoint Platform for APIs]* is an API and service registry and governance platform. Built from the ground up to support hybrid use cases, the platform governs all of your service and API assets, whether they’re internal or external, behind the firewall or on the cloud, on a single platform. By placing a proxy in front of your application, you can apply traffic policies, view usage metrics and more.
 |===

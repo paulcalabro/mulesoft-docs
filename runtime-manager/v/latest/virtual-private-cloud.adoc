@@ -9,7 +9,7 @@ The Virtual Private Cloud (VPC) offering allows you to virtually create a privat
 == How VPC Works
 
 The Virtual Private Cloud creates a logically private and isolated network to host your CloudHub worker instances. +
-It works as an extension of your own network and you can create safe connections between the VPC and the internal networks behind your firewall to extend your corporate intranet into the cloud (see image below).
+It works as an extension of your own network and you can create safe connections between the VPC and the internal networks behind your firewall so you can extend your corporate intranet into the cloud (see image below).
 
 image:CHVPC01.png[CHVPC01]
 
@@ -27,13 +27,10 @@ image:CHVPC02.png[CHVPC02]
 [NOTE]
 IPsec is, in general, the recommended solution for VPC to on-premise connectivity. It provides a standardized, secure way to connect, which integrates well with existing IT infrastructure such as routers/appliances.
 
-. *VPC Peering:* Pair an Amazon VPC directly to a CloudHub VPC.
-
+. *VPC Peering:* Pair an Amazon VPC directly to a CloudHub VPC. +
 If the services you are connecting to are hosted on AWS, then you can choose to peer your CloudHub VPC and your AWS VPC. +
-Note that to leverage AWS Direct Connect you must be able to set up the direct connections within AWS.
-
-The diagram below illustrates connecting a CloudHub VPC and Amazon VPC together directly through VPC peering:
-
+Note that to leverage AWS Direct Connect you must be able to set up the direct connections within AWS.+
+The diagram below illustrates connecting a CloudHub VPC and Amazon VPC together directly through VPC peering: +
 image:CHVPC05.png[CHVPC05]
 
 == Configuring VPC for Your Account

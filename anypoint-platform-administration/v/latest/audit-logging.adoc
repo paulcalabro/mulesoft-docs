@@ -9,7 +9,6 @@ The audit logging services provides a queryable history of actions performed wit
 
 The audit logging service keeps track of all users who have interacted with objects in the system, timestamping these actions and providing mechanisms for querying the set of users who have performed actions, the set of objects that have had actions performed on them, and other endpoints that enable the querying of log entries.
 
-
 You can query the audit log filtering by:
 
 * time period
@@ -50,7 +49,7 @@ In addition, objects have a Name which is used as a user-friendly identifier. Si
 
 === Object Hierarchies
 
-In the real world, objects have parent-child relationships that are critical for querying and organizing log data. For example, when looking at api platform events, a user may wish to look at all events for a particular api. However, the api contains api versions as well as policies, portals, and other objects, whose events the user would need to see. To this end, objects have a parent id and a parent type, which acts as a key to their parent and enabled queries for the children of any entity.
+In the real world, objects have parent-child relationships that are critical for querying and organizing log data. For example, when looking at API platform events, a user may wish to look at all events for a particular API. However, the API contains API versions as well as policies, portals, and other objects, whose events the user would need to see. To this end, objects have a parent ID and a parent Type, which acts as a key to their parent and enabled queries for the children of any entity.
 
 
 [NOTE]

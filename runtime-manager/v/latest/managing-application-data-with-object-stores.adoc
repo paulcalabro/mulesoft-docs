@@ -25,9 +25,12 @@ Each connector contains instructions on how to use the ObjectStore module to sto
 
 == Viewing Application Data
 
-To view application data, click the *Application Data* tab when viewing your application. This tab contains a list of keys and values. To search your keys, simply type the key name in the search bar.
+To view application data, click the *Properties* tab when viewing your application. This tab contains a list of keys and values. You can view them as plain text, or as a list.
 
 image:applicationdata.png[applicationdata]
+
+[TIP]
+You can make properties secure so that they're not visible via the Runtime Manager UI or anywhere else, see link:/runtime-manager/secure-application-properties[Secure Application Policies] for more.
 
 == Semantics and Storage Limits
 

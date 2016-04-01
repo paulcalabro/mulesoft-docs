@@ -14,6 +14,7 @@ Through the same link:/runtime-manager/[Runtime Manager] console that you can de
 
 == 1. Create a CloudHub Application
 
+image:logo-app.png[app]
 
 Learn the essentials of building a basic Mule applications:
 
@@ -43,6 +44,8 @@ Learn what special considerations you need to keep in mind for Mule applications
 
 
 == 2. Deploy your Application to the CloudHub
+
+image:logo-deploy.png[deploy]
 
 Learn how you can deploy your applications to CloudHub:
 
@@ -80,6 +83,8 @@ If you need to automate tasks or build CloudHub into your deployment process, Cl
 
 == 3. Manage your Application
 
+image:logo-manage.png[manage]
+
 Learn how you can manage an application that is currently running in CloudHub:
 
 * link:/runtime-manager/managing-deployed-applications[Manage Deployed Applications] deals with settings that are general to all applications, both those deployed to CloudHub and to on-premise servers.
@@ -101,6 +106,8 @@ You can view the live status and detailed service history for the Runtime Manage
 
 
 == 4. Monitor your Application
+
+image:logo-monitor.png[monitor]
 
 Through varios tools, the Runtime Manager allows you to triage problems, view logs, set up alerts, view dashboards, and more. See:
 

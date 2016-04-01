@@ -47,7 +47,7 @@ image:ELMEnableChangeSettingsPrompt.png[ELMEnableChangeSettingsPrompt]
 +
 image:ELMStart.png[ELMStart]
 +
-. The Filters section on the right of the enhanced logging screen lets you selectively view the output by day, Deployment, System Log, and Workers. The *Less Filters* button above the Filters disables the Filters view. You can re-establish the Filters view by clicking *More Filters*.
+. The Filters section on the right of the enhanced logging screen lets you selectively view the output by day, Deployment, System Log, and Workers. You can unapply a filter by unticking the checkbox next to a date.
 +
 image:ELMfilters.png[ELMfilters]
 +
@@ -93,6 +93,7 @@ The default interface differs from that of enhanced logging:
 image:chlog.png[chlog]
 
 === Pausing and Clearing a Log
+
 To pause the log so that entries are temporarily stopped from writing, click *Live view* and click *Pause*. While the log is paused, a green *Resume* button appears. Click *Resume* to enable more content to be written.
 
 image:ResumeLog.png[ResumeLog]

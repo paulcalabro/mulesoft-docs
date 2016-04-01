@@ -50,6 +50,14 @@ You can configure business events in your Mule applications by embedding custom 
 
 * *Event Tracking* Track more granular events by enabling *default event tracking* for your entire flow or for specific message processors or endpoints within your flow. When you configure the flows in your application, you can explicitly configure the scope for default event tracking. Read more about link:/mule-user-guide/v/3.7/business-events[enabling default business event tracking] in your flows.
 
+[NOTE]
+====
+Note that when deploying your application on Runtime Manager, you must make sure that in the *Insight* tab you select either 'Metadata' or 'Metadata and Replay'
++
+image:CHInsightTab.png[insight tab]
+====
+
+
 == Searching and Filtering Transactions and Events
 
 The *Insight Dashboard* displays information at three tracking levels: Transactions, Events, and Metadata. 
@@ -98,6 +106,8 @@ image:CH_date+range+click+drag.png[CH_date+range+click+drag]
 In your application, click *Advanced* in the *Search* field to locate additional search parameters.
 
 image:CHInBizData.png[CHInBizData]
+
+NOTE: To enable the *Business Data* field your app must have business events, see <<Setting Up Business Events>>/
 
 |Save Search |
 To save a search, click *Save search*:

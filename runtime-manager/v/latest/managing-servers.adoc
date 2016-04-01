@@ -301,7 +301,7 @@ To create a cluster in Runtime Manager:
 . Log into Anypoint Platform and click *Runtime Manager*:
 
 +
-image:CloudHubStartPage.png[CloudHubStartPage]
+image:APStartScreen.png[CloudHubStartPage]
 
 +
 . Click the *Servers* tab and <<add a server, register each server to the platform>>.

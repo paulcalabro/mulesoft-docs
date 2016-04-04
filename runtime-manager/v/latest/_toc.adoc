@@ -67,5 +67,5 @@
 ***** link:/runtime-manager/create-notification[Create Notification]
 ***** link:/runtime-manager/list-notifications[List All Notifications]
 ***** link:/runtime-manager/update-all-notifications[Update All Notifications]
-***** link:/runtime-manager/update-notification[Update Application]
+***** link:/runtime-manager/update-notification[Update Notification]
 *** link:/runtime-manager/maintenance-and-upgrade-policy[Maintenance and Upgrade Policy]

@@ -71,9 +71,7 @@ Two specific types of link:/runtime-manager/alerts-on-runtime-manager[Alerts] ca
 
 With this alert set, emails will be automatically sent to the addresses you provide whenever such an event occurs. See link:/runtime-manager/alerts-on-runtime-manager[Alerts on Runtime Manager] for more.
 
-You can also see a full history of all of the times that the alert has been triggered.
-
-From the *Alerts* page, click on an alert name to open itscorresponding panel. From this panel you can <<Editing Existing Alerts, edit the alert>>, view its status and settings, and view a full history of all of the times that the alert has been triggered:
+You can also see a full history of all of the times that the alert has been triggered. To see this, from the *Alerts* page, click on an alert name to open its corresponding panel:
 
 image:alerts-history-autoscale.png[history]
 

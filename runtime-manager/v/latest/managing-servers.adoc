@@ -144,6 +144,10 @@ If running Windows, substitute `amc_setup.bat` for `./amc_setup` (without `./`)
 +
 image:srv1_created.png[srv1_created]
 
+[TIP]
+If the server was running when registered, it needs to be restarted for it to start communicating with the Runtime Manager.
+
+
 ==== About the amc_setup Command
 
 The `amc_setup` command described above resides in `$MULE_HOME/bin`. If you do not run it from this directory, you have to either set the `MULE_HOME` environment variable before running the command, or use the `--mule-home` parameter:

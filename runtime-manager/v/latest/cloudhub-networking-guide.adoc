@@ -66,9 +66,9 @@ Sometimes firewalls or infrastructure settings don't let Mule Runtimes reach the
 REMOVE THIS PHRASE FROM ABOVE:
 If you need to whitelist the IPs of the Runtime Manager's public services, please contact link:cloudhub-support@mulesoft.com[cloudhub-support@mulesoft.com].
 
-double-check with devops
+double-check with devops!!!!!!!!!!!!!!!!!!!!
 
-
+If you need to whitelist the IPs of the Runtime Manager's public services, you can obtain them from the table below:
 
 [cols="30a,70a",options="header"]
 |===

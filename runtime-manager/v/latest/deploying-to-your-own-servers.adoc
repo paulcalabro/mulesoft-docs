@@ -8,9 +8,10 @@ Once you have link:/runtime-manager/managing-servers#add-a-server[added a server
 // * *Anypoint Studio* - Right-click your project and click *Deploy to Anypoint Platform* -> *Cloud*.
 
 
-* *Anypoint Platform, link:anypoint.mulesoft.com[cloud-based] version* - Go to the *Runtime Manager* section, and then from the *Applications* tab, click the *Deploy application* button.
-* *Anypoint Platform, On-Premise Edition* - Go to the *Runtime Manager* section, and then from the *Applications* tab, click the *Deploy application* button.
-* *Runtime Manager, On-Premise Edition* - From the *Applications* tab, click the *Deploy application* button.
+* *Hybridly, via the Anypoint Platform, link:anypoint.mulesoft.com[cloud-based] version*
+* *Fully On-premises, via the Anypoint Platform On-Premise Edition*
+
+// * *Runtime Manager, On-Premise Edition* - From the *Applications* tab, click the *Deploy application* button.
 
 This page describes the options on the *Deploy Application* page, which is identical in all of the cases above.
 
@@ -24,7 +25,7 @@ Additionally, you can also deploy to your servers through:
 
 
 [NOTE]
-To deploy an app to link:/runtime-manager/cloudhub[CloudHub], see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloduHub]. Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On Premises Edition].
+To deploy an app to link:/runtime-manager/cloudhub[CloudHub], see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloduHub]. Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On-Premises Edition].
 
 == Accessing the Deploy Application Screen
 
@@ -70,9 +71,7 @@ image:DeployAppFirstScreen.png[DeployAppFirstScreen] 
 
 == Creating an Application Name
 
-Every application requires a unique application domain name. The application domain identifies your application in the Runtime Manager and also provides you with a public URL, `http://myapplicationdomain.cloudhub.io`, for accessing the application if it exposes any inbound endpoints.
-
-In the *Deploy Application* dialog, enter a unique application name. The Application Name also becomes the `cloudhub.io` domain name that you use to access your application; for example the Application Name, `abcde` is accessible at `http://abcde.cloudhub.io`. Valid names contain alphanumeric characters and dashes, and contain at most 40 characters. If the name is valid, the Runtime Manager alerts you whether it is available or already reserved by another user.
+Every application requires a unique application name. The application domain identifies your application in the Runtime Manager. Valid names contain alphanumeric characters and dashes, and contain at most 40 characters. If the name is valid, the Runtime Manager alerts you whether it is available or already reserved by another user.
 
 image:DeployAppName.png[DeployAppName]
 
@@ -103,22 +102,19 @@ Keep in mind that servers in a cluster must have the same Runtime version instal
 
 [IMPORTANT]
 ====
-* Ensure that the runtime version is the same Mule version used to develop your application. For example, if you use the default value prod-3.5.0 and your application uses the new HTTP connector introduced in Mule 3.6 and newer, your application won't deploy and the log contains errors.
-* To see what runtime version you set when you deployed your application, click the *Applications* tab and click your application. In the expansion view on the right, click *Manage Application*. Click *Settings* to see the deployment values.
+Ensure that the runtime version in the server or servers is the same Mule version used to develop your application. For example, if you deploy to a server that runs Mule Runtime 3.5.0 and your application uses the new HTTP connector introduced in Mule 3.6 and newer, your application won't deploy and the log contains errors.
 ====
 
 
 == Configuring a Deployed Application
 
-Most of the settings discussed in the steps above can be edited once the application is already deployed. To do so you must:
+You can change the application file of a deployed application
 
-. In the Applications tab, select an application entry and click *Manage Application*:
-+
-image:AMC_ManageApplication.png[AMC_ManageApplication] 
-+
-. Click the *Settings* tab:
-+
-image:ViewingDeployedApp.png[ViewingDeployedApp]
+* Select your application in the *Applications* page to open its corresponding panel
+* Click *Choose File* to upload a new file
+
+[TIP]
+Keep in mind that your application will then experience a moment of downtime while the new version you just selected is launched in the server, server group or cluster.
 
 
 == Deployment Errors

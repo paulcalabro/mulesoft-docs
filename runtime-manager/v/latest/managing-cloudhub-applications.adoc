@@ -19,7 +19,7 @@ With applications deployed to link:/runtime-manager/managing-cloudhub-applicatio
 
 == Applications Dashboard
 
-If you select any of the applications on the Applications tab, a pannel opens on the right. Here you will be able to read additional information about the application and access its settings.
+If you select any of the applications on the Applications tab, a panel opens on the right. Here you will be able to read additional information about the application and access its settings.
 
 image:dashboard-ch.png[dashboard]
 

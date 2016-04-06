@@ -19,16 +19,16 @@ Future releases will also feature integrating with other third party systems.
 The goal of this document to enable you to integrate Runtime Manager with a third party tool such as Splunk or ELK.
 
 [TIP]
-Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, features described in this page work identically in all of them.
+Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on-premise edition] of the Anypoint Platform, the features described in this page work identically in both.
 
 == Basic Architecture
 
 The Runtime Manager exists as:
 * a component of the link:/mule-fundamentals/v/3.7/anypoint-platform-primer[Anypoint Platform]
-* a component of the link://anypoint-platform-on-premises/v/1.1.0/installing-anypoint-on-premises[Anypoint Platform on-premise Edition] that you can install on premises
-* a link://anypoint-platform-on-premises/v/1.1.0/installing-anypoint-on-premises[standalone application] that can be installed on premises
+* a component of the link://anypoint-platform-on-premises/v/1.1.0/installing-anypoint-on-premises[Anypoint Platform on-premise Edition] that you can install on-premises
+* a link://anypoint-platform-on-premises/v/1.1.0/installing-anypoint-on-premises[standalone application] that can be installed on-premises
 
-On-premise versions of the Runtime Manager handle only applications that are deployed on premise or on your own cloud servers, the cloud-based version of the Runtime Manager allows you manage applications deployed to link:/runtime-manager/index[CloudHub] as well as applications that are deployed on premises and to your own cloud servers. When using whichever version of the Runtime Manager, there's always a way to monitor your applications. Applications deployed to CloudHub can use link:/runtime-manager/link:/runtime-manager/insight[[CloudHub Insight]: MuleSoft’s Analytics & Monitoring feature. Applications that you deploy on premises or to your own cloud servers can be integrated into third party monitoring applications, which is what this document describes.
+On-premise versions of the Anypoint Platform have a Runtime Manager that handles only applications that are deployed on-premise or on your own cloud servers. The cloud-based version of the Anypoint Platform has a Runtime Manager that allows you manage applications deployed to link:/runtime-manager/index[CloudHub] as well as applications that are deployed on-premises and to your own cloud servers. When using whichever version of the Runtime Manager, there's always a way to monitor your applications. Applications deployed to CloudHub can use link:/runtime-manager/link:/runtime-manager/insight[[CloudHub Insight]: MuleSoft’s Analytics & Monitoring feature. Applications that you deploy on-premises or to your own cloud servers can be integrated into third-party monitoring applications, which is what this document describes.
 
 ////
 Applications deployed on Cloud can either use Insights (MuleSoft’s Analytics & Monitoring feature) or be integrated into third party monitoring applications for a unified view of monitoring and analytics. Apps deployed on on-prem must be integrated into third party monitoring applications.
@@ -38,7 +38,7 @@ You have the ability to leverage both options to monitor business events, custom
 
 image:arm_big_picture.png[image]
 
-At a closer level of detail, the integration between Runtime Manager and third party monitoring and analytics software looks like the diagram below:
+At a closer level of detail, the integration between Runtime Manager and third-party monitoring and analytics software looks like the diagram below:
 
 image:amc_onprem_diagram_detail.jpg[image]
 
@@ -69,7 +69,7 @@ See link:/mule-agent/v/1.3.0/installing-mule-agent[Installing the Mule Agent].
 
 [NOTE]
 ====
-Although the Mule Agent exists by default bundled with the Mule ESB download as of version 3.7, all ESB versions older than version 3.7.2 contain an old version of the Mule Agent that doesn't support this feature. If this is your case, you must download the latest version of the Mule Agent separatley.
+Although the Mule Agent exists by default bundled with the Mule ESB download as of version 3.7, all ESB versions older than version 3.7.2 contain an old version of the Mule Agent that doesn't support this feature. If this is your case, you must download the latest version of the Mule Agent separately.
 
 *Download it from http://mule-agent.s3.amazonaws.com/1.2.0/mule-agent-1.2.0.zip[here]*
 ====
@@ -118,7 +118,7 @@ The final argument of this command is the name that you assign for your Mule Age
 [tab,title="Anypoint Platform On-Premise Edition"]
 ....
 
-When using the Anypoint Platform as an application running on premises, launch the agent with the following arguments:
+When using the Anypoint Platform as an application running on-premises, launch the agent with the following arguments:
 
 [source, linenums]
 ----
@@ -139,7 +139,7 @@ The final argument of this command is the name that you assign for your Mule Age
 Note that three extra arguments must be added to what you copied from the Runtime Manager UI: -A, -W and -C.
 * *A* sets the Runtime Manager host address
 * *C* sets the Core Services host address
-* *W* sets the Mule Communicatiosn Manager (MCM) host address
+* *W* sets the Mule Communications Manager (MCM) host address
 
 ....
 ------
@@ -163,7 +163,7 @@ image:verify_agent.jpg[image]
 
 === Configure Mule Custom Events
 
-You can configure the Runtime Manager to send out Mule Events to external software, this includes flow executions, exceptions raised, etc. This works with apps deployed to any runtime, and for both the Runtime Manager in the cloud and the Runtime Manager that can be downloaded on premises.
+You can configure the Runtime Manager to send out Mule Events to external software, this includes flow executions, exceptions raised, etc. This works with apps deployed to any runtime, and for both the Runtime Manager in the cloud and the Runtime Manager that can be downloaded on-premises.
 
 ==== Integrating to Splunk
 

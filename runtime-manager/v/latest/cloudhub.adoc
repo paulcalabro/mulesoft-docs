@@ -3,7 +3,7 @@
 
 image:cloudhub-logo.png[cloudhub]
 
-link:http://www.mulesoft.com/cloudhub/ipaas-cloud-based-integration-demand[CloudHub] is an integration platform as a service (iPaaS). Through the link:/runtime-manager/[Anypoint Runtime Manager], it allows you to deploy sophisticated cross-cloud integration applications in the cloud, create new APIs on top of existing data sources, integrate on premises applications with cloud services, and much more. This guide helps you learn the basics, and get started developing your first application.
+link:http://www.mulesoft.com/cloudhub/ipaas-cloud-based-integration-demand[CloudHub] is an integration platform as a service (iPaaS). Through the link:/runtime-manager/[Anypoint Runtime Manager], it allows you to deploy sophisticated cross-cloud integration applications in the cloud, create new APIs on top of existing data sources, integrate on-premise applications with cloud services, and much more. This guide helps you learn the basics, and get started developing your first application.
 
 This page deals with some basic concepts about CloudHub. After this short overview, you can build your first CloudHub integration with the link:/runtime-manager/hello-world-on-cloudhub[Hello World on CloudHub] tutorial.
 
@@ -35,12 +35,12 @@ Want to see examples of more elaborate applications? Check out all the examples 
 === Easy Transition Between Cloud and On-Premise Deployments
 
 
-You can deploy the same Mule applications interchangeably both to CloudHub or to an link:/runtime-manager/deploying-to-your-own-servers[on premise server]. Keep in mind that there are link:/runtime-manager/cloudhub-and-mule[some considerations] to take into account about how some features work between both kinds of environments.
+You can deploy the same Mule applications interchangeably both to CloudHub or to an link:/runtime-manager/deploying-to-your-own-servers[on-premise server]. Keep in mind that there are link:/runtime-manager/cloudhub-and-mule[some considerations] to take into account about how some features work between both kinds of environments.
 
 Learn what special considerations you need to keep in mind for Mule applications that will be deployed in CloudHub:
 
-* link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for an overview on how applications built for delpoying to CloudHub differ from those meant for deploying on premises
-* link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application] for a more in-depth view of these special consideratiosn on CloudHub
+* link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for an overview on how applications built for deploying to CloudHub differ from those meant for deploying on-premises
+* link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub Application] for a more in-depth view of these special considerations on CloudHub
 
 
 == 2. Deploy your Application to the CloudHub
@@ -49,7 +49,7 @@ image:logo-deploy.png[deploy]
 
 Learn how you can deploy your applications to CloudHub:
 
-* link:/runtime-manager/deploying-to-cloudhub[Deploy Aplications to CloudHub Applications]
+* link:/runtime-manager/deploying-to-cloudhub[Deploy Applications to CloudHub Applications]
 * If you prefer, you can also use the link:link:/runtime-manager/cloudhub-cli[Command Line Interface] to deploy and <<manage your application>>
 
 [TIP]
@@ -109,7 +109,7 @@ You can view the live status and detailed service history for the Runtime Manage
 
 image:logo-monitor.png[monitor]
 
-Through varios tools, the Runtime Manager allows you to triage problems, view logs, set up alerts, view dashboards, and more. See:
+Through various tools, the Runtime Manager allows you to triage problems, view logs, set up alerts, view dashboards, and more, see:
 
 * link:/runtime-manager/monitoring-applications[Monitoring Applications] for an overview on the different ways that the Runtime Manager allows you to monitor your running applications
 

@@ -3,12 +3,12 @@
 
 image:hybrid-logo-color.png[hybrid]
 
-Through the Anypoint Runtime Manager, you can register and set up the properties of servers, server groups, and clusters that reside on premises in your organization or in an external cloud repository. Once these are set up, you can select them as the deployment target of your applications, as an alternative to deploying to link:/runtime-manager/deploying-to-cloudhub[CloudHub].
+Through the Anypoint Runtime Manager, you can register and set up the properties of servers, server groups, and clusters that reside on-premises in your organization or in an external cloud repository. Once these are set up, you can select them as the deployment target of your applications, as an alternative to deploying to link:/runtime-manager/deploying-to-cloudhub[CloudHub].
 
-Anypoint Runtime Manager provides a single management interface where you can manage applications running in the cloud, on local servers, on server groups that are on premises within your data center, or on clusters of servers. Applications that are on premises run on Mule Runtime instances on a single server or on a group of servers.
+Anypoint Runtime Manager provides a single management interface where you can manage applications running in the cloud, on local servers, on server groups that are on-premises within your data center, or on clusters of servers. Applications that are on-premises run on Mule Runtime instances on a single server or on a group of servers.
 
 [TIP]
-Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on premise edition] of the Anypoint Platform, or even the standalone link:/anypoint-on-premises/[on premise edition] of the Runtime Manager, these features work identically in all of them.
+Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on-premise edition] of the Anypoint Platform, these features work identically in both.
 
 == Prerequisites
 
@@ -73,7 +73,7 @@ From the *Servers* tab, by selecting an entry as shown, you can perform these t
 
 == Servers Dashboard
 
-If you select any of the servers, server groups or clusters on the Servers tab, a pannel opens on the right. Here you will be able to read additional information about it and access some configuration items.
+If you select any of the servers, server groups or clusters on the Servers tab, a panel opens on the right. Here you will be able to read additional information about it and access some configuration items.
 
 image:dashboard-server.png[dashboard]
 

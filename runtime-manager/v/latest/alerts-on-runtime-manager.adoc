@@ -202,14 +202,14 @@ Switching an alert off has an effect for the user that is currently logged in, t
 
 === Duplicating an Alert
 
-Select one or several alerts and then, from the alert pannel, simply click the *duplicate* icon. You can then edit your new alert freely.
+Select one or several alerts and then, from the alert panel, simply click the *duplicate* icon. You can then edit your new alert freely.
 
 image:duplicate-alert.png[duplicate]
 
 
 === Deleting an Alert
 
-Select one or several a alerts and then, from the alert pannel, simply click the *delete* icon.
+Select one or several a alerts and then, from the alert panel, simply click the *delete* icon.
 
 image:delete-alert.png[duplicate]
 

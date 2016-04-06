@@ -80,7 +80,7 @@ image:DeployAppName.png[DeployAppName]
 If you already have servers link:link:/runtime-manager/managing-servers[registered to the Anypoint Platform], you will see a Deployment Target field that lets you specify where you want to deploy your application:
 
 * On the CloudHub worker cloud
-* On a server on premises, in a different cloud repo, a server group, or a cluster
+* On a server on-premises, in a different cloud repo, a server group, or a cluster
 
 This document focuses on deploying to on-premise servers, for more information on deploying to CloudHub, see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloudHub]
 

@@ -6,8 +6,8 @@
 The Anypoint Runtime Manager offers you several different ways to deploy your Mule applications:
 
 * Through the link:anypoint.mulesoft.com[Cloud console] of the Anypoint Runtime Manager to *CloudHub*
-* Through the link:anypoint.mulesoft.com[Cloud console] of the Anypoint Runtime Manager to *another server* that runs a Mule runtime (which may be on premises or a different cloud server)
-* Through the link:/anypoint-platform-on-premises/[on premise edition] of the Anypoint Runtime Manager to *another server* that runs a Mule runtime
+* Through the link:anypoint.mulesoft.com[Cloud console] of the Anypoint Runtime Manager to *another server* that runs a Mule runtime (which may be on-premises or a different cloud server)
+* Through the link:/anypoint-platform-on-premises/[on-premise edition] of the Anypoint Runtime Manager to *another server* that runs a Mule runtime
 
 
 image:arm-vs-ch1.png[diagram1]
@@ -16,7 +16,7 @@ Although the link:/mule-fundamentals/v/3.7/begin-with-the-basics[basics] of buil
 * When deploying to CloudHub, the old agent is used. This agent was originally created for link:/mule-management-console/[MMC].
 * When deploying to a server you manage, regardless of if you do this through the cloud console or the on-premises Runtime Manager console, the new link:/mule-agent/[Mule Agent] is used.
 
-CloudHub and Mule share a single runtime, ensuring that building applications for both is easy. However, there are some differences as you move from an on premise deployment to CloudHub. CloudHub provides more out of the box functionality, such as load balancing, and also has some limitations to which you may need to adapt your application. This document leads you through the differences between both deployment environments, link:/runtime-manager/developing-a-cloudhub-application[covers a few best practices when developing an application for CloudHub].
+CloudHub and Mule share a single runtime, ensuring that building applications for both is easy. However, there are some differences as you move from an on-premise deployment to CloudHub. CloudHub provides more out of the box functionality, such as load balancing, and also has some limitations to which you may need to adapt your application. This document leads you through the differences between both deployment environments, link:/runtime-manager/developing-a-cloudhub-application[covers a few best practices when developing an application for CloudHub].
 
 == Management Features
 
@@ -75,7 +75,7 @@ CloudHub provides an implementation of the user object store. This makes its usa
 == Shared Resource Support
 
 
-When deploying on premises, it's possible to create 'Domain' mule projects that don't hold any flows, but do hold a set of global configuration elements to share among other apps deployed to the same server. link:/mule-user-guide/v/3.7/shared-resources[Read more]. This is not currently supported for deploying through the Runtime Manager, both for deployments to CloudHub and for deployments to other servers in the cloud and on premises.
+When deploying on-premises, it's possible to create 'Domain' mule projects that don't hold any flows, but do hold a set of global configuration elements to share among other apps deployed to the same server. link:/mule-user-guide/v/3.7/shared-resources[Read more]. This is not currently supported for deploying through the Runtime Manager, both for deployments to CloudHub and for deployments to other servers in the cloud and on-premises.
 
  As each application deployed to CloudHub runs on a separate virtual server, there is no need for using domains.
 
@@ -139,7 +139,7 @@ Outside CloudHub, you can achieve the same by including the link:/mule-user-guid
 
 == Alerts and Notifications
 
-Both CloudHub and On premise deployments include the possibility of setting up link:/runtime-manager/alerts-and-notifications[Alerts and Notifications] for when certain events occur. To configure these, simply click on the bell icon on the top-right.
+Both CloudHub and On-premise deployments include the possibility of setting up link:/runtime-manager/alerts-and-notifications[Alerts and Notifications] for when certain events occur. To configure these, simply click on the bell icon on the top-right.
 
 
 == Other Components

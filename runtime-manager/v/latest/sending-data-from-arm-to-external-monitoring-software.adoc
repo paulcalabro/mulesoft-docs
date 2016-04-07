@@ -80,7 +80,7 @@ Place the agent file in your `MULE HOME}/bin` folder, and then you must register
 
 To obtain this code, you must do the following:
 
-. Log in to your Runtime Manager account
+. Sign in to your Anypoint Platform account
 +
 [TIP]
 To open Anypoint Platform On-Premise Edition, make sure you've already initiated Runtime Manager. If you haven't then you must boot it by running docker. Once initiated, you can access it by navigating to https://localhost in a browser.
@@ -156,7 +156,7 @@ Creating multiple agents within a single server is not supported.
 
 After running the above command, open Runtime Manager to verify that the agent has been registered successfully:
 
-. Log in to Runtime Manager with your credentials
+. Sign in to the Anypoint Platform with your credentials
 . Go to `Runtime Manager - > Servers`. You should now see that one of those servers is your Agent instance, named with the name you provided when installing it:
 
 image:verify_agent.jpg[image]
@@ -318,7 +318,7 @@ image:agent-to-splunk-restapi-advanced.png[splunk]
 This feature requires Mule Agent version 1.3.1 or newer.
 
 . First you must obtain a token from Splunk. To do so:
-.. Log in to your Splunk account
+.. Sign in to your Splunk account
 .. Navigate to *Settings* -> *Data Inputs*
 .. Among the different options, you can find the *HTTP Event Collector*, click the *Add New* link next to it
 +
@@ -349,7 +349,7 @@ Although you can set values for the Splunk Index, Splunk Source and Splunk Sourc
 ....
 
 . First you must enable the input source in Splunk. To do so:
-.. Log in to your Splunk account
+.. Sign in to your Splunk account
 .. Navigate to *Settings* -> *Data Inputs*
 .. Among the different options, you can find the *TCP* option, next to it is an *Add New* link. Click the one you want.
 +

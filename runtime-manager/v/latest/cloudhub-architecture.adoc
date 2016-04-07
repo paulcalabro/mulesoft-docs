@@ -41,7 +41,7 @@ For more about creating and deploying integration applications, see link:/runtim
 
 === Management Console
 
-The Runtime Manager console is integrated into the link:https://anypoint.mulesoft.com[Anypoint Platform]. Log in with your Anypoint Platform credentials to upload and manage your integration applications at runtime. The console surfaces useful monitoring information from the platform services and also works as a comprehensive dashboard for both application-level and account-level management. 
+The Runtime Manager console is integrated into the link:https://anypoint.mulesoft.com[Anypoint Platform]. Sign in with your Anypoint Platform credentials to upload and manage your integration applications at runtime. The console surfaces useful monitoring information from the platform services and also works as a comprehensive dashboard for both application-level and account-level management. 
 
 Through this same console you can link:/runtime-manager/deploying-to-cloudhub[deploy to CloudHub] as well as to link:/runtime-manager/deploying-to-your-own-servers[other registered servers]. You can also link:link:/runtime-manager/managing-deployed-applications[manage deployed applications].
 

@@ -28,7 +28,7 @@ Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premise
 
 To deploy an application:
 
-. Log into link:https://anypoint.mulesoft.com[Anypoint Platform] or click *Sign up* on the sign on page. 
+. Sign in to the link:https://anypoint.mulesoft.com[Anypoint Platform] or click *Sign up* on the sign on page. 
 . Click *Runtime Manager*:
 +
 image:APStartScreen.png[APStartScreen]

@@ -33,7 +33,7 @@ To deploy an app to link:/runtime-manager/cloudhub[CloudHub], see link:/runtime-
 
 To deploy an application:
 
-. For the cloud-based version, log into link:https://anypoint.mulesoft.com[Anypoint Platform] or click *Sign up* on the sign on page. Otherwise, open the application on your local server and log in.
+. For the cloud-based version, sign in to the link:https://anypoint.mulesoft.com[Anypoint Platform] or click *Sign up* on the sign on page. Otherwise, open the application on your local server and sign in.
 . Click *Runtime Manager*:
 +
 image:APStartScreen.png[APStartScreen]

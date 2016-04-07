@@ -44,7 +44,7 @@ On applications deployed to link:/runtime-manager/managing-cloudhub-applications
 
 == Getting Started
 
-Log in to Anypoint Platform and click *Runtime Manager*:
+Sign in to the Anypoint Platform and click *Runtime Manager*:
 
 image:APStartScreen.png[APStartScreen]
 
@@ -182,7 +182,7 @@ Depending on if your application is deployed to CloudHub or your own servers, di
 
 == Accessing Settings for Apps on CloudHub
 
-Log in to the link:anypoint.mulesoft.com[Anypoint Platform] and view the *Applications* tab of the Runtime Manager. Select one of your CloudHub running applications to open a panel on the right side. On that pannel, click the *Manage Application* button to open up the application's settings.
+Sign in to the link:anypoint.mulesoft.com[Anypoint Platform] and view the *Applications* tab of the Runtime Manager. Select one of your CloudHub running applications to open a panel on the right side. On that pannel, click the *Manage Application* button to open up the application's settings.
 
 image:cloudhub-manage-application.png[manage app]
 

@@ -26,7 +26,7 @@ You also need to have the latest version of the Mule Agent to handle the communi
 
 == Getting Started
 
-https://anypoint.mulesoft.com/#/signin[Log in to Anypoint Platform] and click *Runtime Manager*:
+https://anypoint.mulesoft.com/#/signin[Sign in to Anypoint Platform] and click *Runtime Manager*:
 
 image:APStartScreen.png[APStartScreen]
 
@@ -302,7 +302,7 @@ The minimum Mule version that supports this feature is Mule version 3.7.0 and ne
 To create a cluster in Runtime Manager:
 
 . Download and install link:https://www.mulesoft.com/platform/enterprise-integration[Mule Runtime] on two or more physical or virtual servers in your site.
-. Log into Anypoint Platform and click *Runtime Manager*:
+. Sign in to the Anypoint Platform and click *Runtime Manager*:
 
 +
 image:APStartScreen.png[CloudHubStartPage]

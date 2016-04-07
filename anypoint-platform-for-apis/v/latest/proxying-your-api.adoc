@@ -25,7 +25,7 @@ If you are using API Gateway 2.0, you don't need to generate a proxy – you ca
 
 == Generating a Proxy
 
-. Log into link:https://anypoint.mulesoft.com/#/signin[Anypoint Platform] and click *APIs*:
+. Sign in to link:https://anypoint.mulesoft.com/#/signin[Anypoint Platform] and click *APIs*:
 +
 image:APstart.png[APstart]
 

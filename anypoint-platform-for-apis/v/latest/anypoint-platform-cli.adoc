@@ -358,8 +358,8 @@ This command adds a mapping rule to the load balancer specified in <name> at the
 |index|Priority of the rule.  |1
 |inputSubdomain|Name of the sub-domain of your input URL |{app}.api
 |inputUri|Name of the URI of your input URL |example.com
-|appName|Name of the app of your output URL |{app}-example
-|appUri|URI of the app of your output URL |/
+|appName|Name of the app of your output URL to which the request is forwarded |{app}-example
+|appUri|URI of the app of your output URL to which the request is forwarded |/
 |===
 
 For the values in the example above, for an input call to `my-superapp.api.example.com/status?limit=10`, the endpoint `my-superapp-example: /status?limit=10` will be called for the application.

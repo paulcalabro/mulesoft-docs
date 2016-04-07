@@ -83,10 +83,11 @@ image:pressPlay.png[pressPlay]Once you have created a Mule application, then wha
 
 This is great for testing, but probably not ideal for the final implementation of your service; there are several other deployment options to chose from:
 
-* export the application to a *Mule Enterprise Server*
-* deploy the application in the **Mule Management Console's** Application Repository
-* deploy to *CloudHub*
-* deploy to an *API Gateway*
+* Export the application to a *Mule Enterprise Server*
+* Deploy through the link:/runtime-manager[Runtime Manager], either to link:/runtime-manager/deploying-to-cludhub[CloudHub] or to an link:/runtime-manager/deploying-to-your-own-servers[on-premise server, server group or cluster]
+* Deploy to an *API Gateway*
+* Deploy the application in the *Mule Management Console's* Application Repository
+
 
 == See Also
 

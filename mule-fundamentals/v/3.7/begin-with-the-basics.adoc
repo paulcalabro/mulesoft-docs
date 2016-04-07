@@ -80,9 +80,10 @@ After you have created a Mule application, then what? How and where do you make 
 This is great for testing, but probably not ideal for the final implementation of your service; there are several other deployment options to choose from:
 
 * Export the application to a *Mule Enterprise Server*
-* Deploy the application in the **Mule Management Console's** Application Repository
-* Deploy to the *Anypoint Platform*
+* Deploy through the link:/runtime-manager[Runtime Manager], either to link:/runtime-manager/deploying-to-cludhub[CloudHub] or to an link:/runtime-manager/deploying-to-your-own-servers[on-premise server, server group or cluster]
 * Deploy to an *API Gateway*
+* Deploy the application in the *Mule Management Console's* Application Repository
+
 
 For more information on running applications, see:
 

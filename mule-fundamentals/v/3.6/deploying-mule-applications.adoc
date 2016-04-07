@@ -71,13 +71,13 @@ Need more detail?
 
 
 
-== Deploy to CloudHub
+== Deploy to The Anypoint Platform
 
-Deploy the application to *CloudHub*, Mule’s platform for cloud-based integration. CloudHub represents the least painful approach for fast, worry-free cloud-to-cloud and cloud-to-on-premises deployment. 
+Deploy the application to the *Anypoint Platform*, Mule’s platform for cloud-based integration. The Anypoint Platform represents the least painful approach for fast, worry-free cloud-to-cloud and cloud-to-on-premises deployment. 
 
 image:deploy_cloudhub.png[deploy_cloudhub]
 
-CloudHub is a cloud-based integration Platform as a Service (iPaaS). It provides a convenient way for developers to launch their applications on a cloud platform, while also providing many enhanced features for solving cloud-to-cloud and cloud-to-premise integration problems. Anypoint Studio is fully integrated with CloudHub and facilitates simple application deployment.
+The Anypoint Platform includes the Runtime Manager, which can deploy manage and monitor applications running in the cloud and on-premises. CloudHub, which takes care of the backend of cloud applications, is a full integration Platform as a Service (iPaaS). It provides a convenient way for developers to launch their applications on a cloud platform, while also providing many enhanced features for solving cloud-to-cloud and cloud-to-premise integration problems. Anypoint Studio is fully integrated with Runtime Manager and facilitates simple application deployment.
 
 Deploying a Studio-built application to CloudHub involves three steps:
 
@@ -87,7 +87,7 @@ Deploying a Studio-built application to CloudHub involves three steps:
 
 ==== Creating an Anypoint Platform Account
 
-You manage and deploy applications in CloudHub via the link:/runtime-manager[Runtime Manager]. You can access Runtime Manager via the link:https://anypoint.mulesoft.com[Anypoint Platform], if you don't have an account yet, you can easily create a new one. 
+You manage and deploy applications in CloudHub and on-premises via the link:/runtime-manager[Runtime Manager]. You can access Runtime Manager via the link:https://anypoint.mulesoft.com[Anypoint Platform], if you don't have an account yet, you can easily create a new one. 
 
 ==== Adapting an Application for CloudHub
 
@@ -100,7 +100,7 @@ Many projects can be deployed directly to CloudHub. However, some projects requi
 * If using the *Jetty* connector, set the host to `0.0.0.0` instead of `localhost`.
 
 [TIP]
-See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] for more detail.
+See link:/runtime-manager/cloudhub-and-mule[CloudHub and Mule] and link:/runtime-manager/developing-a-cloudhub-application[Developing a CloudHub application] for more details on adapting an application to CloudHub.
 
 ==== Deploying an Application to CloudHub
 
@@ -119,7 +119,7 @@ image:Chconsoledeploying.png[Chconsoledeploying]
 
 == Sharing Resources
 
-If you're deploying multiple applications to the same place, in whichever of the ways explained above, and those applications could share the same resources, then you can create a common *domain* where you can define common configurations that can then be referenced by multiple projects. This allows you to, for example, expose different services in different projects through the same HTTP host and port and be able to deploy everything without any conflicts. link:/mule-user-guide/v/3.6/shared-resources[Read More].
+If you're deploying multiple applications to the same server or servers (except for CloudHub), in whichever of the ways explained above, and those applications could share the same resources, then you can create a common *domain* where you can define common configurations that can then be referenced by multiple projects. This allows you to, for example, expose different services in different projects through the same HTTP host and port and be able to deploy everything without any conflicts. link:/mule-user-guide/v/3.6/shared-resources[Read More].
 
 
 

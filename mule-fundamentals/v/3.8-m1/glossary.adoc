@@ -71,7 +71,7 @@ A self-contained component that allows you to integrate Mule applications with t
 [[cloudhub]]
 *CloudHub*
 
-Integration platform as a service that lets you manage applications in the cloud. When deploying an application to the cloud through the Runtime Manager console, CloudHub is used in the background. For more information, see the link:/runtime-manager/[CloudHub] documentation.
+Integration platform as a service that lets you manage applications in the cloud. When deploying an application to the cloud through the Runtime Manager console, CloudHub is used in the background. For more information, see the link:/runtime-manager/cloudhub[CloudHub] documentation.
 
 *cluster*
 

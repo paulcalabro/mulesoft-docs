@@ -115,7 +115,7 @@ image:deploy+ch+2.png[deploy+ch+2]
 image:api-pick-app-name.png[api-pick-app-name]
 +
 [TIP]
-A link is provided to the actual CloudHub application for further management, from there you can change the worker type, the environment, set advanced settings, etc. Under the API Status section, a new link appears labeled *Manage CloudHub proxy* that takes you there.
+A link is provided to the actual application on the Runtime Manager for further management, from there you can change the worker type, the environment, set advanced settings, etc. Under the API Status section, a new link appears labeled *Manage CloudHub proxy* that takes you there.
 
 . The status of the API deployment is indicated by the marker in the API Status section of the API version page. While the app is starting, you see a spinner. After your app starts successfully, the light turns green.
 +
@@ -129,7 +129,7 @@ Notice there should now be a new link under the API Status labeled *Re-deploy pr
 [WARNING]
 Make sure you first download your API as a .zip file from the API version page in the API platform.
 
-. link:https://anypoint.mulesoft.com[Log in] to your Anypoint Platform account, then go to CloudHub.
+. link:https://anypoint.mulesoft.com[Log in] to your Anypoint Platform account, then go to *Runtime Manager*.
 . First, ensure that you are in the environment that you wish to deploy to. If necessary, click the current environment name in the top-right corner to switch to another.
 . Once you are in the correct environment, click *Deploy application.*
 . In the Deploy Application screen, give your application a unique domain name.
@@ -167,7 +167,7 @@ anypoint.platform.client_secret=00000000000000
 +
 Then replace the numbers for your organization's *client_id* and **client_secret**.
 . Click *Create*.
-. CloudHub automatically moves to the *Logs* view where you can track the status of the deployment. Watch for this message:
+. The Runtime Manager automatically moves to the *Logs* view where you can track the status of the deployment. Watch for this message:
 +
 image:proxyCH-started.png[image]
 

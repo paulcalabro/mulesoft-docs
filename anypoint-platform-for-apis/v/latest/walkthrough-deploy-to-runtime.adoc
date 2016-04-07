@@ -55,15 +55,16 @@ If you wish to undeploy your application, navigate to the `app` directory and 
 image:deploy-to-cloud.jpeg[deploy-to-cloud]
 +
 
-. If this is your first time deploying in this way, a popup menu asks you to provide your login credentials for CloudHub. Studio stores your credentials and uses them automatically the next time you deploy to CloudHub. You can manage these credentials through the Studio Preferences menu, in Anypoint Studio > Authentication.
-. After you sign in, the Deploy to CloudHub menu opens. Choose a unique domain in which to deploy the application. In this case, we enter helloworld (however, you can choose your own unique domain of up to 42 characters in length). When you choose a unique domain name, a green confirmation check mark displays. 
+. If this is your first time deploying in this way, a popup menu asks you to provide your login credentials for the Anypoint Platform. Studio stores your credentials and uses them automatically the next time you deploy to CloudHub. You can manage these credentials through the Studio Preferences menu, in Anypoint Studio > Authentication.
+. After you sign in, the Deploy to Runtime Manager menu opens. Choose a unique domain in which to deploy the application. In this case, we enter helloworld (however, you can choose your own unique domain of up to 42 characters in length). When you choose a unique domain name, a green confirmation check mark displays. 
 . Select an Environment and a Mule Version.
-. Note: After you add your domain name, the Mule Version fills in automatically. Click *Finish*.
+
+[Note] After you add your domain name, the Mule Version fills in automatically. Click *Finish*.
 +
 image:deploy-to-cloud-window.png[deploy-to-cloud-window] 
 
 . Anypoint Studio packages, uploads, and deploys your application to CloudHub.
-. Browse to the URL of yourdomain.cloudhub.io (also shown in the pop-up window above). You should see your application running on CloudHub! (Deployment may take a few minutes.)
+. Browse to the URL of yourdomain.cloudhub.io (also shown in the pop-up window above). You should see your application running via the link:/runtime-manager[Runtime Manager]! (Deployment may take a few minutes.)
 . Congratulations! Your API is deployed.
 
 To stop your application, click the *Settings* tab and click *Cancel deployment*.

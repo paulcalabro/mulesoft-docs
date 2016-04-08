@@ -20,7 +20,11 @@ Additionally, you can also deploy to CloudHub through:
 ====
 
 [NOTE]
-Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On-Premise Edition].
+====
+Deploying to CloudHub is not possible via the lAnypoint Platform On-Premise Edition.
+
+If you’re still interested in requesting the Anypoint Platform on-Premises Edition, please contact your sales representative.
+====
 
 == Accessing the Deploy Application Screen
 

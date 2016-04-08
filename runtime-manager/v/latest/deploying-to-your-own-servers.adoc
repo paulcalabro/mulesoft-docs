@@ -17,6 +17,8 @@ This page describes the options on the *Deploy Application* page, which is ident
 
 [TIP]
 ====
+If you’re interested in requesting the Anypoint Platform on-Premises Edition, please contact your sales representative.
+
 Additionally, you can also deploy to your servers through:
 
 * The *link:/runtime-manager/runtme-manager-api[Runtime Manager API]*
@@ -25,7 +27,7 @@ Additionally, you can also deploy to your servers through:
 
 
 [NOTE]
-To deploy an app to link:/runtime-manager/cloudhub[CloudHub], see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloduHub]. Deploying to CloudHub is not possible via the link:/anypoint-platform-on-premises/[Anypoint Platfrom On-Premises Edition].
+To deploy an app to link:/runtime-manager/cloudhub[CloudHub], see link:/runtime-manager/deploying-to-cloudhub[Deploying to CloduHub].
 
 == Accessing the Deploy Application Screen
 

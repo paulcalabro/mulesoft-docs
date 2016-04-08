@@ -11,7 +11,7 @@ If you deploy through Anypoint Studio, or use the link:/runtime-manager/cloudhub
 After you deploy an application through the Runtime Manager, you can use the console to monitor and manage it at runtime. Depending on if your application is deployed to link:/runtime-manager/deploying-to-cloudhub[CloudHub] or to link:/runtime-manager/deploying-to-your-own-servers[your own servers], there is a different set of possible actions you can perform on it, once deployed.
 
 [TIP]
-Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on-premise edition] of the Anypoint Platform, the features described in this page work identically in both.
+Wether you're using the link:anypoint.mulesoft.com[cloud based] or the on-premise edition of the Anypoint Platform, the features described in this page work identically in both. If you’re interested in requesting the Anypoint Platform on-Premises Edition, please contact your sales representative.
 
 This page introduces the basic management tools in the console that are common to both types of deployments:
 

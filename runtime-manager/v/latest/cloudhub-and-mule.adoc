@@ -7,8 +7,10 @@ The Anypoint Runtime Manager offers you several different ways to deploy your Mu
 
 * Through the link:anypoint.mulesoft.com[Cloud console] of the Anypoint Runtime Manager to *CloudHub*
 * Through the link:anypoint.mulesoft.com[Cloud console] of the Anypoint Runtime Manager to *another server* that runs a Mule runtime (which may be on-premises or a different cloud server)
-* Through the link:/anypoint-platform-on-premises/[on-premise edition] of the Anypoint Runtime Manager to *another server* that runs a Mule runtime
+* Through the on-premise edition of the Anypoint Runtime Manager to *another server* that runs a Mule runtime
 
+[TIP]
+If you’re interested in requesting the Anypoint Platform on-Premises Edition, please contact your sales representative.
 
 image:arm-vs-ch1.png[diagram1]
 

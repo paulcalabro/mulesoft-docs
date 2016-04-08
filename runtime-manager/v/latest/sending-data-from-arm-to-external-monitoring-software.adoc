@@ -19,14 +19,14 @@ Future releases will also feature integrating with other third party systems.
 The goal of this document to enable you to integrate Runtime Manager with a third party tool such as Splunk or ELK.
 
 [TIP]
-Wether you're using the link:anypoint.mulesoft.com[cloud based] or the link:/anypoint-on-premises/[on-premise edition] of the Anypoint Platform, the features described in this page work identically in both.
+Wether you're using the link:anypoint.mulesoft.com[cloud based] or the on-premise edition of the Anypoint Platform, the features described in this page work identically in both. If you’re interested in requesting the Anypoint Platform on-Premises Edition, please contact your sales representative.
 
 == Basic Architecture
 
 The Runtime Manager exists as:
 * a component of the link:/mule-fundamentals/v/3.7/anypoint-platform-primer[Anypoint Platform]
-* a component of the link://anypoint-platform-on-premises/v/1.1.0/installing-anypoint-on-premises[Anypoint Platform on-premise Edition] that you can install on-premises
-* a link://anypoint-platform-on-premises/v/1.1.0/installing-anypoint-on-premises[standalone application] that can be installed on-premises
+* a component of the Anypoint Platform on-premise Edition that you can install on-premises
+
 
 On-premise versions of the Anypoint Platform have a Runtime Manager that handles only applications that are deployed on-premise or on your own cloud servers. The cloud-based version of the Anypoint Platform has a Runtime Manager that allows you manage applications deployed to link:/runtime-manager/index[CloudHub] as well as applications that are deployed on-premises and to your own cloud servers. When using whichever version of the Runtime Manager, there's always a way to monitor your applications. Applications deployed to CloudHub can use link:/runtime-manager/link:/runtime-manager/insight[[Insight]: MuleSoft’s Analytics & Monitoring feature. Applications that you deploy on-premises or to your own cloud servers can be integrated into third-party monitoring applications, which is what this document describes.
 
@@ -93,7 +93,7 @@ image:org_code.png[image]
 
 [tabs]
 ------
-[tab,title="Runtime Manager Cloud"]
+[tab,title="Anypoint Platform Cloud"]
 ....
 
 When using Runtime Manager as part of the cloud-based Anypoint Platform, launch the agent with exactly the same command that you found on the Runtime Manager UI:

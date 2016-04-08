@@ -62,7 +62,9 @@ So after software developer teams create Mule applications using Anypoint Studio
 
 The Runtime Manager is an enterprise tool that provides a centralized, convenient, and intuitive web-based interface to monitor, manage, and administer the run-time aspects of Mule runtimes. It is designed specifically for handling Mule runtime instances, and can do so over various different environments. It provides a comprehensive set of functionality for dealing with running Mule instances in CloudHub virtual workers, in servers, in server groups, in Mule clusters – and in the case of CloudHub – for dealing with the applications within Mule instances and the flows within those applications.
 
-A downloadable version also exists as part of the Anypoint Platform On-Premise Edition that runs entirely on-premises, which allows you to keep all of your infrastructure secure under your required policies.
+[TIP]
+A downloadable version also exists as part of the Anypoint Platform On-Premise Edition that runs entirely on-premises, which allows you to keep all of your infrastructure secure under your required policies. If you’re interested in requesting the Anypoint Platform on-Premises Edition, please contact your sales representative.
+
 
 [TIP]
 For managing apps on your own servers, you can still resort to the link:m/mule-management-console/v/3.7/index[Mule Management Console] as an alternative to the Runtime Manager. This older tool is no longer being developed, but has some features that are currently not yet implemented in the Runtime Manager when it comes to on-premise deployment scenarios.

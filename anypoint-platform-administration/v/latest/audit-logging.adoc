@@ -1,26 +1,28 @@
 = Audit Logging
 :keywords: anypoint platform, configuring, logs, auditing
 
-Changes within an Anypoint Platform organization (e.g. the application of a policy or the creation of a new user) are logged through an audit logging service. The historical audit events for an organization can be accessed by users belonging to the *Organization Administration* role or the *Audit Log Viewer* role within a business unit.
+Changes made by users within an Anypoint Platform organization are logged through an audit logging service. You can access the data logs through the link:https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/apis/24562/versions/26089/pages/39846[Audit Logging Query API] or through the Audit Logging UI (currently in Public Beta).
 
 == Overview
 
-The audit logging services provides a queryable history of actions performed within the Anypoint platform. The actions recorded here are mostly performed by users through the Anypoint Platform user interface or via an API call, some actions can also be performed by system processes.
+The audit logging service provides a queryable history of actions performed within the Anypoint platform, it keeps track of all users who have interacted with objects in the system, timestamping these actions and providing mechanisms for querying the set of users who have performed actions, the set of objects that have had actions performed on them, and other endpoints that enable the querying of log entries.
 
-The audit logging service keeps track of all users who have interacted with objects in the system, timestamping these actions and providing mechanisms for querying the set of users who have performed actions, the set of objects that have had actions performed on them, and other endpoints that enable the querying of log entries.
+Each log entry has a set of properties that provides us with more information about the activity:
 
-You can query the audit log filtering by:
-
-* time period
-* type of event
-* action (Delete, login, permissin change, etc)
-* object name
-* user name
+* *Time*: The timestamp when the activity occurred.
+* *Product*: The product where the object resides. Example: "Access Management"
+* *Type*: The type of the object on which the action is performed. Example: "Organization"
+* *Action*: The Action associated with the object. Example: “Create”
+* *Object*: The name of the Object. Example: “foo”
+* *User*: The User who performed the action. Example: “johndoe”
+* *Parent*: (Optional) The parent of the object (if any) on which the action is performed. Mainly relevant to APIs.
+* *Payload*: (Optional) More information about the log properties. Example: If an Organization was created, then the payload would contain information about organization and the owner such as IDs.
 
 == How to Access It
 
+Users belonging to the *Organization Administration* role or the *Audit Log Viewer* role on the Anypoint Platform have access to both the UI and the Query API. The audit log service is business group aware, meaning, you will see only logs that are relevant to your own business group. The audit log UI is embedded in Access Manager, if you are not an Organization Administrator, but you have the Audit Log Viewer role, then you will see only the audit log UI under Access Manager.
 
-To view the audit log, click the gear icon on the top nav bar: image:gearicon.png[gear-icon]
+To view the audit logs, click the gear icon on the top nav bar: image:gearicon.png[gear-icon]
 
 Then select the *Audit Log* section
 
@@ -29,34 +31,40 @@ image:audit-logs.png[auditlogs]
 image:audit-logs-screenshot.png[screenshot]
 
 
+
 == About the Content of the Log
 
-Activities represented in the log are actions that occur at a particular time, involve one or more objects, have a type (such as 'delete' or 'approve') and optionally a payload which can store application-specific information (such as changed fields, environment information, etc).
+Activities represented in the log are actions that occur at a particular time, involve one or more objects, have an action type (such as 'delete' or 'approve') associated with the objects, and optionally a payload which can store application-specific information such as changed fields, environment information, etc.
 
-=== Objects
+Below is a list of actions per Product and Object type that we currently audit in Anypoint platform :
 
-Actions may involve more than a single object. For example, permission changes involve both a permission and an object being secured. As another example, granting an application access to an API involves both of those objects in a single action.
+=== APIs
 
-Objects represent the entities about which actions are logged. Within an organization, objects are identified by a trio of properties:
+==== Organization
 
+==== API versions
 
-* *Platform*: The system that owns the object. Examples: "cloudhub", "api platform", "core services".
-* *Type*: The business entity that the object represents. Examples: "api", "api version", "permission", "environment".
-* *Id*: The system-local id of the object. Can be a uuid, a number or any other key representation used by the object's platform.
+==== Application
 
+===== Portals
 
-In addition, objects have a Name which is used as a user-friendly identifier. Since names change over time, object names will be updated any time an event is ingested whose object name does not match the name stored in the log.
+=== Access Management
 
-=== Object Hierarchies
+==== Users
 
-In the real world, objects have parent-child relationships that are critical for querying and organizing log data. For example, when looking at API platform events, a user may wish to look at all events for a particular API. However, the API contains API versions as well as policies, portals, and other objects, whose events the user would need to see. To this end, objects have a parent ID and a parent Type, which acts as a key to their parent and enabled queries for the children of any entity.
+==== Roles
 
+==== Permissions
 
-[NOTE]
-You can also access Audit Logging data through the Anypoint Platform’s link:https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/apis/24562/versions/26089/pages/39846[Audit Logging Query API].
+=== Organization & Sub-orgs
 
+=== Environments
 
+=== Runtime Manager
 
+==== Applications
+
+==== Servers
 
 = See Also
 
